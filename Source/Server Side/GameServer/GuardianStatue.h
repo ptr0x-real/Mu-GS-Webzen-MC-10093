@@ -11,7 +11,7 @@
 
 #ifdef CASTLE_NPC_GUARDIANSTATUE_WORK_20041207
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
 
 class CGuardianStatue  

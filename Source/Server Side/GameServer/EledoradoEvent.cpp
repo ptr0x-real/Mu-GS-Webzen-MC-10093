@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\Prodef.H"
+#include "Include\Prodef.H"
 #include "User.h"
 #include "Protocol.h"
 #include "Gamemain.h"

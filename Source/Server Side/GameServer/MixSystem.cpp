@@ -7,15 +7,15 @@
 
 #include "StdAfx.h"
 #include "User.h"
-#include "..\\Include\\Prodef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\cb_protocol.h"
+#include "Include\Prodef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\cb_protocol.h"
 #include "wzUdp.h"
 #include "protocol.h"
 #include "Gamemain.h"
 #include "DSProtocol.h"
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 #include "BloodCastle.h"
 

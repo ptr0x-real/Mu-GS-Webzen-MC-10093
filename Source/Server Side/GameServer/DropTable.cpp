@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "DropTable.h"
 
-#include "..\include\Readscript.h"
+#include "Include\Readscript.h"
 
 #include "DSProtocol.h"
 

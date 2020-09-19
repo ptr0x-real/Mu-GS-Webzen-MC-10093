@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\public.h"
+#include "Include\public.h"
 #include "MagicDamage.h"
 #include "MagicInf.h"
 

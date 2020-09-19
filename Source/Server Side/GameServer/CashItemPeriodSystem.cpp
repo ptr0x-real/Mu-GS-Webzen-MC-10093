@@ -16,7 +16,7 @@ BOOL g_bRunningPeriodCheckThread = FALSE;
 #include "ItemAddOption.h"
 
 #ifdef MODIFY_MAPMOVEBOUNCE_CHECK_OPTION_20070521
-#include "..\\common\\winutil.h"
+#include "Common\winutil.h"
 #endif // MODIFY_MAPMOVEBOUNCE_CHECK_OPTION_20070521
 
 #ifdef MODIFY_BUFF_SYSTEM_EXTENTION_CASHSHOP_20080318

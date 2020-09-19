@@ -1,7 +1,7 @@
 #include "StdAfx.h"
-#include "..\\Include\\Public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Public.h"
+#include "Include\ProDef.h"
+#include "Include\Readscript.h"
 #include "user.h"
 #include "Protocol.h"
 #include "NPCTalk.h"
@@ -26,7 +26,7 @@
 #endif
 
 #include "Event.h"
-#include "..\\Include\\cb_protocol.h"
+#include "Include\cb_protocol.h"
 
 #ifdef NEW_SKILL_FORSKYLAND
 #include "QuestInfo.h"

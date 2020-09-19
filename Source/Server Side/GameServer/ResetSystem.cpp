@@ -8,14 +8,14 @@
 #include "ResetSystem.h"
 #include "LogProc.h"
 #include "LogToFile.h"
-#include "..\\include\\readscript.h"
+#include "Include\readscript.h"
 #include "user.h"
 #include "DSProtocol.h"
 #include "ObjUseSkill.h"
 #include "ObjCalCharacter.h"
 #include "GameMain.h"
-#include "..\\common\\winutil.h"
-#include "..\\common\\classdef.h"
+#include "Common\winutil.h"
+#include "Common\classdef.h"
 #include "DBSockMng.h"
 #include "BloodCastle.h"
 #include "DevilSquare.h"
@@ -25,7 +25,7 @@
 
 #include "MonsterAttr.h"
 
-#include "..\\common\\zzzitem.h"
+#include "Common\zzzitem.h"
 
 #ifdef CHAOSCASTLE_SYSTEM_20040408
 #include "ChaosCastle.h"

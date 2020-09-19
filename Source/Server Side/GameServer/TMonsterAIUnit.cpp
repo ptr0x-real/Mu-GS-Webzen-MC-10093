@@ -1,7 +1,7 @@
 #include "Stdafx.h"
 #include "TMonsterAIUnit.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "User.h"
 #include "protocol.h"

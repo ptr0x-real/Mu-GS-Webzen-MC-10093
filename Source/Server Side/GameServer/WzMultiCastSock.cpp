@@ -8,7 +8,7 @@
 #include "WzMultiCastSock.h"
 #include "process.h"				// _beginthreadex()
 
-#include "..\\include\\Prodef.h"
+#include "Include\Prodef.h"
 
 extern HWND g_hMainList;
 extern HWND g_hNumStatic;

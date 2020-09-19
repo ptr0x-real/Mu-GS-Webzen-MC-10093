@@ -3,16 +3,16 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "GameMain.h"
 #include "MonsterSetBase.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 #ifdef AUTH_GAMESERVER
-#include "..\\common\\WzMemScript.h"
+#include "Common\WzMemScript.h"
 #endif
 
 #ifdef MAP_SERVER_WORK_20041030

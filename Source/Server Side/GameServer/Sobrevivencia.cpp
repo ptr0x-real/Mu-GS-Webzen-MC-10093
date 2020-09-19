@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include "../include/Tokenizer.h"
+#include "Include\Tokenizer.h"
 #include "TNotice.h"
 
 SOBRE SobreDrop[1000];

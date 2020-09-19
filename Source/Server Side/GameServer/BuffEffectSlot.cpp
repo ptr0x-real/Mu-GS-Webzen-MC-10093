@@ -9,7 +9,7 @@
 #include "ChaosCastle.h"
 #endif
 
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 #include "ItemAddOption.h"
 
 #ifdef MASTER_LEVEL_UP_SYSTEM_20070912

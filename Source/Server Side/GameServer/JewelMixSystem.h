@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\\Common\\winutil.h"
+#include "Common\winutil.h"
 
 
 #ifdef	JEWEL_MIX_SYSTEM_20050309

@@ -10,8 +10,8 @@
 CCastleSiege	g_CastleSiege;
 
 
-#include "..\\Common\\LogProc.h"
-#include "..\\Include\\ReadScript.h"
+#include "Common\LogProc.h"
+#include "Include\ReadScript.h"
 #include "DSProtocol.h"
 
 #include "wsJoinServerCli.h"

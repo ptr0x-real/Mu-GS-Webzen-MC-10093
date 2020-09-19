@@ -1,7 +1,7 @@
 #ifndef ANTI_HACK_H
 #define ANTI_HACK_H
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 #include <vector>
 
 #ifdef MODIFY_CONNNECT_HACK_ATTACK_20090409

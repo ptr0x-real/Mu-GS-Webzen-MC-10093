@@ -2,12 +2,12 @@
 #include "PickUpSystem.h"
 #include "protocol.h"
 #include "logproc.h"
-#include "../include/ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "QuestInfo.h"
 #include "KalimaGate.h"
 #include "ChaosCastle.h"
-#include "..\include\define.h"
+#include "Include\define.h"
 //========================================================================================================================
 #ifdef PICKUP_SYSTEM
 CPickUpSystem s_PickUp;

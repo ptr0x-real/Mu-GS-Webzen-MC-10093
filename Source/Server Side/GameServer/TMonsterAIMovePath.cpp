@@ -4,8 +4,8 @@
 
 #include "TMonsterAIMovePath.h"
 
-#include "..\Include\ReadScript.h"
-#include "..\Common\WinUtil.h"
+#include "Include\ReadScript.h"
+#include "Common\WinUtil.h"
 
 TMonsterAIMovePath::TMonsterAIMovePath()
 {

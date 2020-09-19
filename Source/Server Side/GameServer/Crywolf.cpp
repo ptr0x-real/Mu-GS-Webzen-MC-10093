@@ -7,8 +7,8 @@
 
 #include "TMonsterAIGroup.h"
 
-#include "..\Include\ReadScript.h"
-#include "..\common\Winutil.h"
+#include "Include\ReadScript.h"
+#include "Common\Winutil.h"
 #include "protocol.h"
 #include "user.h"
 #include "gamemain.h"

@@ -5,8 +5,8 @@
 #include "TMonsterAIGroup.h"
 
 #include "User.h"
-#include "..\Include\ReadScript.h"
-#include "..\Common\WinUtil.h"
+#include "Include\ReadScript.h"
+#include "Common\WinUtil.h"
 
 
 

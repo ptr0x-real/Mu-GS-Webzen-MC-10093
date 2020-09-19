@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TerrainManager.h"
 
-#include "..\include\Readscript.h"
+#include "Include\Readscript.h"
 
 CTerrainManager g_TerrainManager;
 

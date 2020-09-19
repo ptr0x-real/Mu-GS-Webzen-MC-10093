@@ -3,8 +3,8 @@
 
 
 
-#include "..\\Include\\GMProtocol.h"
-#include "../include/ProDef.h"
+#include "Include\\GMProtocol.h"
+#include "include/ProDef.h"
 
 #include <WinSock2.h>
 
@@ -6334,7 +6334,7 @@ extern void CGRelationShipReqKickOutUnionMember( LPPMSG_KICKOUT_UNIONMEMBER_REQ 
 #endif
 
 #ifdef MU_CASTLESIEGE_CL_PROTOCOL_20041122	// 뮤 공성전 - 뮤 클라이언트 관련 프로토콜 함수 선언
-#include "..\Include\Sprodef.h"
+#include "Include\Sprodef.h"
 
 //----------------------------------------------------------------------------
 // CG [0xB2][0x00] 클라이언트가 공성전 상태정보를 요청

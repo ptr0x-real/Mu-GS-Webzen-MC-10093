@@ -224,7 +224,7 @@ BOOL CKanturuBattleUserMng::IsOverMaxUser()
 
 //----------------------------------------------------------------------------
 #ifdef KANTURU_TIMEATTACK_EVENT_20060822
-#include "..\INCLUDE\cb_protocol.h"
+#include "Include\cb_protocol.h"
 #include "Event.h"
 #include "GameMain.h"
 #endif

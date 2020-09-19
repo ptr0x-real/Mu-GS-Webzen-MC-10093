@@ -8,8 +8,8 @@
 
 #ifdef ADD_ITEM_ATTACK_XMASEVENT_20081014
 
-#include "..\\Include\\ReadScript.h"
-#include "..\\Include\\Prodef.h"
+#include "Include\ReadScript.h"
+#include "Include\Prodef.h"
 #include "MonsterHerd.h"
 
 //////////////////////////////////////////////////////////////////////

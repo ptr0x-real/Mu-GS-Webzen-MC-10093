@@ -3,11 +3,11 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\Prodef.h"
+#include "Include\Prodef.h"
 #include "User.h"
 #include "Protocol.h"
 #include <Winsock2.h>
-#include "..\\Common\\Winutil.h"
+#include "Common\Winutil.h"
 #include "wsGameServer.h"
 #include "IpCache.h"
 

@@ -9,11 +9,11 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Common\\zzzItem.h"
-#include "..\\Common\\Classdef.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Common\zzzItem.h"
+#include "Common\Classdef.h"
 
 #include "WzUdp.h"
 

@@ -133,7 +133,7 @@ BYTE GamblingSystemItemBagOpen( LPOBJECTSTRUCT lpObj, BYTE btMapNumber, UCHAR cX
 extern void	FireCrackerMonsterEventItemBagOpen( LPOBJECTSTRUCT lpObj, BYTE btMapNumber, UCHAR cX, UCHAR cY );
 #endif // ADD_SUMMER_FIRECRACKER_MONSTER_EVENT_20090610
 
-#include "..\\Include\\cb_protocol.h"
+#include "Include\cb_protocol.h"
 
 
 #ifdef BLOODCASTLE_CHECK_ENTERCOUNT_20040304

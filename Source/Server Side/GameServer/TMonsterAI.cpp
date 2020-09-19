@@ -5,8 +5,8 @@
 #include "User.h"
 #include "protocol.h"
 
-#include "..\Include\ReadScript.h"
-#include "..\Common\WinUtil.h"
+#include "Include\ReadScript.h"
+#include "Common\WinUtil.h"
 
 #include "CrywolfUtil.h"
 #include "TMonsterAIUtil.h"

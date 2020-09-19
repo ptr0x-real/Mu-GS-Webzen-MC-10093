@@ -3,8 +3,8 @@
 // 서버와의 정보를 주고받는 프로토콜 처리 모듈
 //----------------------------------------------------------------------------
 #include "stdafx.h"
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
 #include "User.h"
 #include "Protocol.h"
 #include "GameServer.h"

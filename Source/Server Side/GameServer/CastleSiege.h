@@ -20,9 +20,9 @@
 
 using namespace std;
 
-#include "..\INCLUDE\DEFINE.H"
-#include "..\INCLUDE\SPRODEF.H"
-#include "..\COMMON\WINUTIL.H"
+#include "Include\DEFINE.H"
+#include "Include\SPRODEF.H"
+#include "Common\WINUTIL.H"
 
 #ifdef MODIFY_CASTLE_PK_01_20050309
 #define CASTLE_PK_BORDER					113					// 성 주인 길드가 공성 준비기간에 PK 할수 있는 경계선 (apple)

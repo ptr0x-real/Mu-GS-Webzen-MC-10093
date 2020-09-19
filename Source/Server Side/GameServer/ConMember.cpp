@@ -9,7 +9,7 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-#include "..\\Include\\Readscript.h"
+#include "Include\Readscript.h"
 CConMember	ConMember;
 
 CConMember::CConMember()

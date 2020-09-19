@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Common\\Winutil.h"
+#include "Common\Winutil.h"
 #include "ChinaHackUserKick.h"
 #include "user.h"
 #include "DSProtocol.h"

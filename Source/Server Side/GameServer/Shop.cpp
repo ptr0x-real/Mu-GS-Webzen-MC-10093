@@ -3,18 +3,18 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Common\\zzzitem.h"
-#include "..\\Common\\winUtil.h"
-#include "..\\Include\\ReadScript.h"
+#include "Common\zzzitem.h"
+#include "Common\winUtil.h"
+#include "Include\ReadScript.h"
 #include "Dirpath.h"
 #include "Shop.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 #ifdef AUTH_GAMESERVER
-#include "..\\common\\WzMemScript.h"
+#include "Common\WzMemScript.h"
 #include "GameServerAuth.h"
 #endif
 

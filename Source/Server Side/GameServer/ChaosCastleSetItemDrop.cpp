@@ -3,14 +3,14 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\common\\winutil.h"
-#include "..\\Include\\Readscript.h"
+#include "Common\winutil.h"
+#include "Include\Readscript.h"
 #include "ChaosCastleSetItemDrop.h"
 
 #include "User.h"
 #include "DsProtocol.h"
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 #ifdef CHANGE_CHAOSCASTLE_SET_ITEM_DROP
 

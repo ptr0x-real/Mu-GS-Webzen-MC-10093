@@ -4,9 +4,9 @@
 
 #include "stdafx.h"
 #include "ItemSeedSphere.h"
-#include "..\common\ItemSocketOptionDefine.h"
+#include "Common\ItemSocketOptionDefine.h"
 
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 
 #ifdef ADD_ITEM_SOCKET_OPTION_SYSTEM_20080415
 

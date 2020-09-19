@@ -18,8 +18,8 @@
 
 using namespace std;
 
-#include "..\INCLUDE\DEFINE.H"
-#include "..\COMMON\WINUTIL.H"
+#include "Include\DEFINE.H"
+#include "Common\WINUTIL.H"
 
 #define		MAX_SUBSVR_COUNT		20						// 최대 서브서버 개수
 #define		MAX_MAPSVR_GROUP		(MAX_SUBSVR_COUNT)		// 최대 서버그룹 개수 (물리적으로 서브서버의 개수를 넘어갈 수 없다.)

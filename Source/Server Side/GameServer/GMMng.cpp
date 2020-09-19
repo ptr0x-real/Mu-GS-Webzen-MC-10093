@@ -6,9 +6,9 @@
 #include "stdafx.h"
 #include <string.h>
 #include <stdio.h>
-#include "..\\Include\\Prodef.h"
-#include "..\\common\\winutil.h"
-#include "..\\Common\\classdef.h"
+#include "Include\Prodef.h"
+#include "Common\winutil.h"
+#include "Common\classdef.h"
 #include "giocp.h"
 #include "user.h"
 #include "GMMng.h"
@@ -34,7 +34,7 @@ extern PartyClass		gParty;
 #include "MoveCommand.h"
 #endif
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 //#if (TESTSERVER == 1) || defined(FOR_TEMP_SERVER)
 //	#ifdef JS_ADD_TEST_COMMAND

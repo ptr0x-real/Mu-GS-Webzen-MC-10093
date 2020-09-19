@@ -3,7 +3,7 @@
 
 #include <winsock2.h>
 
-#include "..\\Common\\zzzItem.h"
+#include "Common\zzzItem.h"
 #include "Magicinf.h"
 #include "HitC.h"
 #include "wsGameServer.h"
@@ -24,7 +24,7 @@
 #endif // NPROTECT_GAME_GAURD_FOR_SERVER_VERSION_10_20050411
 
 #ifdef NPROTECT_GAME_GAURD_FOR_SERVER_VERSION_20_20050411
-//	#include "..\\include\\ggsrv.h"		
+//	#include "Include\ggsrv.h"		
 	#include "ggsrv.h"						// 기존 루트와 맞춤 (b4nfter)
 #endif // NPROTECT_GAME_GAURD_FOR_SERVER_VERSION_20_20050411
 

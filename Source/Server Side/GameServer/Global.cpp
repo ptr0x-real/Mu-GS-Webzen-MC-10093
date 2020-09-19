@@ -2,7 +2,7 @@
 #include "Global.h"
 #include "LogProc.h"
 
-#include "..\include\Readscript.h"
+#include "Include\Readscript.h"
 
 CGlobalConfig g_GlobalConfig;
 

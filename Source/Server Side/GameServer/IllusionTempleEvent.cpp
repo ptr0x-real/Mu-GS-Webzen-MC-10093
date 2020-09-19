@@ -8,14 +8,14 @@
 #ifdef ADD_EVENT_MAP_ILLUSION_TEMPLE_20070328
 
 #include "DSProtocol.h"
-#include "..\\Common\\Winutil.h"
+#include "Common\Winutil.h"
 #include "Gamemain.h"
 #include "DirPath.h"
 #include "Crywolf.h"
 #include "CastleSiegeSync.h"
 #include "protocol.h"
 #include "PartyClass.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "wsJoinServerCli.h"
 
 #ifdef MODIFY_MIX_SYSTEM_20070518

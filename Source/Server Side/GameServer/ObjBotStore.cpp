@@ -5,10 +5,10 @@
 #include "User.h"
 //#include "SCFExDBProtocol.h"
 #include "ObjBotStore.h"
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 #include "..\include\readscript.h"
-#include "..\common\SetItemOption.h"
-#include "..\common\zzzitem.h"
+#include "Common\SetItemOption.h"
+#include "Common\zzzitem.h"
 
 ObjBotStore BotStore;
 

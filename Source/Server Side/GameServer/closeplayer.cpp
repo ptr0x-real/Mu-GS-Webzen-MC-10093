@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #include "closeplayer.h"
 #include "user.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "wsGameServer.h"
 #include "giocp.h"
 //////////////////////////////////////////////////////////////////////

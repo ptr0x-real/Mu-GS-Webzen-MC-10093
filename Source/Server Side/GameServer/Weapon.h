@@ -11,9 +11,9 @@
 
 #ifdef ADD_NEW_WEAPON_FOR_CASTLE_01_20041116
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
-#include "..\\Common\\TSync.h"
+#include "Common\TSync.h"
 
 #define MAX_WEAPON_DAMAGED_TARGET_INFO	100
 #define MAX_WEAPON_CAL_DAMAGE_INFO		50

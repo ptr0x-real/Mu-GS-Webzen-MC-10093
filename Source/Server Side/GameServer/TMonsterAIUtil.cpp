@@ -4,7 +4,7 @@
 
 #include "TMonsterAIUtil.h"
 
-#include "..\Common\WinUtil.h"
+#include "Common\WinUtil.h"
 #include "User.h"
 #include "protocol.h"
 #include "MapClass.h"

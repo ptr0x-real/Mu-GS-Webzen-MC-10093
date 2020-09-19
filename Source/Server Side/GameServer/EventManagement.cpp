@@ -7,10 +7,10 @@
 
 #ifdef EVENT_MANAGEMENT_20040711
 
-#include "..\\Include\\ReadScript.h"
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\cb_protocol.h"
-#include "..\\Common\\Winutil.h"
+#include "Include\ReadScript.h"
+#include "Include\Prodef.h"
+#include "Include\cb_protocol.h"
+#include "Common\Winutil.h"
 #include "GameMain.h"
 #include "Protocol.h"
 #include "Event.h"

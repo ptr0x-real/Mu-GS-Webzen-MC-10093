@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Common\\winutil.h"
+#include "Common\winutil.h"
 #include "ItemSystemFor380.h"
 
 #ifdef MODIFY_MIX_SYSTEM_20070518
@@ -12,7 +12,7 @@
 #endif
 
 #include "DSProtocol.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "DirPath.h"
 extern CDirPath		gDirPath;

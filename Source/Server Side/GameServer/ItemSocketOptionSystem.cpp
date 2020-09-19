@@ -5,8 +5,8 @@
 #include "stdafx.h"
 #include "ItemSocketOptionSystem.h"
 
-#include "..\\common\\winutil.h"
-#include "..\include\ReadScript.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
 
 #include "Dirpath.h"
 extern CDirPath gDirPath;

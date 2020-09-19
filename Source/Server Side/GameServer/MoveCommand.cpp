@@ -3,11 +3,11 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\Prodef.h"
-#include "..\\common\\winutil.h"
-#include "..\\Common\\classdef.h"
-#include "..\\Include\\public.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Prodef.h"
+#include "Common\winutil.h"
+#include "Common\classdef.h"
+#include "Include\public.h"
+#include "Include\Readscript.h"
 
 #include "user.h"
 #include "Protocol.h"
@@ -17,7 +17,7 @@
 #include "MoveCommand.h"
 
 #ifdef AUTH_GAMESERVER
-#include "..\\common\\WzMemScript.h"
+#include "Common\WzMemScript.h"
 #endif
 
 #ifdef DEVILSQUARE_EXTEND_20050221

@@ -19,7 +19,7 @@
 #include "MonsterSetBase.h"
 #include "user.h"
 #include "MagicInf.h"
-#include "../include/public.h"
+#include "Include\public.h"
 
 #include "RaklionDefine.h"
 #include "RaklionBattleUserMng.h"

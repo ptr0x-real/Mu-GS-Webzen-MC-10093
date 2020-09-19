@@ -6,7 +6,7 @@
 #include "Weapon.h"
 
 #ifdef ADD_NEW_WEAPON_FOR_CASTLE_01_20041116
-#include "..\Common\winutil.h"
+#include "Common\winutil.h"
 #include "User.h"
 #include "ObjAttack.h"
 #include "NpcTalk.h"

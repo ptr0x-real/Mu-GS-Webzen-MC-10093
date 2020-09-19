@@ -15,8 +15,8 @@
 #include "resource.h"
 #include <CommCtrl.h>
 #include <stdio.h>
-#include "..\\Include\\Prodef.H"
-#include "..\\Include\\SProdef.h"
+#include "Include\Prodef.H"
+#include "Include\SProdef.h"
 #include "wsGameServer.h"
 #include "wsJoinServerCli.h"
 #include "User.h"
@@ -653,7 +653,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //  WM_DESTROY	- post a quit message and return
 //
 //
-#include "..\\Include\\Prodef.h"
+#include "Include\Prodef.h"
 #include "Protocol.h"
 
 #ifdef MAP_SERVER_WORK_20041030

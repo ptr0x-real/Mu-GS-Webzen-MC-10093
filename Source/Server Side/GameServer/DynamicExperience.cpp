@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include "..\include\readscript.h"
+#include "Include\readscript.h"
 #include "LogProc.h"
 
 CDynamicExperience _dynamic_experience;

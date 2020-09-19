@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "wsShopServerCli.h"
-#include "..\\Include\\Prodef.h"
+#include "Include\Prodef.h"
 #include "User.h"
 
 //////////////////////////////////////////////////////////////////////

@@ -11,8 +11,8 @@
 #include <windows.h>
 #endif
 
-#include "..\\common\\winutil.h"
-#include "..\include\ReadScript.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
 
 #ifdef MODIFY_PERIODITEM_SLOT_EXTEND_20070423
 #include "CashItemPeriodSystem.h"

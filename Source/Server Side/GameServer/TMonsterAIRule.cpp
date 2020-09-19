@@ -4,8 +4,8 @@
 
 #include "TMonsterAIRule.h"
 
-#include "..\Include\ReadScript.h"
-#include "..\Common\WinUtil.h"
+#include "Include\ReadScript.h"
+#include "Common\WinUtil.h"
 
 BOOL				TMonsterAIRule::s_bDataLoad = FALSE;
 int					TMonsterAIRule::s_iMonsterCurrentAIUnitTable[MAX_MONSTER_CLASS];

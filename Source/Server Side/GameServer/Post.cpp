@@ -4,8 +4,8 @@
 #include "TNotice.h"
 #include "protocol.h"
 #include "LogProc.h"
-#include "..\\common\\winutil.h"
-#include "..\\include\\define.h"
+#include "Common\winutil.h"
+#include "Include\define.h"
 #include "GameMain.h"
 
 CPostSystem g_PostSystem;

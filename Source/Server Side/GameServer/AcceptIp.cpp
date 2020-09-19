@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "AcceptIp.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Readscript.h"
 
 CAcceptIp	acceptIP;
 

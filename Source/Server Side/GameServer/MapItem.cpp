@@ -6,7 +6,7 @@
 #include "MapItem.h"
 #include "User.h"
 #include "Gamemain.h"
-#include "..\\common\\winutil.h"
+#include "Common\winutil.h"
 
 #ifdef FOR_BLOODCASTLE
 #include "BloodCastle.h"

@@ -9,14 +9,14 @@
 #include <TIME.H>
 #include "process.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\include\\cb_protocol.h"
-#include "..\\Include\\public.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
+#include "Include\public.h"
+#include "Include\Readscript.h"
 
 #include "User.h"
 #include "protocol.h"

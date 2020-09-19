@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "HappyHour.h"
 #include "GameMain.h"
-#include "..\include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "TNotice.h"
 

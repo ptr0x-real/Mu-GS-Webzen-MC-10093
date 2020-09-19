@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #include "BuffScriptLoader.h"
 
-#include "..\include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #ifdef MODIFY_BUFF_SYSTEM_EXTENTION_20070917
 

@@ -5,15 +5,15 @@
 #include "stdafx.h"
 #include "GamblingSystem.h"
 
-#include "..\\common\\winutil.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\common\\zzzitem.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
+#include "Common\zzzitem.h"
 
-#include "..\\Include\\public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Common\\ZzzPath.h"
+#include "Include\public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Include\GMProtocol.h"
+#include "Common\ZzzPath.h"
 #include "SProtocol.h"
 #include "User.h"
 #include "gObjMonster.h"
@@ -25,7 +25,7 @@
 
 #include "LargeRand.h"
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 extern ITEM_ATTRIBUTE      ItemAttribute [MAX_ITEM];
 extern CDirPath		gDirPath;

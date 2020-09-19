@@ -10,7 +10,7 @@
 #endif // _MSC_VER > 1000
 
 #ifdef AUTH_GAMESERVER
-#include "..\\include\\WzSvMng_Interface.h"
+#include "Include\WzSvMng_Interface.h"
 
 
 //WZSVMNG_DLLINTERFACE BOOL WZSvMngFuncSetInfo(int iCountryCode, 

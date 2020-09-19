@@ -422,7 +422,7 @@ void CKanturuUtil::SendKanturuChattingMsg( int iIndex, LPSTR lpszMsg, ... )
 }
 
 #ifdef KANTURU_TIMEATTACK_EVENT_20060822
-#include "..\INCLUDE\cb_protocol.h"
+#include "Include\cb_protocol.h"
 #include "Event.h"
 #include "gamemain.h"
 

@@ -2,10 +2,10 @@
 #include "BuffHelper.h"
 #include "LogProc.h"
 #include "LogToFile.h"
-#include "..\include\readscript.h"
+#include "Include\readscript.h"
 #include "user.h"
 #include "GameMain.h"
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 #include "BloodCastle.h"
 #include "DevilSquare.h"
 

@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "wsJoinServerCli.h"
-#include "..\\Include\\Prodef.h"
+#include "Include\Prodef.h"
 #include "User.h"
 #include "Protocol.h"
 #include "SProtocol.h"

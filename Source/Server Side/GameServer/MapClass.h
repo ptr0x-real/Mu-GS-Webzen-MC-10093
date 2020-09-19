@@ -10,7 +10,7 @@
 #endif // _MSC_VER > 1000
 
 #include "MapItem.h"
-#include "..\\Common\\zzzPath.h"
+#include "Common\zzzPath.h"
 #include "user.h"
 
 

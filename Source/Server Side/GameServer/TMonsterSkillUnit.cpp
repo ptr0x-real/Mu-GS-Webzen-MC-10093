@@ -4,7 +4,7 @@
 
 #include "TMonsterSkillUnit.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 BOOL				TMonsterSkillUnit::s_bDataLoad = FALSE;
 TMonsterSkillUnit	TMonsterSkillUnit::s_MonsterSkillUnitArray[MAX_MONSTER_SKILL_UNIT];

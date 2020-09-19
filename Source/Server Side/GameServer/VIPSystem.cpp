@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "VIPSystem.h"
-#include "..\common\LogProc.h"
+#include "Common\LogProc.h"
 #include "GameMain.h"
 #include "DBSockMng.h"
 

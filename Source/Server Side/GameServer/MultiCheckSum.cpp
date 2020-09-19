@@ -4,12 +4,12 @@
 
 #include "stdafx.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\Include\\cb_protocol.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
 #include "User.h"
 
 #include "MultiCheckSum.h"

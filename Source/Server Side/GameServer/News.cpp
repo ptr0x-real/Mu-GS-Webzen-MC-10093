@@ -2,7 +2,7 @@
 #include "News.h"
 #include "TNotice.h"
 
-#include "..\include\Readscript.h"
+#include "Include\Readscript.h"
 
 CNewsSystem g_NewsSystem;
 

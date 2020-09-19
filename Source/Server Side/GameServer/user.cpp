@@ -7,14 +7,14 @@
 #include <windef.h>
 #include <crtdbg.h> 
 #include <TIME.H>
-#include "..\\Include\\Public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Common\\Winutil.h"
-#include "..\\Common\\zzzItem.h"
-#include "..\\Common\\Classdef.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\Public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Include\GMProtocol.h"
+#include "Common\Winutil.h"
+#include "Common\zzzItem.h"
+#include "Common\Classdef.h"
+#include "Include\ReadScript.h"
 #include "Gameserver.h"
 #include "SProtocol.h"
 #include "Protocol.h"
@@ -122,7 +122,7 @@
 #include "GameServerAuth.h"
 #endif
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 #ifdef CHANGE_CHAOSCASTLE_SET_ITEM_DROP
 #include "ChaosCastleSetItemDrop.h"

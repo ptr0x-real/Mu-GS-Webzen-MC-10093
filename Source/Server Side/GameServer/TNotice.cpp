@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include "TNotice.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Common\\winutil.h"
+#include "Include\Prodef.h"
+#include "Common\winutil.h"
 
 #include "user.h"
 #include "protocol.h"
-#include "..\\include\\define.h"
+#include "Include\define.h"
 
 
 void TNotice::MakeNoticeMsg( LPVOID lpNotice, BYTE btType, char *szNoticeMsg )

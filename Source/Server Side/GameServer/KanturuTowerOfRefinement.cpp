@@ -10,7 +10,7 @@
 
 #include "KanturuUtil.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 static CKanturuUtil	KANTURU_UTIL;
 

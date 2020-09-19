@@ -6,15 +6,15 @@
 #include "stdafx.h"
 #include <stdio.h>
 #include <math.h>
-#include "..\\Include\\prodef.h"
-#include "..\\Common\\winutil.h"
+#include "Include\prodef.h"
+#include "Common\winutil.h"
 #include "User.h"
 #include "Protocol.h"
 #include "wsGameServer.h"
 #include "MapClass.h"
 #include "Event.h"
 #include "GameMain.h"
-#include "..\\include\\define.h"
+#include "Include\define.h"
 
 #ifdef FOR_BLOODCASTLE
 #include "BloodCastle.h"

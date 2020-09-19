@@ -9,14 +9,14 @@
 #include <time.h>
 #include <math.h>
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\include\\cb_protocol.h"
-#include "..\\Include\\public.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
+#include "Include\public.h"
+#include "Include\Readscript.h"
 
 #include "User.h"
 #include "NpcTalk.h"
@@ -35,8 +35,8 @@
 #include "MapClass.h"
 #include "GameServer.h"
 #include "DirPath.h"
-#include "..\\Common\\Classdef.h"
-#include "..\\Common\\zzzitem.h"
+#include "Common\Classdef.h"
+#include "Common\zzzitem.h"
 
 #include "LogToFile.H"
 

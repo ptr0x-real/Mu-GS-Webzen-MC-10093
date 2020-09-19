@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "user.h"
-#include "..\\Include\\prodef.h"
+#include "Include\prodef.h"
 #include "Protocol.h"
 #include "PartyClass.h"
 

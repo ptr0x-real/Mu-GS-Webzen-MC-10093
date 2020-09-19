@@ -9,7 +9,7 @@
 #include "Kanturu.h"
 
 #include "DirPath.h"
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "MapServerManager.h"
 #include "protocol.h"
 #include "user.h"

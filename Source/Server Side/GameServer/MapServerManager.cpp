@@ -7,10 +7,10 @@
 
 #ifdef MAP_SERVER_WORK_20041030
 
-#include "..\\Common\\LogProc.h"
-#include "..\\Include\\ItemDef.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\common\\zzzitem.h"
+#include "Common\LogProc.h"
+#include "Include\ItemDef.h"
+#include "Include\ReadScript.h"
+#include "Common\zzzitem.h"
 #include "MapClass.h"
 
 #include <TIME.H>

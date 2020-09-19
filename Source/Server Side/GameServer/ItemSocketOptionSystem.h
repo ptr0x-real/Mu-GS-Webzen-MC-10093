@@ -11,7 +11,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\common\ItemSocketOptionDefine.h"
+#include "Common\ItemSocketOptionDefine.h"
 #include "ItemSeedSphere.h"
 
 #include "TRandomPoolMgr.h"

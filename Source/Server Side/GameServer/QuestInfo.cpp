@@ -3,12 +3,12 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\Readscript.h"
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
+#include "Include\Readscript.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
 
 #include "User.h"
 #include "protocol.h"
@@ -20,11 +20,11 @@
 #include "Gamemain.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 #ifdef AUTH_GAMESERVER
-#include "..\\common\\WzMemScript.h"
+#include "Common\WzMemScript.h"
 #endif
 
 #ifdef MODIFY_QUEST_MONSTER_KILL_COUNT_BUGFIX_20070704

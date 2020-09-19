@@ -6,7 +6,7 @@
 
 #include "User.h"
 #include "ObjUseSkill.h"
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "gObjMonster.h"
 #include "Gamemain.h"
@@ -861,7 +861,7 @@ int	TMonsterSkillElement::ApplyElementImmuneSkill( int iIndex, int iTargetIndex 
 
 #ifdef MODIFY_NEW_MONSTER_SKILL_01_20060724
 
-#include "..\\Common\\winutil.h"
+#include "Common\winutil.h"
 int	TMonsterSkillElement::ApplyElementTeleportSkill( int iIndex, int iTargetIndex )
 {
 	// ¹üÀ§ : m_iNullifiedSkill;

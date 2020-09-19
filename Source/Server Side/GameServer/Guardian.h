@@ -11,7 +11,7 @@
 
 #ifdef ADD_NEW_WEAPON_FOR_CASTLE_01_20041116
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
 #define NPC_INDEX_GUARDIAN	285
 

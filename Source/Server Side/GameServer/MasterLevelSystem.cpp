@@ -5,10 +5,10 @@
 #include "stdafx.h"
 #include "MasterLevelSystem.h"
 
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 #include "DirPath.h"
 #include "Gamemain.h"
-#include "..\\Common\\classdef.h"
+#include "Common\classdef.h"
 #include "ObjCalCharacter.h"
 #include "wsJoinServerCli.h"
 #include "DBSockMng.h"

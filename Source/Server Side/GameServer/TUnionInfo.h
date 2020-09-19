@@ -4,7 +4,7 @@
 #define __TUNIONINFO_DEF__
 
 #include "GuildClass.h"
-#include "..\\Common\\TSync.h"
+#include "Common\TSync.h"
 
 #include <map>
 #include <iostream>

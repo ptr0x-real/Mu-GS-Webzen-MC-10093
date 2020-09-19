@@ -564,9 +564,6 @@
     <ClInclude Include="giocp.h">
       <Filter>SOCKET</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\MyWinsockBase.h">
-      <Filter>SOCKET</Filter>
-    </ClInclude>
     <ClInclude Include="wsJoinServerCli.h">
       <Filter>SOCKET</Filter>
     </ClInclude>
@@ -612,17 +609,11 @@
     <ClInclude Include="..\common\Msg.h">
       <Filter>ETC\Message_WTF</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\winutil.h">
-      <Filter>ETC\WinUtil</Filter>
-    </ClInclude>
     <ClInclude Include="WhisperCash.h">
       <Filter>ETC\±Ó¸»</Filter>
     </ClInclude>
     <ClInclude Include="..\common\ZzzPath.h">
       <Filter>ETC\PathFind</Filter>
-    </ClInclude>
-    <ClInclude Include="..\common\WZScriptEncode.h">
-      <Filter>ETC\½ºÅ©¸³Æ®¾ÏÈ£È­</Filter>
     </ClInclude>
     <ClInclude Include="CWhatsUpDummyServer.h">
       <Filter>ETC\WhatsUp ´õ¹Ì¼­¹ö</Filter>
@@ -662,9 +653,6 @@
     </ClInclude>
     <ClInclude Include="ObjUseSkill.h">
       <Filter>User\½ºÅ³&amp;¸¶¹ý »ç¿ë</Filter>
-    </ClInclude>
-    <ClInclude Include="..\common\classdef.h">
-      <Filter>User\Ä³¸¯ÅÍ »ý¼º½Ã±âº»Á¤º¸</Filter>
     </ClInclude>
     <ClInclude Include="StatMng.h">
       <Filter>User\¿Ã¸±¼öÀÖ´Â ½ºÅÈ Á¤º¸</Filter>
@@ -709,12 +697,6 @@
       <Filter>Item</Filter>
     </ClInclude>
     <ClInclude Include="JewelMixSystem.h">
-      <Filter>Item</Filter>
-    </ClInclude>
-    <ClInclude Include="..\common\SetItemOption.h">
-      <Filter>Item</Filter>
-    </ClInclude>
-    <ClInclude Include="..\common\zzzitem.h">
       <Filter>Item</Filter>
     </ClInclude>
     <ClInclude Include="Shop.h">
@@ -1014,12 +996,6 @@
     <ClInclude Include="RaklionUtil.h">
       <Filter>Raklion</Filter>
     </ClInclude>
-    <ClInclude Include="..\Lua\LuaSample.h">
-      <Filter>Lua</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Lua\MuLua.h">
-      <Filter>Lua</Filter>
-    </ClInclude>
     <ClInclude Include="ArrowSystem.h">
       <Filter>Custom</Filter>
     </ClInclude>
@@ -1060,8 +1036,6 @@
     <ClInclude Include="LargeRand.h" />
     <ClInclude Include="MultiCheckSum.h" />
     <ClInclude Include="NewPVP.h" />
-    <ClInclude Include="..\Common\TSync.h" />
-    <ClInclude Include="..\common\WzMemScript.h" />
     <ClInclude Include="BalanceSystem.h">
       <Filter>Custom\BalanceSystem</Filter>
     </ClInclude>
@@ -1121,6 +1095,35 @@
     </ClInclude>
     <ClInclude Include="Command.h">
       <Filter>Custom\NewCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\classdef.h">
+      <Filter>User\Ä³¸¯ÅÍ »ý¼º½Ã±âº»Á¤º¸</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\MyWinsockBase.h">
+      <Filter>SOCKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\SetItemOption.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\TSync.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\winutil.h">
+      <Filter>ETC\WinUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\WzMemScript.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\WZScriptEncode.h">
+      <Filter>ETC\½ºÅ©¸³Æ®¾ÏÈ£È­</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Common\zzzitem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Lua\LuaFun.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Lua\LuaSample.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\Lua\MuLua.h">
+      <Filter>Lua</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1283,9 +1286,6 @@
     <ClCompile Include="giocp.cpp">
       <Filter>SOCKET</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\MyWinsockBase.cpp">
-      <Filter>SOCKET</Filter>
-    </ClCompile>
     <ClCompile Include="wsJoinServerCli.cpp">
       <Filter>SOCKET</Filter>
     </ClCompile>
@@ -1328,17 +1328,11 @@
     <ClCompile Include="MoveCheck.cpp">
       <Filter>ETC\ÀÌµ¿Ã¼Å©%28»ç¿ë¾ÈÇÔ%29</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\winutil.cpp">
-      <Filter>ETC\WinUtil</Filter>
-    </ClCompile>
     <ClCompile Include="WhisperCash.cpp">
       <Filter>ETC\±Ó¸»</Filter>
     </ClCompile>
     <ClCompile Include="zzzmathlib.cpp">
       <Filter>ETC\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="..\common\WZScriptEncode.cpp">
-      <Filter>ETC\½ºÅ©¸³Æ®¾ÏÈ£È­</Filter>
     </ClCompile>
     <ClCompile Include="CWhatsUpDummyServer.cpp">
       <Filter>ETC\WhatsUp ´õ¹Ì¼­¹ö</Filter>
@@ -1379,9 +1373,6 @@
     <ClCompile Include="ObjUseSkill.cpp">
       <Filter>User\½ºÅ³&amp;¸¶¹ý »ç¿ë</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\classdef.cpp">
-      <Filter>User\Ä³¸¯ÅÍ »ý¼º½Ã±âº»Á¤º¸</Filter>
-    </ClCompile>
     <ClCompile Include="StatMng.cpp">
       <Filter>User\¿Ã¸±¼öÀÖ´Â ½ºÅÈ Á¤º¸</Filter>
     </ClCompile>
@@ -1419,12 +1410,6 @@
       <Filter>Item</Filter>
     </ClCompile>
     <ClCompile Include="JewelMixSystem.cpp">
-      <Filter>Item</Filter>
-    </ClCompile>
-    <ClCompile Include="..\common\SetItemOption.cpp">
-      <Filter>Item</Filter>
-    </ClCompile>
-    <ClCompile Include="..\common\zzzitem.cpp">
       <Filter>Item</Filter>
     </ClCompile>
     <ClCompile Include="Shop.cpp">
@@ -1658,15 +1643,6 @@
     <ClCompile Include="RaklionUtil.cpp">
       <Filter>Raklion</Filter>
     </ClCompile>
-    <ClCompile Include="..\Lua\LuaFun.cpp">
-      <Filter>Lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Lua\LuaSample.cpp">
-      <Filter>Lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Lua\MuLua.cpp">
-      <Filter>Lua</Filter>
-    </ClCompile>
     <ClCompile Include="ArrowSystem.cpp">
       <Filter>Custom</Filter>
     </ClCompile>
@@ -1706,8 +1682,6 @@
     <ClCompile Include="LargeRand.cpp" />
     <ClCompile Include="MultiCheckSum.cpp" />
     <ClCompile Include="NewPVP.cpp" />
-    <ClCompile Include="..\Common\TSync.cpp" />
-    <ClCompile Include="..\common\WzMemScript.cpp" />
     <ClCompile Include="BalanceSystem.cpp">
       <Filter>Custom\BalanceSystem</Filter>
     </ClCompile>
@@ -1767,6 +1741,35 @@
     </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>Custom\NewCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\classdef.cpp">
+      <Filter>User\Ä³¸¯ÅÍ »ý¼º½Ã±âº»Á¤º¸</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\MyWinsockBase.cpp">
+      <Filter>SOCKET</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\SetItemOption.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\TSync.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\winutil.cpp">
+      <Filter>ETC\WinUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\WzMemScript.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\WZScriptEncode.cpp">
+      <Filter>ETC\½ºÅ©¸³Æ®¾ÏÈ£È­</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Common\zzzitem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Lua\LuaFun.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Lua\LuaSample.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Base Common Src\Lua\MuLua.cpp">
+      <Filter>Lua</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

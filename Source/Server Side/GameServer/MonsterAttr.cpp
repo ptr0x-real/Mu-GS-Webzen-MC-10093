@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Readscript.h"
 #include "MonsterAttr.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 #ifdef AUTH_GAMESERVER
-#include "..\\common\\WzMemScript.h"
+#include "Common\WzMemScript.h"
 #endif
 
 #include "Gamemain.h"

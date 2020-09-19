@@ -9,13 +9,13 @@
 #include <time.h>
 
 #include "RingAttackEvent.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\Include\\Prodef.h"
+#include "Include\ReadScript.h"
+#include "Include\Prodef.h"
 #include "GameMain.h"
 #include "Protocol.h"
-#include "..\\Include\\cb_protocol.h"
+#include "Include\cb_protocol.h"
 #include "Event.h"
-#include "..\\Common\\Winutil.h"
+#include "Common\Winutil.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

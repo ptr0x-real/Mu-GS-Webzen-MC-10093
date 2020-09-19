@@ -5,7 +5,7 @@
 #if !defined(AFX_ITEMBAGEX_H__D3BB88D8_6ABA_4A8B_B1BF_97716E97A2E4__INCLUDED_)
 #define AFX_ITEMBAGEX_H__D3BB88D8_6ABA_4A8B_B1BF_97716E97A2E4__INCLUDED_
 
-#include "../common/zzzitem.h"
+#include "Common/zzzitem.h"
 
 #if _MSC_VER > 1000
 #pragma once

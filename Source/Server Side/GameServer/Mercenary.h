@@ -11,7 +11,7 @@
 
 #ifdef ADD_NEW_MERCENARY_FOR_CASTLE_01_20041214
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
 #define NPC_INDEX_SPEARMAN		287
 #define NPC_INDEX_BOWMAN		286

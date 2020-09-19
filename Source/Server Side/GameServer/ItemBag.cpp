@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\common\\winutil.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\common\\zzzitem.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
+#include "Common\zzzitem.h"
 
 #include "DirPath.h"
 #include "ItemBag.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 extern ITEM_ATTRIBUTE      ItemAttribute [MAX_ITEM];

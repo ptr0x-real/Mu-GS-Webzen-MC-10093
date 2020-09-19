@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #include "MasterSkillSystem.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "DSProtocol.h"
 #include "MagicDamage.h"
 #ifdef MASTER_LEVEL_UP_SYSTEM_20070912

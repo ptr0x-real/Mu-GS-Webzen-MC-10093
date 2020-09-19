@@ -13,8 +13,8 @@
 
 #ifdef CHAOSCASTLE_SYSTEM_20040408
 
-#include "..\INCLUDE\DEFINE.H"
-#include "..\COMMON\WINUTIL.H"
+#include "Include\DEFINE.H"
+#include "Common\WINUTIL.H"
 #include "VECTOR"
 #include "MAP"
 #include "ALGORITHM"
@@ -840,7 +840,7 @@ public:			// 공용 메서드들
 				INT iWinnerIndex
 				);
 	VOID	PullObjInnerPlace	(										// 각 트랩 단계에 따라 트랩위의 사용자들을 트랩이 아닌 안으로 밀어낸다. (재수없으면 떨어짐)
-																		// 그리고 맵 외곾의 아이템들을 지워준다.
+																		// 그리고 맵 외곾�?아이템들을 지워준다.
 				INT iChaosCastleIndex,									
 				INT iTRAP_STEP
 				);

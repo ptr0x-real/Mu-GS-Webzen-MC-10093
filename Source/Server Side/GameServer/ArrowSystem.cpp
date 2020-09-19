@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "ArrowSystem.h"
-#include "..\include\readscript.h"
+#include "Include\readscript.h"
 
 CArrowSystem g_ArrowSystem;
 

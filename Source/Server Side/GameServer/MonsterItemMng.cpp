@@ -5,8 +5,8 @@
 #include "stdafx.h"
 #include "MonsterItemMng.h"
 
-#include "..\Common\winutil.h"
-#include "..\Common\zzzItem.h"
+#include "Common\winutil.h"
+#include "Common\zzzItem.h"
 
 #include "MonsterAttr.h"
 

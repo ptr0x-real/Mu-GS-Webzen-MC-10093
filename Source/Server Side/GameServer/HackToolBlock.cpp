@@ -7,7 +7,7 @@
 
 #ifdef ADD_HACKING_TOOL_BLOCK_20090311
 
-#include "..\Common\winutil.h"
+#include "Common\winutil.h"
 #include "Sprotocol.h"
 
 CHackToolBlock g_HackToolBlock;

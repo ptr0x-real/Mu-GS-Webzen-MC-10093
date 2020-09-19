@@ -12,7 +12,7 @@
 #ifdef ADD_EVENT_MAP_ILLUSION_TEMPLE_20070328
 
 #include "IllusionTempleProcess.h"
-#include "..\\Include\\cb_protocol.h"
+#include "Include\cb_protocol.h"
 
 
 // 카오스 조합 최소 레벨

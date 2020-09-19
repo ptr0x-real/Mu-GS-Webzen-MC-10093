@@ -7,7 +7,7 @@
 
 #ifdef MODIFY_QUEST_SYSTEM_20070525
 
-#include "..\common\winutil.h"
+#include "Common\winutil.h"
 
 #include "wsJoinServerCli.h"
 #include "DBSockMng.h"

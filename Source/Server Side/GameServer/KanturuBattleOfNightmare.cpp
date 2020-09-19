@@ -12,7 +12,7 @@
 #include "KanturuBattleUserMng.h"
 #include "KanturuMonsterMng.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "TMonsterAIGroup.h"
 

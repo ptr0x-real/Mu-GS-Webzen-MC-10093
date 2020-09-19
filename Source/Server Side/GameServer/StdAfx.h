@@ -33,9 +33,9 @@
 #include <windows.h>
 #endif
 
-#include "..\\Include\\Define.h"
+#include "Include\\Define.h"
 #include "Logproc.h"
-#include "..\\Common\\Msg.h"
+#include "Common\\Msg.h"
 
 #ifdef HACKTOOL_KUZIMO
 	#include "AntiHackDef.h"

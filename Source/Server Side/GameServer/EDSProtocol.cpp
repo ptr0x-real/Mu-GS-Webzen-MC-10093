@@ -6,9 +6,9 @@
 //----------------------------------------------------------------------------
 #include "stdafx.h"
 #include <CommCtrl.h>
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
 #include "User.h"
 #include "Protocol.h"
 #include "GameServer.h"

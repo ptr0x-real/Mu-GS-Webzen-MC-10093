@@ -5,7 +5,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\\common\\zzzitem.h"
+#include "Common\zzzitem.h"
 
 #include <map>
 

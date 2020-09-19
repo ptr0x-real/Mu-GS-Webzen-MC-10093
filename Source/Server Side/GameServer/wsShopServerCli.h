@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\\Common\\MyWinsockBase.h"
+#include "Common\MyWinsockBase.h"
 #include "PCSdefines.h"
 #include "PCSprotocol.h"
 

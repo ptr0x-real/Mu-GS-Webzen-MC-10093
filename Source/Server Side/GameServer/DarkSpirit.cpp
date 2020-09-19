@@ -7,14 +7,14 @@
 
 #ifdef DARKLORD_WORK
 
-#include "..\\Include\\Public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Common\\Winutil.h"
-#include "..\\Common\\zzzItem.h"
-#include "..\\Common\\Classdef.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\Public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Include\GMProtocol.h"
+#include "Common\Winutil.h"
+#include "Common\zzzItem.h"
+#include "Common\Classdef.h"
+#include "Include\ReadScript.h"
 
 #include "User.h"
 

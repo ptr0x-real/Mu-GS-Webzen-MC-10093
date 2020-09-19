@@ -7,13 +7,13 @@
 
 #include "MonsterSetBase.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\include\\cb_protocol.h"
-#include "..\\Include\\public.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
+#include "Include\public.h"
 
 #include "wzUdp.h"
 #include "GameMain.h"

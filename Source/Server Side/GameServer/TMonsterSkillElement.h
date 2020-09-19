@@ -1,7 +1,7 @@
 #if !defined(__TMONSTERSKILLELEMENT_DEF__) && defined(ADD_NEW_MONSTER_SYSTEM_01_20050714)
 #define __TMONSTERSKILLELEMENT_DEF__
 
-#include "..\Common\TSync.h"
+#include "Common\TSync.h"
 #include "TSkillElement.h"
 
 #define MAX_MONSTER_SKILL_ELEMENT	100

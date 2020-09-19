@@ -6,11 +6,11 @@
 #include "stdafx.h"
 #include <time.h>
 #include <stdio.h> 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Common\\zzzItem.h"
-#include "..\\Common\\Classdef.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Common\zzzItem.h"
+#include "Common\Classdef.h"
 #include "wsGameServer.h"
 #include "wsJoinServerCli.h"
 #include "User.h"
@@ -23,7 +23,7 @@
 #include "PickUpSystem.h"
 
 #ifdef NPROTECT_GAME_GAURD_FOR_SERVER_VERSION_20_20050411
-//	#include "..\\include\\ggsrv.h"			// 클라이언트 인증 서버용
+//	#include "Include\ggsrv.h"			// 클라이언트 인증 서버용
 	#include "ggsrv.h"						// 기존 루트와 맞춤 (b4nfter)
 #endif // NPROTECT_GAME_GAURD_FOR_SERVER_VERSION_20_20050411
 
@@ -109,7 +109,7 @@
 #include "ProbabilityItemBag.h"
 #endif
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 #ifdef ADD_MOVE_COMMAND_SCRIPT
 #include "MoveCommand.h"

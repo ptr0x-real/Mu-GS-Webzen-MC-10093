@@ -11,7 +11,7 @@
 
 #ifdef ADD_NEWPVP_PKFIELD
 
-#include "..\\Common\\winutil.h"
+#include "Common\winutil.h"
 //#include <vector>
 #include <list>
 

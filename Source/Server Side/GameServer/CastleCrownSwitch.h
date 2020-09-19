@@ -11,7 +11,7 @@
 
 #ifdef CASTLE_NPC_CROWN_SWITCH_WORK_20041210
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
 
 class CCastleCrownSwitch  

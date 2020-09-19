@@ -2,8 +2,8 @@
 
 #ifdef ADD_NEW_MONSTER_SYSTEM_01_20050714
 
-#include "..\Include\ReadScript.h"
-#include "..\Common\WinUtil.h"
+#include "Include\ReadScript.h"
+#include "Common\WinUtil.h"
 #include "User.h"
 #include "protocol.h"
 #include "ObjUseSkill.h"

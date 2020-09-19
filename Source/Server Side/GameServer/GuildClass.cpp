@@ -7,7 +7,7 @@
 #include "GuildClass.h"
 
 #include "Gamemain.h"
-#include "..\Common\winutil.h"
+#include "Common\winutil.h"
 
 BOOL	gGuildNoticeStringCheck(char* notice);
 

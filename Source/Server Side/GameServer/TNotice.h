@@ -1,7 +1,7 @@
 #ifndef __TNOTICE_DEF__
 #define __TNOTICE_DEF__
 
-#include "..\Include\ProDef.h"
+#include "Include\ProDef.h"
 #include "user.h"
 #include "protocol.h"
 

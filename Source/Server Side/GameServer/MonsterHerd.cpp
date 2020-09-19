@@ -8,14 +8,14 @@
 
 #include "MonsterHerd.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\include\\cb_protocol.h"
-#include "..\\Include\\public.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
+#include "Include\public.h"
+#include "Include\Readscript.h"
 
 #include "User.h"
 #include "NpcTalk.h"
@@ -33,7 +33,7 @@
 #include "GameServer.h"
 #include "DirPath.h"
 #include "MonsterAttr.h"
-#include "..\\Common\\Classdef.h"
+#include "Common\Classdef.h"
 
 extern CMonsterAttr	gMAttr;
 

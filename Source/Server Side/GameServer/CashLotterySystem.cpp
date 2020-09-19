@@ -7,9 +7,9 @@
 
 #ifdef ADD_PCS_LOTTERY_SYSTEM_20070117
 
-#include "..\\Include\\Readscript.h"
-#include "..\\common\\winutil.h"
-#include "..\\common\\zzzitem.h"
+#include "Include\Readscript.h"
+#include "Common\winutil.h"
+#include "Common\zzzitem.h"
 #include "LargeRand.h"
 
 //////////////////////////////////////////////////////////////////////

@@ -11,8 +11,8 @@
 
 #ifdef ADD_PARTIALY_CHARGE_CASH_SHOP_20070117
 
-#include "..\\Include\\Readscript.h"
-#include "..\\common\\zzzitem.h"
+#include "Include\Readscript.h"
+#include "Common\zzzitem.h"
 #include "..\\common\winutil.h"
 #include "DirPath.h"
 #include "DSProtocol.h"

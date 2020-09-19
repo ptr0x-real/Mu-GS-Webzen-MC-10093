@@ -4,14 +4,14 @@
 
 #include "stdafx.h"
 
-#include "..\\Include\\Public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Common\\Winutil.h"
-#include "..\\Common\\zzzItem.h"
-#include "..\\Common\\Classdef.h"
-#include "..\\Include\\ReadScript.h"
+#include "Include\Public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Include\GMProtocol.h"
+#include "Common\Winutil.h"
+#include "Common\zzzItem.h"
+#include "Common\Classdef.h"
+#include "Include\ReadScript.h"
 #include "CalCharacter.h"
 
 #include "User.h"
@@ -78,7 +78,7 @@ void	GetSetItemInfo(LPOBJECTSTRUCT lpObj, LPMU_SETITEMINFO lpSetItemInfo);
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-#include "..\\common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 extern classdef			DCInfo;
 #if GAME_VERSION >= G_V_99B

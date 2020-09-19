@@ -10,14 +10,14 @@ CBloodCastle			g_BloodCastle;		// 블러드 캐슬 이벤트 객체
 
 #include <stdio.h>
 
-#include "..\\Include\\Prodef.h"
-#include "..\\Include\\SProdef.h"
-#include "..\\Common\\winutil.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Include\\Public.h"
-#include "..\\include\\cb_protocol.h"
-#include "..\\Include\\public.h"
-#include "..\\Include\\Readscript.h"
+#include "Include\Prodef.h"
+#include "Include\SProdef.h"
+#include "Common\winutil.h"
+#include "Include\GMProtocol.h"
+#include "Include\Public.h"
+#include "Include\cb_protocol.h"
+#include "Include\public.h"
+#include "Include\Readscript.h"
 
 #include "User.h"
 #include "NpcTalk.h"
@@ -41,7 +41,7 @@ CBloodCastle			g_BloodCastle;		// 블러드 캐슬 이벤트 객체
 #include "MapClass.h"
 #include "GameServer.h"
 #include "DirPath.h"
-#include "..\\Common\\Classdef.h"
+#include "Common\Classdef.h"
 
 #ifdef CHAOSCASTLE_SYSTEM_20040408
 #include "ChaosCastle.h"
@@ -64,7 +64,7 @@ extern CMonsterAttr		gMAttr;
 #include "MasterLevelSystem.h"
 #endif
 
-#include "..\\common\\zzzitem.h"
+#include "Common\zzzitem.h"
 
 extern ITEM_ATTRIBUTE	ItemAttribute[];
 

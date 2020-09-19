@@ -1,8 +1,8 @@
 #include "StdAfx.h"
-#include "..\\Include\\Public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Common\\Winutil.h"
+#include "Include\Public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Common\Winutil.h"
 #include "User.h"
 #include "ItemBag.h"
 #include "Protocol.h"
@@ -13,7 +13,7 @@
 #include "GameServer.h"
 #include "Event.h"
 
-#include "..\Include\cb_protocol.h"
+#include "Include\cb_protocol.h"
 #include "wsJoinServerCli.h"
 #include "MasterLevelSystem.h"
 

@@ -1,14 +1,14 @@
 #include "stdafx.h"
 #include "SetItemMacro.h"
 
-#include "..\\common\\winutil.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\common\\zzzitem.h"
-#include "..\\Include\\ItemDef.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
+#include "Common\zzzitem.h"
+#include "Include\ItemDef.h"
 
-#include "..\\Include\\Prodef.h"
-#include "..\\common\\winutil.h"
-#include "..\\Common\\classdef.h"
+#include "Include\Prodef.h"
+#include "Common\winutil.h"
+#include "Common\classdef.h"
 #include "giocp.h"
 #include "user.h"
 #include "GMMng.h"
@@ -19,7 +19,7 @@
 #include "DSProtocol.h"
 #include "QuestInfo.h"
 
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 
 #ifdef ITEM_ADD_OPTION_20061019
 

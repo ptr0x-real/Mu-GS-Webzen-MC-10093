@@ -8,7 +8,7 @@
 
 #include "KanturuMonsterMng.h"
 
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 #include "MapClass.h"
 extern MapClass		*MapC;
 

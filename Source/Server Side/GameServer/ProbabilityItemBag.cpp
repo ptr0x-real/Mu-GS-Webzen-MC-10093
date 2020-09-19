@@ -5,15 +5,15 @@
 #include "stdafx.h"
 #include "ProbabilityItemBag.h"
 
-#include "..\\common\\winutil.h"
-#include "..\\Include\\ReadScript.h"
-#include "..\\common\\zzzitem.h"
+#include "Common\winutil.h"
+#include "Include\ReadScript.h"
+#include "Common\zzzitem.h"
 
-#include "..\\Include\\public.h"
-#include "..\\Include\\ProDef.h"
-#include "..\\Include\\SproDef.h"
-#include "..\\Include\\GMProtocol.h"
-#include "..\\Common\\ZzzPath.h"
+#include "Include\public.h"
+#include "Include\ProDef.h"
+#include "Include\SproDef.h"
+#include "Include\GMProtocol.h"
+#include "Common\ZzzPath.h"
 #include "SProtocol.h"
 #include "User.h"
 #include "gObjMonster.h"
@@ -24,11 +24,11 @@
 #include "ItemBag.h"
 
 #ifdef SCRIPT_DECODE_WORK	
-#include "..\\common\\WZScriptEncode.h"
+#include "Common\WZScriptEncode.h"
 #endif
 
 #ifdef UPDATE_PROBABILITYiTEMBAG_ADD_SETITEM_20080329
-#include "..\\Common\\SetItemOption.h"
+#include "Common\SetItemOption.h"
 #endif	// UPDATE_PROBABILITYiTEMBAG_ADD_SETITEM_20080329
 
 extern ITEM_ATTRIBUTE      ItemAttribute [MAX_ITEM];

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <stdio.h>
-#include "..\\Include\\Prodef.h"
-#include "..\\Common\\Winutil.h"
+#include "Include\Prodef.h"
+#include "Common\Winutil.h"
 #include <winsock2.h>
 
 #include "IpCache.h"
@@ -18,7 +18,7 @@
 
 #include "NSerialCheck.h"
 
-#include "..\\include\\define.h"
+#include "Include\define.h"
 
 #ifdef MODIFY_CONNNECT_HACK_ATTACK_20090409
 #include "AntiHack.h"

@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "EngagePVP.h"
-#include "..\include\readscript.h"
+#include "Include\readscript.h"
 #include "TNotice.h"
 #include "GMMng.h"
-#include "..\\common\\zzzitem.h"
+#include "Common\zzzitem.h"
 #include "DSProtocol.h"
 #include "MapClass.h"
 

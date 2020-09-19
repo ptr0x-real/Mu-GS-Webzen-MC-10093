@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\\Include\\prodef.h"
+#include "Include\prodef.h"
 #include "user.h"
 #include "Protocol.h"
 #include "ViewportGuild.h"

@@ -17,7 +17,7 @@
 #include "RaklionUtil.h"
 #include "RaklionDefine.h"
 
-//#include "..\Include\ReadScript.h"
+//#include "Include\ReadScript.h"
 
 static CRaklionUtil	g_RaklionUtil;
 

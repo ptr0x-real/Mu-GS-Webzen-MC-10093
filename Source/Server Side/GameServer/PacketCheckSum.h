@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\\include\\define.h"
+#include "Include\define.h"
 
 #define MAX_PACKETCHECKSUMFUNC_COUNT	22
 

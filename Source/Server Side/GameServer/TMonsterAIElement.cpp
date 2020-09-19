@@ -2,7 +2,7 @@
 #include "TMonsterAIElement.h"
 
 #include <math.h>
-#include "..\Include\ReadScript.h"
+#include "Include\ReadScript.h"
 
 #include "User.h"
 #include "protocol.h"

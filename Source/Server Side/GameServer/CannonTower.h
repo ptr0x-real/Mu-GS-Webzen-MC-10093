@@ -11,7 +11,7 @@
 
 #ifdef CASTLE_NPC_CANNON_TOWER_20041223
 
-#include "..\INCLUDE\DEFINE.H"
+#include "Include\DEFINE.H"
 
 
 class CCannonTower  

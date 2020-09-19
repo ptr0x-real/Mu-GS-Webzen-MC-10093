@@ -651,7 +651,7 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KOR|Win32'">
-    <OutDir>$(SolutionDir)Bin\$(ProjectName)_$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)Source\Bin\$(ProjectName)_$(Configuration)\</OutDir>
     <IntDir>$(OutDir)IntermediateDir\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -1807,6 +1807,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\Base Common Src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -2392,6 +2393,17 @@
     <ResourceCompile Include="GameServer.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Base Common Src\Common\classdef.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\MyWinsockBase.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\SetItemOption.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\TSync.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\winutil.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\WzMemScript.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\WZScriptEncode.h" />
+    <ClInclude Include="..\..\Base Common Src\Common\zzzitem.h" />
+    <ClInclude Include="..\..\Base Common Src\Lua\LuaFun.h" />
+    <ClInclude Include="..\..\Base Common Src\Lua\LuaSample.h" />
+    <ClInclude Include="..\..\Base Common Src\Lua\MuLua.h" />
     <ClInclude Include="BalanceSystem.h" />
     <ClInclude Include="CalCharacter.h" />
     <ClInclude Include="Command.h" />
@@ -2472,7 +2484,6 @@
     <ClInclude Include="wsGameServer.h" />
     <ClInclude Include="WzMultiCastSock.h" />
     <ClInclude Include="giocp.h" />
-    <ClInclude Include="..\common\MyWinsockBase.h" />
     <ClInclude Include="wsJoinServerCli.h" />
     <ClInclude Include="WzIocp.h" />
     <ClInclude Include="WzQueue.h" />
@@ -2488,10 +2499,8 @@
     <ClInclude Include="LogToFile.h" />
     <ClInclude Include="MoveCheck.h" />
     <ClInclude Include="..\common\Msg.h" />
-    <ClInclude Include="..\common\winutil.h" />
     <ClInclude Include="WhisperCash.h" />
     <ClInclude Include="..\common\ZzzPath.h" />
-    <ClInclude Include="..\common\WZScriptEncode.h" />
     <ClInclude Include="CWhatsUpDummyServer.h" />
     <ClInclude Include="TNotice.h" />
     <ClInclude Include="TStatistics.h" />
@@ -2505,7 +2514,6 @@
     <ClInclude Include="ObjAttack.h" />
     <ClInclude Include="ObjBaseAttack.h" />
     <ClInclude Include="ObjUseSkill.h" />
-    <ClInclude Include="..\common\classdef.h" />
     <ClInclude Include="StatMng.h" />
     <ClInclude Include="ComboAttack.h" />
     <ClInclude Include="ObjCalCharacter.h" />
@@ -2521,8 +2529,6 @@
     <ClInclude Include="ItemAddOption.h" />
     <ClInclude Include="..\Include\ItemDef.h" />
     <ClInclude Include="JewelMixSystem.h" />
-    <ClInclude Include="..\common\SetItemOption.h" />
-    <ClInclude Include="..\common\zzzitem.h" />
     <ClInclude Include="Shop.h" />
     <ClInclude Include="..\Include\define.h" />
     <ClInclude Include="..\Include\public.h" />
@@ -2623,8 +2629,6 @@
     <ClInclude Include="RaklionDefine.h" />
     <ClInclude Include="RaklionObjInfo.h" />
     <ClInclude Include="RaklionUtil.h" />
-    <ClInclude Include="..\Lua\LuaSample.h" />
-    <ClInclude Include="..\Lua\MuLua.h" />
     <ClInclude Include="ArrowSystem.h" />
     <ClInclude Include="BuffHelper.h" />
     <ClInclude Include="DropTable.h" />
@@ -2643,10 +2647,19 @@
     <ClInclude Include="LargeRand.h" />
     <ClInclude Include="MultiCheckSum.h" />
     <ClInclude Include="NewPVP.h" />
-    <ClInclude Include="..\Common\TSync.h" />
-    <ClInclude Include="..\common\WzMemScript.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Base Common Src\Common\classdef.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\MyWinsockBase.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\SetItemOption.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\TSync.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\winutil.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\WzMemScript.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\WZScriptEncode.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Common\zzzitem.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Lua\LuaFun.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Lua\LuaSample.cpp" />
+    <ClCompile Include="..\..\Base Common Src\Lua\MuLua.cpp" />
     <ClCompile Include="BalanceSystem.cpp" />
     <ClCompile Include="CalCharacter.cpp" />
     <ClCompile Include="Command.cpp" />
@@ -2719,7 +2732,6 @@
     <ClCompile Include="wsGameServer.cpp" />
     <ClCompile Include="WzMultiCastSock.cpp" />
     <ClCompile Include="giocp.cpp" />
-    <ClCompile Include="..\common\MyWinsockBase.cpp" />
     <ClCompile Include="wsJoinServerCli.cpp" />
     <ClCompile Include="WzQueue.cpp" />
     <ClCompile Include="WzUdp.cpp" />
@@ -2734,10 +2746,8 @@
     <ClCompile Include="logproc.cpp" />
     <ClCompile Include="LogToFile.cpp" />
     <ClCompile Include="MoveCheck.cpp" />
-    <ClCompile Include="..\common\winutil.cpp" />
     <ClCompile Include="WhisperCash.cpp" />
     <ClCompile Include="zzzmathlib.cpp" />
-    <ClCompile Include="..\common\WZScriptEncode.cpp" />
     <ClCompile Include="CWhatsUpDummyServer.cpp" />
     <ClCompile Include="TNotice.cpp" />
     <ClCompile Include="TStatistics.cpp" />
@@ -2751,7 +2761,6 @@
     <ClCompile Include="ObjAttack.cpp" />
     <ClCompile Include="ObjBaseAttack.cpp" />
     <ClCompile Include="ObjUseSkill.cpp" />
-    <ClCompile Include="..\common\classdef.cpp" />
     <ClCompile Include="StatMng.cpp" />
     <ClCompile Include="ComboAttack.cpp" />
     <ClCompile Include="ObjCalCharacter.cpp" />
@@ -2765,8 +2774,6 @@
     <ClCompile Include="ItemSocketOptionSystem.cpp" />
     <ClCompile Include="ItemAddOption.cpp" />
     <ClCompile Include="JewelMixSystem.cpp" />
-    <ClCompile Include="..\common\SetItemOption.cpp" />
-    <ClCompile Include="..\common\zzzitem.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="CCastleEventItemList.cpp" />
     <ClCompile Include="GMMng.cpp" />
@@ -2920,9 +2927,6 @@
     <ClCompile Include="RaklionBattleUserMng.cpp" />
     <ClCompile Include="Raklion.cpp" />
     <ClCompile Include="RaklionUtil.cpp" />
-    <ClCompile Include="..\Lua\LuaFun.cpp" />
-    <ClCompile Include="..\Lua\LuaSample.cpp" />
-    <ClCompile Include="..\Lua\MuLua.cpp" />
     <ClCompile Include="ArrowSystem.cpp" />
     <ClCompile Include="BuffHelper.cpp" />
     <ClCompile Include="DropTable.cpp" />
@@ -2940,8 +2944,6 @@
     <ClCompile Include="LargeRand.cpp" />
     <ClCompile Include="MultiCheckSum.cpp" />
     <ClCompile Include="NewPVP.cpp" />
-    <ClCompile Include="..\Common\TSync.cpp" />
-    <ClCompile Include="..\common\WzMemScript.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="SimpleModulus.lib" />
