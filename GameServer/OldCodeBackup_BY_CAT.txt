@@ -1,0 +1,26 @@
+//2005년 2월 4일
+//부분적으로 #define이 중첩이 너무 심할 경우, 여기 백업하고 코드 정리////////
+//부분적인 버그 수정에 대하여만 적용할 예정//////////////////////////////////
+
+//20050204_001_bak {{
+if (titem->m_Type == MAKE_ITEMNUM(14, 29) && titem->m_Durability >= max_count) {
+	// 잃어버린 지도로 바꾼다.
+
+	// 쿤둔의 표식 (20개)을 삭제하고 
+	gObjInventoryItemSet(aIndex, target, 0xFF);
+	gObj[aIndex].pInventory[target].Clear();
+	GCInventoryItemDeleteSend(aIndex, target, 1);
+
+	// 잃어버린 지도를 집어넣는다.
+	ItemSerialCreateSend(
+		aIndex, 
+		ITEMMAKE_INVENTORY_1CELL, 
+		(BYTE)gObj[aIndex].X, 
+		(BYTE)gObj[aIndex].Y, 
+		ItemGetNumberMake(14, 28), 
+		sitem->m_Level, (BYTE)0, 0, 0, 0, aIndex);
+}
+//20050204_001_bak }}
+
+
+

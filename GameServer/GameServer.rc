@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Coreano (Corea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GAMESERVER          ICON                    "GameServer.ICO"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_GAMESERVER MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "All User Close",              ID_MENU_DISCONNECT
+        MENUITEM "All User LogOut",             ID_MENU_USERLOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Load"
+    BEGIN
+        MENUITEM "&Monster Position Reload",    ID_LOAD_MONSTERPOS
+        MENUITEM "&Shop Reload",                ID_LOAD_SHOP
+        MENUITEM SEPARATOR
+        MENUITEM "GameGuard Info Load",         ID_GAMEGUARD_MODULE_UPDATE
+        MENUITEM "IP Load",                     ID_LOAD_ACCEPTIPLOAD, GRAYED
+        MENUITEM "&Option Reload",              ID_MENUGAMESERVEROPTIONLOAD
+        MENUITEM "Custom",                      ID_LOAD_CUSTOM
+    END
+    POPUP "&Event Load"
+    BEGIN
+        MENUITEM "Reload All Event",            ID_EVENTLOAD_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Reload DevilSquare",          ID_EVENTLOAD_DEVILSQUARE
+        MENUITEM "Reload BloodCastle",          ID_EVENTLOAD_BLOODCASTLE
+        MENUITEM "Reload ChaosCastle",          ID_EVENTLOAD_CHAOSCASTLE
+        MENUITEM SEPARATOR
+        MENUITEM "Reload UnderWorld Attack",    ID_EVENTLOAD_UNDERTROOPATTACK
+        MENUITEM "Reload GoldenTroop Attack",   ID_EVENTLOAD_GOLDENTROOPATTACK
+        MENUITEM "Reload WhiteMage Attack",     ID_EVENTLOAD_WHITEMAGEATTACK
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Love PangPang",        ID_EVENTLOAD_LOVEPANGPANG
+        MENUITEM "Reload FireCracker",          ID_EVENTLOAD_FIRECRACKER
+        MENUITEM "Reload X-Mas Star",           ID_EVENTLOAD_XMASSTAR
+        MENUITEM "Reload Heart of Love",        ID_EVENTLOAD_HEARTOFLOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Reload NPC say HappyNewYear", ID_EVENTLOAD_SAY_HAPPYNEWYEAR
+        MENUITEM "Reload NPC say Merry X-Mas",  ID_EVENTLOAD_SAY_MERRYXMAS
+    END
+    POPUP "Game ETC Load"
+    BEGIN
+        MENUITEM "Reload All ETC Option",       ID_ETCLOAD_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Create Character",     ID_ETCLOAD_CREATECHAR
+        MENUITEM "Reload Guild",                ID_ETCLOAD_GUILD
+        MENUITEM "Reload Trade",                ID_ETCLOAD_TRADE
+        MENUITEM "Reload Chaos Box",            ID_ETCLOAD_CHAOSBOX
+        MENUITEM "Reload Personal Shop",        ID_ETCLOAD_PSHOP
+        MENUITEM "Reload PK Item Drop",         ID_ETCLOAD_PKITEMDROP
+        MENUITEM "Reload Item Drop Rate",       ID_ETCLOAD_ITEMDROPRATE
+        MENUITEM "Reload SpeedHack",            ID_ETCLOAD_SPEEDHACK
+        MENUITEM "Reload GameGuard Checksum Check", ID_ETCLOAD_GAMEGUARD
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Log Paint",                   ID_VIEW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "Map1",                        ID_MAP_1, GRAYED
+        MENUITEM "Map2",                        ID_MAP_2, GRAYED
+        MENUITEM "Map3",                        ID_MAP_3, GRAYED
+        MENUITEM "Map4",                        ID_MAP_4, GRAYED
+    END
+    POPUP "Etc"
+    BEGIN
+        MENUITEM "Dragon Event",                ID_MENUITEM_EVENT
+        MENUITEM "StartOfXMas Event",           ID_MENUITEM_STAROFXMAS_EVENT
+        MENUITEM "FireCracker",                 ID_MENUITEM_FIRECRACKER_EVENT
+    END
+    POPUP "Msg"
+    BEGIN
+        MENUITEM "5 Minute Close",              ID_MENU_FIVECLOSE
+        MENUITEM "3 Minute Close",              ID_MENU_THREECLOSE
+        MENUITEM "1 Minute Close",              ID_MENU_ONECLOSE
+    END
+    POPUP "Alert"
+    BEGIN
+        MENUITEM "All &Clear",                  IDM_ALERT_ALL_CLEAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_GAMESERVER ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 22, 17, 230, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_GAMESERVER,IDC_MYICON,14,9,20,20
+    LTEXT           "GameServer Version 0.99.28",IDC_STATIC,49,10,123,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 Webzen Inc.",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+    LTEXT           "오토프로그램 이동관련 핵대응",IDC_STATIC,49,32,167,10,SS_NOPREFIX
+END
+
+IDD_DLG_GUILDLISTSTATE DIALOG 0, 0, 195, 27
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guild list state."
+FONT 8, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_LIST_PROGRESS,"msctls_progress32",0x0,7,5,181,10
+    RTEXT           "",IDC_LIST_STATE,7,16,181,11
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLG_GUILDLISTSTATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,99,28,0
+ PRODUCTVERSION 0,99,28,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "Webzen"
+            VALUE "FileDescription", "GameServer"
+            VALUE "FileVersion", "0, 99, 28, 0"
+            VALUE "InternalName", "GameServer"
+            VALUE "LegalCopyright", "Copyright (C) 2004 Webzen Inc."
+            VALUE "OriginalFilename", "GameServer.exe"
+            VALUE "ProductName", "GameServer"
+            VALUE "ProductVersion", "0, 99, 28, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "GameServer"
+    IDS_HELLO               "Hello World!"
+    IDC_GAMESERVER          "GAMESERVER"
+END
+
+#endif    // Coreano (Corea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

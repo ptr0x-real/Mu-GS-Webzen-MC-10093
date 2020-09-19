@@ -1,0 +1,26 @@
+// KanturuNightmare.cpp: implementation of the CKanturuNightmare class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+
+#ifdef ADD_KANTURU_20060627
+
+#include "KanturuNightmare.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CKanturuNightmare::CKanturuNightmare()
+{
+
+}
+
+CKanturuNightmare::~CKanturuNightmare()
+{
+
+}
+
+
+#endif
