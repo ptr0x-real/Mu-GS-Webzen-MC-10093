@@ -11,6 +11,9 @@
 #include "protocol.h"
 
 #include "LogProc.h"
+
+void GJPUserClose2(LPSTR szAccountID);
+
 extern PartyClass		gParty;
 
 cOffExp OffExp;

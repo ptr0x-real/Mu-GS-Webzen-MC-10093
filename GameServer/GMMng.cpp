@@ -147,6 +147,8 @@ if(!(t)) \
 }
 #endif // GMCOMMAND_EX
 
+void GJPUserClose2(LPSTR szAccountID);
+
 extern CwsGameServer	wsGServer;
 extern CGuildClass		Guild;
 extern classdef			DCInfo;
