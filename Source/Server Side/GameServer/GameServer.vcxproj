@@ -2413,7 +2413,6 @@
     <ClInclude Include="ExpSettings.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="IniFile.h" />
-    <ClInclude Include="Licencia.h" />
     <ClInclude Include="LogShop.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="NSIniFile.h" />
@@ -2669,7 +2668,6 @@
     <ClCompile Include="ExpSettings.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="IniFile.cpp" />
-    <ClCompile Include="Licencia.cpp" />
     <ClCompile Include="LogShop.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="MonsterHerd.cpp" />

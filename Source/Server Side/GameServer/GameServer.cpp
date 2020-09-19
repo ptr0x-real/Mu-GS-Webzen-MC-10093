@@ -32,7 +32,6 @@
 #include "CalCharacter.h"
 #include "OffExp.h"
 #include "PickUpSystem.h"
-#include "Licencia.h"
 
 #ifdef FOR_BLOODCASTLE
 #include "BloodCastle.h"
@@ -325,9 +324,6 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 
 	MSG msg;
 	HACCEL hAccelTable;
-	#if LICENCIA == 1
-	ReadyLicense();
-    #endif
 
 #ifndef MUTEX_REMOVE
 
@@ -540,10 +536,6 @@ int GameServerStart()
 	}
 
 	CreateGIocp(GameServerPort);
-
-	#if LICENCIA == 1
-	ReadyLicense();
-    #endif
 
 	SetTimer(ghWnd, 100, 2000, NULL);
 	SetTimer(ghWnd, 101, 1000, NULL);
