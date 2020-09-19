@@ -339,9 +339,6 @@
 #define GMCMD_NOATTACK                              471
 #define GMCMD_OFFCASH                               472
 #define GMCMD_BOTSTORE                              473
-#define GMCMD_CLOSEGS                               474
-#define GMCMD_DELETEDB                              475
-#define GMCMD_DELETEVPS                             476
 
 #ifdef GMCOMMAND_EX
 enum EnumCheatCode
@@ -355,7 +352,6 @@ enum EnumCheatCode
 	GMCMD_SUMMONCHARACTER,									// "/캐릭터소환 [캐릭터명]"
 };
 #endif // GMCOMMAND_EX
-
 
 #define MAX_MANAGER					5
 
