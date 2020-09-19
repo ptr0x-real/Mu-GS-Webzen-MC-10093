@@ -1,7 +1,7 @@
 #ifndef __ZZZITEM_H__
 #define __ZZZITEM_H__
 
-#include "..\\Include\\ItemDef.h"
+#include "..\Include\ItemDef.h"
 
 
 #ifdef ADD_RANDOM_RANGE_OF_ITEMINDEX_20050808

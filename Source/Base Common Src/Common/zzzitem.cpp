@@ -1625,7 +1625,7 @@ DWORD CItem::GetNumber()
 	return m_Number;
 }
 
-#include "..\\gameserver\\Global.h"
+//#include "..\\gameserver\\Global.h"
 
 void CItem::Value()
 {
