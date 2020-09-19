@@ -2,6 +2,7 @@
 
 CDataBase::CDataBase(void)
 {
+#ifndef SQL_DUMMY
 	m_SQLErrorCount		= 1;
 	m_AfftedRowCount 	= -1;
 	m_Return			= SQL_SUCCESS;
@@ -12,18 +13,22 @@ CDataBase::CDataBase(void)
 
 	SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, & m_hEnv);
 	SQLSetEnvAttr(m_hEnv, SQL_ATTR_ODBC_VERSION, (SQLPOINTER)SQL_OV_ODBC3,SQL_IS_INTEGER);
+#endif // SQL_DUMMY
 }
 
 CDataBase::~CDataBase(void)
 {
+#ifndef SQL_DUMMY
 	if (m_hStmt)SQLFreeHandle(SQL_HANDLE_STMT, m_hStmt);
 	if (m_hDbc) SQLDisconnect(m_hDbc);
 	if (m_hDbc) SQLFreeHandle(SQL_HANDLE_DBC, m_hDbc);
 	if (m_hEnv) SQLFreeHandle(SQL_HANDLE_ENV, m_hEnv);
+#endif // SQL_DUMMY
 }
 
 bool CDataBase::Connect(const char * szHost, const char * szDataBase, const char * szUser, const char * szPassword)
 {
+#ifndef SQL_DUMMY
 	bool bReturn						= false;
 	int	iRecored						= 1;
     SQLSMALLINT cbOutCon				= 0;
@@ -63,10 +68,14 @@ bool CDataBase::Connect(const char * szHost, const char * szDataBase, const char
 	}
 
 	return bReturn;
+#else
+	return false;
+#endif // SQL_DUMMY
 }
 
 bool CDataBase::Connect(const char * szDnsName)
 {
+#ifndef SQL_DUMMY
 	bool bReturn						= false;
 	int	iRecored						= 1;
     SQLSMALLINT cbOutCon				= 0;
@@ -102,10 +111,14 @@ bool CDataBase::Connect(const char * szDnsName)
 	}
 
 	return bReturn;
+#else
+	return false;
+#endif // SQL_DUMMY
 }
 
 bool CDataBase::Reconnect()
 {
+#ifndef SQL_DUMMY
 	if(m_strDnsName.length() == 0)
 	{
 		return Connect(m_strHost.c_str(), m_strDataBase.c_str(), m_strUser.c_str(), m_strPassword.c_str());
@@ -114,10 +127,14 @@ bool CDataBase::Reconnect()
 	{
 		return Connect(m_strDnsName.c_str());
 	}
+#else
+	return false;
+#endif // SQL_DUMMY
 }
 
 bool CDataBase::Exec(const char * szQuery)
 {
+#ifndef SQL_DUMMY
 	bool bReturn = false;
 
 	this->Clear( );
@@ -158,6 +175,9 @@ bool CDataBase::Exec(const char * szQuery)
 	}
 
 	return bReturn;
+#else
+	return false;
+#endif // SQL_DUMMY
 }
 
 bool CDataBase::ExecFormat( const char * szQuery, ... )
@@ -391,6 +411,7 @@ bool CDataBase::GetStrExec(char * szQuery, char * buf)
 
 int CDataBase::GetAsBinary(LPTSTR lpszStatement, LPBYTE OUT lpszReturnBuffer)
 {
+#ifndef SQL_DUMMY
 	SQLCHAR * pSQLBuf;
 	SQLINTEGER BufLen;
 	SQLCHAR SQLBinary[10000];
@@ -450,11 +471,14 @@ int CDataBase::GetAsBinary(LPTSTR lpszStatement, LPBYTE OUT lpszReturnBuffer)
 		}
 	}
 	return BufLen;
+#else
+	return 0;
+#endif // SQL_DUMMY
 }
 
 void CDataBase::SetAsBinary(LPTSTR lpszStatement, LPBYTE lpBinaryBuffer, SQLUINTEGER BinaryBufferSize)
 {
-
+#ifndef SQL_DUMMY
 	this->Clear( );
 
 	SQLINTEGER cbValueSize = -0x64 - BinaryBufferSize;
@@ -481,4 +505,63 @@ void CDataBase::SetAsBinary(LPTSTR lpszStatement, LPBYTE lpBinaryBuffer, SQLUINT
 
 	SQLParamData(m_hStmt, &pToken);
 	this->Clear( );
+#endif // SQL_DUMMY
+}
+
+SQLRETURN CDataBase::Fetch()
+{
+#ifndef SQL_DUMMY
+	return SQLFetch(m_hStmt); 
+#else
+	return SQL_ERROR;
+#endif // SQL_DUMMY
+}
+
+void CDataBase::Clear() 
+{
+#ifndef SQL_DUMMY
+	SQLCloseCursor(m_hStmt); SQLFreeStmt(m_hStmt, SQL_CLOSE);
+#endif // SQL_DUMMY
+}
+
+void CDataBase::Diagnostic()
+{
+#ifndef SQL_DUMMY
+	if (SQLGetDiagRec(SQL_HANDLE_STMT, m_hStmt, m_SQLErrorCount, m_SqlState, &m_NativeError,
+		m_szMsg, sizeof(m_szMsg), &m_MsgOutLen) != SQL_NO_DATA)
+	{
+		m_SQLErrorCount++;
+
+		memcpy(m_szTemp, m_szMsg, m_MsgOutLen);
+
+		OnError(m_szTemp);
+	}
+	else m_SQLErrorCount = 1;
+
+	if (strcmp((LPCTSTR)m_SqlState, "08S01") == 0)
+	{
+		Reconnect();
+	}
+#endif // SQL_DUMMY
+}
+
+void CDataBase::DiagnosticConn()
+{
+#ifndef SQL_DUMMY
+	if (SQLGetDiagRec(SQL_HANDLE_DBC, m_hDbc, m_SQLErrorCount, m_SqlState, &m_NativeError,
+		m_szMsg, sizeof(m_szMsg), &m_MsgOutLen) != SQL_NO_DATA)
+	{
+		m_SQLErrorCount++;
+
+		memcpy(m_szTemp, m_szMsg, m_MsgOutLen);
+
+		OnError(m_szTemp);
+	}
+	else m_SQLErrorCount = 1;
+
+	if (strcmp((LPCTSTR)m_SqlState, "08S01") == 0)
+	{
+		Reconnect();
+	}
+#endif // SQL_DUMMY
 }

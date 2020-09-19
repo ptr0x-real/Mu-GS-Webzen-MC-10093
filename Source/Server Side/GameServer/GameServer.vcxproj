@@ -1822,7 +1822,7 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\GameServer___Win32_KOR\GameServer.bsc</OutputFile>
+      <OutputFile>$(IntDir)GameServer.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>

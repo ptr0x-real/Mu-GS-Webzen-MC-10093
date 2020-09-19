@@ -55,48 +55,14 @@ public:
 	int			GetAsBinary(LPSTR lpszStatement, LPBYTE OUT lpszReturnBuffer);
 	void		SetAsBinary(LPTSTR lpszStatement, LPBYTE lpBinaryBuffer, SQLUINTEGER BinaryBufferSize);
 
-	SQLRETURN	inline Fetch( ){ return SQLFetch( m_hStmt ); };
-	void		inline Clear( ){ SQLCloseCursor( m_hStmt ) ; SQLFreeStmt( m_hStmt , SQL_CLOSE ); };
+	SQLRETURN	inline Fetch();
+	void		inline Clear();
 
 	virtual	void OnError(const char * szMessage, ...){};
 	virtual	void OnQuery(const char * szMessage, ...){};
 	virtual void OnMessage(const char * szMessage, ...){};
 
-	void Diagnostic()
-	{
-		if (SQLGetDiagRec(SQL_HANDLE_STMT, m_hStmt, m_SQLErrorCount, m_SqlState, & m_NativeError, 
-			m_szMsg, sizeof(m_szMsg), & m_MsgOutLen) != SQL_NO_DATA)
-		{
-			m_SQLErrorCount++;
+	void Diagnostic();
 
-			memcpy(m_szTemp, m_szMsg , m_MsgOutLen);
-
-			OnError(m_szTemp);
-		}
-		else m_SQLErrorCount = 1;
-
-		if (strcmp((LPCTSTR)m_SqlState, "08S01") == 0)
-		{
-			Reconnect();
-		}
-	};
-
-	void DiagnosticConn()
-	{
-		if (SQLGetDiagRec(SQL_HANDLE_DBC, m_hDbc, m_SQLErrorCount, m_SqlState, & m_NativeError, 
-			m_szMsg, sizeof(m_szMsg), & m_MsgOutLen) != SQL_NO_DATA)
-		{
-			m_SQLErrorCount++;
-
-			memcpy(m_szTemp, m_szMsg , m_MsgOutLen);
-
-			OnError(m_szTemp);
-		}
-		else m_SQLErrorCount = 1;
-
-		if (strcmp((LPCTSTR)m_SqlState, "08S01") == 0 )
-		{
-			Reconnect();
-		}
-	};
+	void DiagnosticConn();
 };

@@ -75,6 +75,9 @@
 #include "TNotice.h"
 #endif
 
+/* Macros to help deal with the "not original" code */
+#define SQL_DUMMY
+
 #include "Database.h"
 #include "Manager.h"
 #include "Global.h"
