@@ -64,7 +64,6 @@
 #include "BattleSoccer.h"
 #include "ConMember.h"
 
-#include "Licencia.h"
 #ifdef MODIFY_MIX_SYSTEM_20070518
 //#include "ChaosBox.h"
 #include "MixSystem.h"
@@ -1516,10 +1515,6 @@ void GameMainInit(HWND hWnd)
 	ReadServerInfo();
 	LogInit(LOG_PRINT);		// Log 기록용 함수 초기화
 	gSetDate();				// 오늘 날짜 읽기
-
-	#if LICENCIA == 1
-	ReadyLicense();
-    #endif
 
 	gDirPath.SetFirstPath("..\\Data\\");
 

@@ -320,9 +320,6 @@
     <Filter Include="Custom\BalanceSystem">
       <UniqueIdentifier>{e03cfeb1-199c-4641-a0fb-29673adb8bb4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Custom\Licencia">
-      <UniqueIdentifier>{629734a6-ae8b-4abb-81d0-59a59b077f8b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Custom\CalCharacter">
       <UniqueIdentifier>{8abc10cf-b89d-4bf6-b1ad-9edaf337d573}</UniqueIdentifier>
     </Filter>
@@ -1039,9 +1036,6 @@
     <ClInclude Include="BalanceSystem.h">
       <Filter>Custom\BalanceSystem</Filter>
     </ClInclude>
-    <ClInclude Include="Licencia.h">
-      <Filter>Custom\Licencia</Filter>
-    </ClInclude>
     <ClInclude Include="CalCharacter.h">
       <Filter>Custom\CalCharacter</Filter>
     </ClInclude>
@@ -1684,9 +1678,6 @@
     <ClCompile Include="NewPVP.cpp" />
     <ClCompile Include="BalanceSystem.cpp">
       <Filter>Custom\BalanceSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="Licencia.cpp">
-      <Filter>Custom\Licencia</Filter>
     </ClCompile>
     <ClCompile Include="CalCharacter.cpp">
       <Filter>Custom\CalCharacter</Filter>
