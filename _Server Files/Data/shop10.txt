@@ -1,0 +1,13 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+7 10 0 0 0 1 0 //Vine Glove
+8 10 0 0 0 1 0 //Vine Glove
+9 10 0 0 0 1 0 //Vine Glove
+10 10 0 0 0 1 0 //Vine Glove
+11 10 0 0 0 1 0 //Vine Glove
+13 29 0 0 0 0 0 //Armor of Guardian
+end

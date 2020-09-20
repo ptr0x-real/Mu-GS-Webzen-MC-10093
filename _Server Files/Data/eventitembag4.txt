@@ -1,0 +1,123 @@
+//---------------------------------------------------------------------------------------
+// Files brindados por Mirage Continent & www.miragecontinent.com (Files 99B+)
+// Star of Sacred (Estrella amarilla)
+//---------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------//
+// DROPEO EN MAPAS
+//---------------------------------------------------------------------------------------//
+0
+//    Mapa ID   Drop   Minimo DropRate
+	0	1	0	1000	// Lorencia
+	1	1	0	1000	// Dungeon
+	2	1	0	1000	// Devias
+	3	1	0	1000	// Noria
+	4	1	0	1000	// LostTower
+	5	0	0	1000	// Exile
+	6	0	0	1000	// Arena
+	7	1	0	1000	// Atlans
+	8	0	0	1000	// Tarkan
+	9	1	0	1000	// DevilSquare
+	10	1	0	1000	// Icarus
+end																					
+	
+
+//---------------------------------------------------------------------------------------//
+// OPCIÓN DE DROPEO
+// Nombre => Nombre del ITEM
+// Zen DROP => Número de ZEN que dropeara la ESTRELLA AMARILLA
+// Grupo Item => Número que identifica el grupo donde se encuentra el item en este caso la Estrella.
+// ID => Número que identifica el ITEM dentro del GRUPO en este caso la Estrella
+// DropNormal => Aquí se configura para que dropee más ZEN o más ITEMS la Estrella, se configura a partir del número 0 hasta el 1000
+// DropExcelente => Aquí se configura para que caigan los items del listado de abajo Excelente obviamente con la opción de abajo tambien añadida de [EXCELENTE], se configura a partir del número 0 hasta el 1000.
+//---------------------------------------------------------------------------------------//
+1
+//        Nombre         Zen Drop    Grupo Item  ID   Nivel Item DropRate DropNormal DropExcelente
+       "StarOfXMas"	  500000	  14	 11	   1	     2	     500 	  0
+end
+
+//---------------------------------------------------------------------------------------//
+// LISTA DE ITEMS A DROPEAR LA ESTRELLA AMARILLA
+//---------------------------------------------------------------------------------------//
+2
+// [GRUPO ITEM] [ID] [NIVEL] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+// GRUPO ITEM => Número que identifica el grupo donde se encuentra el item a dropear.
+// ID => Número que identifica el ITEM a dropear dentro del GRUPO.
+// NIVEL MÍNIMO => Nivel Minimo que asignas para que caiga apartir de este nivel, puede ser desde 1 hasta 13.
+// NIVEL MÁXIMO => Nivel Máximo que asignas para que caiga hasta este nivel, puede ser desde 1 hasta 13.
+// SKILL => Skill que le asignas al item que va a dropear, es decir, lo configuras con ( 1 = Activado, 0 = Desactivado )
+// SUERTE => La Suerte que asignas si queres que tenga o no el item, es decir, lo configuras con ( 1 = Activado, 0 = Desactivado )
+// OPCIÓN => La Opción que asignas al item que queres que tenga, es decir, lo configuras con 1,2,3 y 4 ( 1 = 4 de adicional, 2 = 8 de adicional, 3 = 12 de adicional, 4 = 16 de adicional)
+// EXCELENTE => Le asignas al item si queres que caiga EXCELENTE o no, es decir, lo configuras con ( 1 = Activado, 0 = Desactivado )
+
+//---------------------------------------------------------------------------------------//
+// ARMAS
+//---------------------------------------------------------------------------------------//
+// [GRUPO ITEM] [ID] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+
+0 10 5 9 0 1 2 0 	//Light Saber
+0 11 5 9 0 1 2 0 	//Legendary Sword
+0 13 5 9 0 1 2 0 	//Double Blade
+1 6 5 9 0 1 2 0 	//Nikkea Axe
+1 7 5 9 0 1 2 0 	//Larkan Axe
+2 3 5 9 0 1 2 0 	//Great Hammer
+3 7 5 9 0 1 2 0 	//Bardiche
+3 0 5 9 0 1 2 0 	//Light Spear
+3 4 5 9 0 1 2 0	 	//Serpent Spear
+4 11 5 9 0 1 2 0 	//Light Crossbow
+
+//---------------------------------------------------------------------------------------//
+// ARCOS Y BALLESTAS
+//---------------------------------------------------------------------------------------//
+// [GRUPO ITEM] [ID] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+4 4 5 9 0 1 2 0 	//Tiger Bow
+4 12 5 9 0 1 2 0 	//Serpent Crossbow
+
+//---------------------------------------------------------------------------------------//
+// STAFFS
+//---------------------------------------------------------------------------------------//
+// [GRUPO ITEM] [ID] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+5 3 5 9 0 1 2 0 	//Lightning Staff
+
+//---------------------------------------------------------------------------------------//
+// ESCUDOS
+//---------------------------------------------------------------------------------------//
+// [GRUPO ITEM] [ID] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+6 0 5 9 0 1 2 0 	//Dragon Slayer
+6 8 5 9 0 1 2 0 	//Tower Shield
+6 11 5 9 0 1 2 0 	//Serpent Shield
+
+//---------------------------------------------------------------------------------------//
+// SETS
+//---------------------------------------------------------------------------------------//
+// [GRUPO ITEM] [ID] [NIVEL MÍNIMO] [NIVEL MÁXIMO] [SKILL] [Suerte] [OPCIÓN] [EXCELENTE]
+7 8 5 9 0 1 2 0 	//Brass Helm
+8 8 5 9 0 1 2 0 	//Brass Armor
+9 8 5 9 0 1 2 0 	//Brass Pants
+10 8 5 9 0 1 2 0 	//Brass Gloves
+11 8 5 9 0 1 2 0 	//Brass Boots
+
+7 9 5 9 0 1 2 0 	//Plate Helm
+8 9 5 9 0 1 2 0 	//Plate Armor
+9 9 5 9 0 1 2 0		//Plate Pants
+10 9 5 9 0 1 2 0 	//Plate Gloves
+11 9 5 9 0 1 2 0 	//Plate Boots
+
+7 7 5 9 0 1 2 0 	//Sphinx Helm
+8 7 5 9 0 1 2 0 	//Sphinx Armor
+9 7 5 9 0 1 2 0 	//Sphinx Pants
+10 7 5 9 0 1 2 0 	//Sphinx Gloves
+11 7 5 9 0 1 2 0 	//Sphinx Boots
+
+7 12 5 9 0 1 2 0 	//Wind Helm
+8 12 5 9 0 1 2 0 	//Wind Armor
+9 12 5 9 0 1 2 0 	//Wind Pants
+10 12 5 9 0 1 2 0 	//Wind Gloves
+11 12 5 9 0 1 2 0 	//Wind Boots
+
+7 13 5 9 0 1 2 0 	//Spirit Helm
+8 13 5 9 0 1 2 0 	//Spirit Armor
+9 13 5 9 0 1 2 0 	//Spirit Pants
+10 13 5 9 0 1 2 0 	//Spirit Gloves
+11 13 5 9 0 1 2 0 	//Spirit Boots
+end

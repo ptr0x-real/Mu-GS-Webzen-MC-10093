@@ -1,0 +1,24 @@
+//ENABLE(0,1)
+1
+
+//MESSAGES
+"[Happy Hour] ha empezado!"
+"[Happy Hour] ha terminado!"
+"[Happy Hour] empezara en %d minutos!"
+"[Happy Hour] terminara en %d minutos!"
+
+//EXPERIENCE_TYPE: 	0 - Define la nueva experience sin agregar a la actual
+//			1 - Agrega experiencia a la experiencia original del servidor
+//EXPERIENCE_FORMAT:	0 - ABSOLUTO, agrega el monto definido
+//			1 - PORCENTAJE, agrega el porcentaje definido(solo funciona con EXPERIENCE_TYPE = 1)
+//EXPERIENCE:		La experiencia a definir
+//Para evadir alguna de las columnas de las fechas definir -1 en vez de un valor
+//MONTH:		Mes(1 a 12)
+//DAYOFWEEK:		1(Habilitar) - 0(Deshabilitar)
+//DAY:			Dia(1 a 31) - DAYOFWEEK == 1 = Dia(1 a 7) 1 = Lunes...7 = Domingo
+//HOUR:			Hora(0 a 23)
+//MINUTES:		Minutos(0 a 59)
+//DURATION:		Duracion(expresada en minutos), es la cantidad de minutos que va a durar el evento.
+
+//EXPERIENCE_TYPE	EXPERIENCE_FORMAT	EXPERIENCE	MONTH	DAYOFWEEK	DAY	HOUR	MINUTES	DURATION
+1			0			600		-1	0		-1	22	45	460

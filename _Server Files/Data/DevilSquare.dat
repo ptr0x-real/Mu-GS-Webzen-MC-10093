@@ -1,0 +1,92 @@
+// Devil Square
+// CloseTime, OpenTime, PlayTime
+0
+35 5 20
+end
+
+//Moobs In DS
+1
+//DS1
+0 	9 	0 	7 	// Thunder Lich
+0 	5 	0 	7  	// Hell Hound
+0 	10 	5 	14   	// Dark Knight
+0 	39 	5 	14   	// Poison Shadow
+0 	25 	12 	20 	// Ice Queen
+0 	41 	12 	20 	// Death cow
+//DS2
+1 	18 	0 	7   	// Gorgon
+1 	41 	0 	7   	// Death cow
+1 	35 	5 	14   	// Death Gorgon
+1 	51 	5 	14   	// Bahamut
+1 	64 	12 	20   	// Orc Archer
+1 	65 	12 	20   	// King Orc
+//DS3
+2 	38 	0 	7   	// Great Bahamut
+2 	51 	0 	7   	// Orc Archer
+2 	64 	5 	14   	// King Orc
+2 	65 	5 	14	// King Orc
+2 	62 	12 	20   	// Mutant
+2 	60 	12 	20   	// Grand Wolf
+//DS4
+3 	64 	0 	7   	// Orc Archer
+3 	65 	0 	7   	// King Orc
+3 	62	5 	14   	// Mutant
+3 	60	5 	14   	// Grand Wolf
+3 	67	12 	20   	// Metal Balrog
+3 	72	12 	20   	// Phantom Knight
+end
+
+//DS Boss ID
+//DS    MobID   Time	X1	X2	Y1	Y2
+2
+0 	18 	15 	119 	80   	150  	115  	// Gorgon
+0 	18 	15 	119 	80   	150  	115  	// Gorgon
+0 	18 	15 	119 	80   	150  	115  	// Gorgon
+0 	18 	15 	119 	80   	150  	115  	// Gorgon
+0 	18 	15 	119 	80   	150  	115  	// Gorgon
+0 	78 	15 	119 	80   	150  	115  	// Golden Goblin
+
+1 	49 	15 	121 	152 	151 	184   	// Hydra
+1 	49 	15 	121 	152 	151 	184   	// Hydra
+1 	49 	15 	121 	152 	151 	184   	// Hydra
+1 	49 	15 	121 	152 	151 	184   	// Hydra
+1 	49 	15 	121 	152 	151 	184   	// Hydra
+1 	53 	15 	121 	152   	151  	184  	// Golden Titan
+
+2 	67 	15 	49 	138 	79 	173   	// Metal Balrog
+2 	67 	15 	49 	138 	79 	173   	// Metal Balrog
+2 	67 	15 	49 	138 	79 	173   	// Metal Balrog
+2 	67 	15 	49 	138 	79 	173   	// Metal Balrog
+2 	67 	15 	49 	138 	79 	173   	// Metal Balrog
+2 	79 	15 	49 	138 	79 	173   	// Golden Dragon
+
+3 	66 	15 	53 	74 	83 	109   	// Cursed king
+3 	66 	15 	53 	74 	83 	109   	// Cursed king
+3 	66 	15 	53 	74 	83 	109   	// Cursed king
+3 	66 	15 	53 	74 	83 	109   	// Cursed king
+3 	66 	15 	53 	74 	83 	109   	// Cursed king
+3 	80 	15 	53 	74 	83 	109   	// Golden Lizzard
+end
+
+//DS(+1), Place, Reward Exp, Reward Zen
+3
+0	0	600000	3000000
+0	1	400000	2500000
+0	2	200000	2000000
+0	3	100000	1500000
+	
+1	0	800000	4000000
+1	1	600000	3500000
+1	2	400000	3000000
+1	3	200000	2500000
+
+2	0	1000000	5000000
+2	1	800000	4500000
+2	2	600000	4000000
+2	3	400000	3500000
+
+3	0	2000000	6000000
+3	1	1000000	5500000
+3	2	800000	5000000
+3	3	600000	4500000
+end

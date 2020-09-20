@@ -1,0 +1,97 @@
+//===============================================================
+//Time Settings
+//Castle Doors Open (Min)	Event Duration (Min)	Close After Event Duration Runs Out (Min)	MinUsers	MinUsersMsg
+//===============================================================
+0	
+5				10			1						2		"[Chaos Castle] Cancelado por falta de jugadores!"
+end
+
+//==============================================================
+//Configurations
+//Item Drop Rate (10/N)	Excellent Item Drop Rate (1/N)	Time For Item Disappear (Min)
+//==============================================================
+1
+100			1200				0		
+end
+
+//===============================
+//Event Schedules
+//Hours (24 Format)	Minutes (59 Format)
+//===============================
+2
+1			35
+2			35
+6			35
+8			35
+10			35
+12			35
+14			35
+16			35
+18			35
+20			35
+21			35
+22			35
+23			35
+0			35
+end
+
+//=====================
+//Probability of Winning (N/10000)
+//=====================
+3
+2		// 2/10000
+end
+
+//=========================
+//Chaos Castle Reward Items
+//Type	Index	Level	Skill	Luck	Option	ExcOption	MaxDropRate(1/1000)
+//=========================
+5	
+//Chaos Castle 1
+0
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+end
+//Chaos Castle 2
+1
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+14	22	0	0	0	0	0		1000    //Jewel of Creation
+end
+//Chaos Castle 3
+2
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+14	22	0	0	0	0	0		1000    //Jewel of Creation
+end
+//Chaos Castle 4
+3
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+14	22	0	0	0	0	0		1000    //Jewel of Creation
+14	14	0	0	0	0	0		1000    //Jewel of Soul
+end
+//Chaos Castle 5
+4
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+14	13	0	0	0	0	0		1000    //Jewel of Bless
+14	14	0	0	0	0	0		1000    //Jewel of Soul
+14	16	0	0	0	0	0		1000    //Jewel of Life
+end
+//Chaos Castle 6
+5
+12	15	0	0	0	0	0		1000    //Jewel of Chaos
+14	22	0	0	0	0	0		1000    //Jewel of Creation
+14	14	0	0	0	0	0		1000    //Jewel of Soul
+14	16	0	0	0	0	0		1000    //Jewel of Life
+14	13	0	0	0	0	0		1000    //Jewel of Bless
+end
+end
+
+//=====================
+//ChaosCastle	ItemCount
+//=====================
+6	
+0		1	//ChaosCastle 1
+1		1	//ChaosCastle 2
+2		1	//ChaosCastle 3
+3		1	//ChaosCastle 4
+4		1	//ChaosCastle 5
+5		1	//ChaosCastle 6
+end

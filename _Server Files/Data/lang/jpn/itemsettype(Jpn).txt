@@ -1,0 +1,274 @@
+////////////////////////////////////////////////////////////////////////////////
+// Set item drop level : Excellent item drop level+5																			
+// Set item increase attack : [4+(Set item drop level/40)] + Basic item minimum damage, maximum damage																			
+// Set item increase durability : Excellent item durability +5																			
+// Set item increase defense : Excellent item defense+(Excellent item defense*3/Set item drop level+2+set item drop level/30)																			
+// Every time when the item level increases by 1, up to level 10: 3/11: 4/12: 5 of attack and defense increase.																			
+// Set item Wizardry : Excellent item Wizardry + 2 +(Set item drop level/60)																			
+// Set item shield defense : Excellent item defense + (Excellent item defense*30/Set item drop level+2)																			
+// Set item shield defense rate : same as defense rate of Excellent item 																			
+// Set item strength requirement : 25+(strength*(Set item drop level+item level*3)*0.3)																				
+// Set item Agility requirement : 25+(Agility*(Set item drop level + item level*3)*0.3)																				
+////////////////////////////////////////////////////////////////////////////////																				
+
+//item index(sub type)	Link a	Link b	mixItemLevel a	mixItemLevel b																
+0	
+0	21	0	0	0	//	Kris							
+//1	0	0	0	0	//	Short sword						
+2	23	0	0	0	//	Rapier					
+//4	0	0	0	0	//	Sword of Assassin			
+3	3	0	0	0	//	Katana					
+//6	0	0	0	0	//	Gladius					
+7	5	0	0	0	//	Falchion				
+//8	0	0	0	0	//	Serpent Sword				
+//5	0	0	0	0	//	Blade					
+13	7	0	0	0	//	Double Blade				
+14	11	0	0	0	//	Lighting Sword				
+//16	0	0	0	0	//	Sword of Destruction			
+//17	0	0	0	0	//	Dark Breaker				
+//18	0	0	0	0	//	Thunder Blade				
+//19	0	0	0	0	//	Divine Sword of Arch Angel		
+31	4	0	0	0	//	Rune Blade				
+//9	0	0	0	0	//	Salamander Sword			
+//10	0	0	0	0	//	Light Saber				
+//11	0	0	0	0	//	Legendary Sword				
+15	9	0	0	0	//	Giant Sword				
+//12	0	0	0	0	//	Heliacal Sword				
+end
+																				
+1											
+//0	0	0	0	0	//	Small Axe				
+//1	0	0	0	0	//	Hand Axe				
+//2	0	0	0	0	//	Double Axe				
+//3	0	0	0	0	//	Tomahawk				
+4	25	0	0	0	//	Elven Axe				
+//5	0	0	0	0	//	Battle Axe				
+//6	0	0	0	0	//	Nikea Axe				
+//7	0	0	0	0	//	Larkan Axe				
+//8	0	0	0	0	//	Cresent Axe				
+end	
+														
+2											
+//0	0	0	0	0	//	Mace					
+1	1	0	0	0	//	Morning Star				
+//2	0	0	0	0	//	Flail					
+//7	0	0	0	0	//	Elemental Mace				
+//3	0	0	0	0	//	Great Hammer				
+//4	0	0	0	0	//	Crystal Morning Star			
+5	30	0	0	0	//	Crystal Sword				
+//6	0	0	0	0	//	Chaos Dragon Axe
+8	2	0	0	0	//	Battle Scepter	
+9	18	0	0	0	//	Master Scepter				
+end	
+																			
+3											
+//5	0	0	0	0	//	Double Poleaxe				
+//2	0	0	0	0	//	Dragon Lance				
+//6	0	0	0	0	//	Halberd					
+//1	0	0	0	0	//	Spear					
+//3	0	0	0	0	//	Great Trident				
+//7	0	0	0	0	//	Berdysh					
+//0	0	0	0	0	//	Light Spear				
+//4	0	0	0	0	//	Serpent Spear				
+//8	0	0	0	0	//	Great Scythe				
+//9	0	0	0	0	//	Bill of Balrog				
+//10	0	0	0	0	//	Dragon Spear				
+end
+																					
+4											
+//0	0	0	0	0	//	Short Bow				
+//8	0	0	0	0	//	Crossbow				
+//1	0	0	0	0	//	Bow					
+//9	23	0	0	0	//	Golden Crossbow				
+//2	0	0	0	0	//	Elven Bow				
+//10	0	0	0	0	//	Arquebus				
+//3	0	0	0	0	//	Battle Bow				
+//11	0	0	0	0	//	Crossbow of Light			
+//4	0	0	0	0	//	Tiger Bow				
+12	27	0	0	0	//	Serpent Crossbow			
+5	29	0	0	0	//	Silver Bow				
+//13	0	0	0	0	//	Blue Wing Crossbow			
+//14	0	0	0	0	//	Aqua Gold Crossbow			
+//6	0	0	0	0	//	Chaos Nature Bow			
+//16	0	0	0	0	//	Saint Cross Crossbow			
+17	10	0	0	0	//	Celestial Bow								
+//18	0	0	0	0	//	Divine Crossbow of Arch Angel						
+//19	0	0	0	0	//	Great Reign Crossbow							
+end	
+																										
+5															
+0	13	0	0	0	//	Skull Staff								
+5	19	0	0	0	//	Legendary Staff								
+//6	0	0	0	0	//	Staff of Resurrection							
+//9	0	0	0	0	//	Grand Soul Staff							
+//10	0	0	0	0	//	Divine Staff of Arch Angel						
+1	15	0	0	0	//	Angelic Staff								
+2	17	0	0	0	//	Serpent Staff								
+//3	0	0	0	0	//	Thunder Staff								
+//4	0	0	0	0	//	Staff of Gorgon								
+//7	0	0	0	0	//	Chaos Lighting Staff							
+//8	0	0	0	0	//	Staff of Destruction							
+end	
+																									
+7															
+5	1	0	0	0	//	Leather Helmet								
+0	3	0	0	0	//	Bronze Helm								
+6	5	0	0	0	//	Scale Helmet								
+8	7	0	0	0	//	Brass Helmet								
+9	9	0	0	0	//	Plate Helmet								
+1	11	0	0	0	//	Dragon Helm								
+16	30	0	0	0	//	Black Dragon Helm							
+//17	0	0	0	0	//	Dark Phoenix Helm							
+2	13	0	0	0	//	Pad Helm								
+4	15	0	0	0	//	Bone Helmet								
+7	17	0	0	0	//	Sphinx Mask
+3	19	0	0	0	//	Legendary Helmet
+18	6	0	0	0	//	Grand Soul Helmet
+10	21	0	0	0	//	Vine Helmet
+11	23	0	0	0	//	Silk Helmet
+12	25	0	0	0	//	Helmet of Wind
+13	27	0	0	0	//	Helmet of Spirit
+14	29	0	0	0	//	Helmet of Guardian Angel
+19	10	0	0	0	//	Helmet of Divine
+25	2	0	0	0	//	Light Plate Helm
+26	18	0	0	0	//	Adamantine Helm
+end						
+						
+8						
+5	1	0	0	0	//	Leather Armor
+0	3	0	0	0	//	Bronze Armor
+6	5	0	0	0	//	Scale Armor
+8	7	0	0	0	//	Brass Armor
+9	9	0	0	0	//	Plate Armor
+//1	0	0	0	0	//	Dragon Armor
+15	31	0	0	0	//	Armor of Storm Crow
+16	30	0	0	0	//	Black Dragon Armor
+//17	0	0	0	0	//	Dark Phoenix Armor
+20	4	0	0	0	//	Thunder Hawk Armor
+2	13	0	0	0	//	Pad Armor
+4	15	0	0	0	//	Bone Armor
+7	17	0	0	0	//	Sphinx Armor
+3	19	0	0	0	//	Legendary Armor
+18	6	0	0	0	//	Grand Soul Armor
+10	21	0	0	0	//	Vine Armor
+11	23	0	0	0	//	Silk Armor
+12	25	0	0	0	//	Armor of Wind
+13	27	0	0	0	//	Armor of Spirit
+14	29	0	0	0	//	Armor of Guardian
+19	10	0	0	0	//	Divine Armor
+25	2	0	0	0	//	Light Plate Armor
+26	18	0	0	0	//	Adamantine Armor
+end						
+						
+9						
+5	1	0	0	0	//	Leather Pants
+0	3	0	0	0	//	Bronze Pants
+6	5	0	0	0	//	Scale Pants
+8	7	0	0	0	//	Brass Pants
+9	9	0	0	0	//	Plate Pants
+1	11	0	0	0	//	Dragon Pants
+15	31	0	0	0	//	Storm Crow pants
+16	30	0	0	0	//	Black Dragon Pants
+//17	0	0	0	0	//	Dark Phoenix Pants
+20	4	0	0	0	//	Thunder Hawk Pants
+2	13	0	0	0	//	Pad Pants
+4	15	0	0	0	//	Bone pants
+7	17	0	0	0	//	Sphinx pants
+3	19	0	0	0	//	Legendary pants
+18	6	0	0	0	//	Grand soul pants
+10	21	0	0	0	//	Vine pants
+11	23	0	0	0	//	Silk pants
+12	25	0	0	0	//	Wind pants
+13	27	0	0	0	//	Spirit pants
+14	29	0	0	0	//	Guardian pants
+19	10	0	0	0	//	Divine pants
+25	2	0	0	0	//	Light Plate Pants
+26	18	0	0	0	//	Adamantine Pants
+end						
+						
+10						
+5	1	0	0	0	//	Leather gloves
+0	3	0	0	0	//	Bronze gloves
+6	5	0	0	0	//	Scale gloves
+8	7	0	0	0	//	Brass gloves
+9	9	0	0	0	//	Plate gloves
+1	11	0	0	0	//	Dragon gloves
+15	31	0	0	0	//	Storm Crow gloves
+16	30	0	0	0	//	Black Dragon gloves
+//17	0	0	0	0	//	Dark Phoenix gloves
+20	4	0	0	0	//	Thunder Hwak gloves
+2	13	0	0	0	//	Pad gloves
+4	15	0	0	0	//	Bone gloves
+7	17	0	0	0	//	Sphinx gloves
+3	19	0	0	0	//	Legendary gloves
+18	6	0	0	0	//	Grand soul gloves
+10	21	0	0	0	//	Vine gloves
+11	23	0	0	0	//	Silk gloves
+12	25	0	0	0	//	Wind gloves
+13	27	0	0	0	//	Spirit gloves
+14	29	0	0	0	//	Guardian gloves
+19	10	0	0	0	//	Divine gloves
+25	2	0	0	0	//	Light Plate Gloves
+26	18	0	0	0	//	Adamantine Gloves
+end						
+						
+11						
+5	1	0	0	0	//	Leather boots
+0	3	0	0	0	//	Bronze boots
+//6	0	0	0	0	//	Scale boots
+8	7	0	0	0	//	Brass boots
+9	9	0	0	0	//	Plate boots
+1	11	0	0	0	//	Dragon boots
+15	31	0	0	0	//	Storm Crow boots
+16	30	0	0	0	//	Black Dragon boots
+//17	0	0	0	0	//	Dark Phoenix boots
+20	4	0	0	0	//	Thunder Hawk boots
+2	13	0	0	0	//	Pad boots
+4	15	0	0	0	//	Bone boots
+7	17	0	0	0	//	Sphinx boots								
+//3	0	0	0	0	//	Legendary boots								
+18	6	0	0	0	//	Grand soul boots							
+10	21	0	0	0	//	Vine boots								
+11	23	0	0	0	//	Silk boots								
+12	25	0	0	0	//	Wind boots								
+13	27	0	0	0	//	Spirit boots								
+14	29	0	0	0	//	Guardian boots								
+19	10	0	0	0	//	Divine boots
+25	2	0	0	0	//	Light Plate Boots
+26	18	0	0	0	//	Adamantine Boots							
+end	
+																			
+6															
+//0	0	0	0	0	//	Round Shield								
+//4	0	0	0	0	//	Buckler									
+//1	0	0	0	0	//	Horn Shield								
+//2	0	0	0	0	//	Kite Shield								
+//6	17	0	0	0	//	Skull Shield								
+//10	0	0	0	0	//	Large Round Shield							
+3	25	0	0	0	//	Elven Shield								
+9	5	0	0	0	//	Plate Shield								
+//7	0	0	0	0	//	Spike Shield								
+//5	0	0	0	0	//	Dragon Slayer Shield							
+//8	0	0	0	0	//	Tower Shield								
+//11	0	0	0	0	//	Serpent Shield								
+14	19	0	0	0	//	Legendary Shield							
+//12	0	0	0	0	//	Broze Shield								
+13	11	0	0	0	//	Dragon Shield								
+15	6	0	0	0	//	Grand Soul Shield							
+//16	0	0	0	0	//	Elemental Shield							
+end															
+
+13															
+//8	1	0	0	0	//	Ring of Ice
+9	31	0	0	0	//	Ring of Poison
+//21	19	0	0	0	//	Ring of Fire
+//22	21	0	0	0	//	Ring of Earth
+//23	9	0	0	0	//	Ring of Wind
+//24	13	0	0	0	//	Ring of Magic
+//12	5	0	0	0	//	Pendant of Light
+13	31	0	0	0	//	Pendant of Fire
+25	10	0	0	0	//	Pendant of Ice
+//26	15	0	0	0	//	Pendant of Wind
+//27	31	0	0	0	//	Pendant of Water
+28	4	0	0	0	//	Pendant of Ability
+end

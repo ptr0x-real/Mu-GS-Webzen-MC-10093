@@ -1,0 +1,32 @@
+
+////////////////////////////////////////////////////////////////////////////////
+// Text Ver. 0.0.0.0
+// Version 1.02c
+// 15:10 2008-03-08
+// Author: HermeX
+////////////////////////////////////////////////////////////////////////////////
+
+//index	Movename(eng)	Movename(eng)		Zen	Level	GateNumber									
+1	"Arena"		"Arena"			2000	50	50
+2	"Lorencia"	"Lorencia"		2000	50	17
+3	"Noria"		"Noria"			2000	50	27
+4	"Devias"	"Devias"		2000	50	22
+5	"Devias2"	"Devias2"		2500	50	72
+6	"Devias3"	"Devias3"		3000	50	73
+7	"Devias4"	"Devias4"		3500	50	74
+8	"Dungeon"	"Dungeon"		3000	50	2
+9	"Dungeon2"	"Dungeon2"		3500	60	6
+10	"Dungeon3"	"Dungeon3"		4000	70	10
+11	"Atlans"	"Atlans"	        4000	70	49
+12	"Atlans2"	"Atlans2"	        4500	70	75
+13	"Atlans3"	"Atlans3"	        5000	70	76
+14	"LostTower"	"LostTower"		5000	90	42
+15	"LostTower2"	"LostTower2"		5500	90	31
+16	"LostTower3"	"LostTower3"		6000	100	33
+17	"LostTower4"	"LostTower4"		6500	110	35
+18	"LostTower5"	"LostTower5"		7000	110	37
+19	"LostTower6"	"LostTower6"		7500	110	39
+20	"LostTower7"	"LostTower7"		8000	120	41
+21	"Tarkan"	"Tarkan"		8000	140	57
+22	"Tarkan2"	"Tarkan2"		8500	140	77
+23	"Icarus"	"Icarus"		10000	170	63

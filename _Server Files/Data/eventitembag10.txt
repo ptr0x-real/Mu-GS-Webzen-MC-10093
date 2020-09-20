@@ -1,0 +1,64 @@
+//==============================================================================
+//	Event Item Bag 10 - Box of Kundun +3
+//	All Rights Reserved (C) 2010 Nemesis
+//==============================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//===============================[Sets]=========================================
+// [Dragon Set]
+//==============================================================================
+8	1	0	0	1	0	//Excellent Dragon Armor
+11	1	0	0	1	0	//Excellent Dragon Boots
+10	1	0	0	1	0	//Excellent Dragon Gloves
+7	1	0	0	1	0	//Excellent Dragon Helm
+9	1	0	0	1	0	//Excellent Dragon Pants
+//==============================================================================
+// [Legendary Set]
+//==============================================================================
+8	3	0	0	1	0	//Excellent Legendary Armor
+11	3	0	0	1	0	//Excellent Legendary Boots
+10	3	0	0	1	0	//Excellent Legendary Gloves
+7	3	0	0	1	0	//Excellent Legendary Helm
+9	3	0	0	1	0	//Excellent Legendary Pants
+//==============================================================================
+// [Guardian Set]
+//==============================================================================
+8	14	0	0	1	0	//Excellent Guardian Armor
+11	14	0	0	1	0	//Excellent Guardian Boots
+10	14	0	0	1	0	//Excellent Guardian Gloves
+7	14	0	0	1	0	//Excellent Guardian Helm
+9	14	0	0	1	0	//Excellent Guardian Pants
+//==============================================================================
+// [Unicorn Set]
+//==============================================================================
+8	15	0	0	1	0	//Excellent Unicorn Armor
+11	15	0	0	1	0	//Excellent Unicorn Boots
+10	15	0	0	1	0	//Excellent Unicorn Gloves
+9	15	0	0	1	0	//Excellent Unicorn Pants
+//==============================================================================
+// [Adamantine Set]
+//==============================================================================
+8	26	0	0	1	0	//Excellent Adamantine Armor
+11	26	0	0	1	0	//Excellent Adamantine Boots
+10	26	0	0	1	0	//Excellent Adamantine Gloves
+7	26	0	0	1	0	//Excellent Adamantine Helm
+9	26	0	0	1	0	//Excellent Adamantine Pants
+//=====================================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//==============================[Weapons]==============================================
+0	13	0	1	1	0	//Excellent Double Blade
+0	14	0	1	1	0	//Excellent Lightning Sword
+2	4	0	1	1	0	//Excellent Crystal Mace
+2	5	0	1	1	0	//Excellent Crystal Sword
+2	8	0	0	1	0	//Excellent Battle Scepter
+2	9	0	0	1	0	//Excellent Master Scepter
+2	10	0	0	1	0	//Excellent Great Scepter
+3	9	0	1	1	0	//Excellent Bill of Balrog
+4	5	0	1	1	0	//Excellent Silver Bow
+5	5	0	0	1	0	//Excellent Legendary Staff
+5	6	0	0	1	0	//Excellent Resurrection Staff
+6	13	0	1	1	0	//Excellent Dragon Shield
+6	14	0	0	1	0	//Excellent Legendary Shield
+2	6	0	1	1	0	//Excellent Chaos Dragon Axe
+4	6	0	1	1	0	//Excellent Chaos Nature Bow
+5	7	0	0	1	0	//Excellent Chaos Lightning Staff
+//=====================================================================================

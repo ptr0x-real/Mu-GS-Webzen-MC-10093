@@ -1,0 +1,7 @@
+7 1 0 0 0 1 0 //Brass Helm
+8 1 0 0 0 1 0 //Brass Armor
+10 1 0 0 0 1 0 //Brass Gloves
+9 1 0 0 0 1 0 //Brass Pants
+11 1 0 0 0 1 0 //Brass Boots
+0 13 0 0 0 1 0 //Double Blade
+end

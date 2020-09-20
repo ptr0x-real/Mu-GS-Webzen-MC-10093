@@ -1,0 +1,164 @@
+//==========================================================================
+//Project: Season 4
+//Sources: RMST 
+//Re-Struct & Fixes: Wigos
+//Information: Fire Cracker & Heart Of Love
+//==========================================================================
+//Type	Index	Level	Skill	Luck	Option	Name
+//==========================================================================
+//Sets
+  7	7	3	0	0	1	// Sphinx Helm
+  8	7	3	0	0	1	// Sphinx Armor
+  9	7	3	0	0	1	// Sphinx Pants
+  10	7	3	0	0	1	// Sphinx Gloves
+  11	7	3	0	0	1	// Sphinx Boots
+
+  7	6	3	0	0	1	// Scale  Helm
+  8	6	3	0	0	1	// Scale Armor
+  9	6	3	0	0	1	// Scale Pants
+  10	6	3	0	0	1	// Scale Gloves
+  11	6	3	0	0	1	// Scale Boots
+
+  7	12	3	0	0	1	// Wind Helm
+  8	12	3	0	0	1	// Wind Armor
+  9	12	3	0	0	1	// Wind Pants
+  10	12	3	0	0	1	// Wind Gloves
+  11	12	3	0	0	1	// Wind Boots
+
+  7	25	3	0	0	1	// Light Plate Helm
+  8	25	3	0	0	1	// Light Plate Armor
+  9	25	3	0	0	1	// Light Plate Pants
+  10	25	3	0	0	1	// Light Plate Gloves
+  11	25	3	0	0	1	// Light Plate Boots
+
+  7	7	6	0	0	1	// Sphinx Helm
+  8	7	6	0	0	1	// Sphinx Armor
+  9	7	6	0	0	1	// Sphinx Pants
+  10	7	6	0	0	1	// Sphinx Gloves
+  11	7	6	0	0	1	// Sphinx Boots
+
+  7	6	6	0	0	1	// Scale  Helm
+  8	6	6	0	0	1	// Scale Armor
+  9	6	6	0	0	1	// Scale Pants
+  10	6	6	0	0	1	// Scale Gloves
+  11	6	6	0	0	1	// Scale Boots
+
+  7	12	6	0	0	1	// Wind Helm
+  8	12	6	0	0	1	// Wind Armor
+  9	12	6	0	0	1	// Wind Pants
+  10	12	6	0	0	1	// Wind Gloves
+  11	12	6	0	0	1	// Wind Boots
+
+  7	25	6	0	0	1	// Light Plate Helm
+  8	25	6	0	0	1	// Light Plate Armor
+  9	25	6	0	0	1	// Light Plate Pants
+  10	25	6	0	0	1	// Light Plate Gloves
+  11	25	6	0	0	1	// Light Plate Boots
+
+  7	7	7	0	0	1	// Sphinx Helm
+  8	7	7	0	0	1	// Sphinx Armor
+  9	7	7	0	0	1	// Sphinx Pants
+  10	7	7	0	0	1	// Sphinx Gloves
+  11	7	7	0	0	1	// Sphinx Boots
+
+  7	6	7	0	0	1	// Scale  Helm
+  8	6	7	0	0	1	// Scale Armor
+  9	6	7	0	0	1	// Scale Pants
+  10	6	7	0	0	1	// Scale Gloves
+  11	6	7	0	0	1	// Scale Boots
+
+  7	9	7	0	0	1	// Plate Helm
+  8	9	7	0	0	1	// Plate Armor
+  9	9	7	0	0	1	// Plate Pants
+  10	9	7	0	0	1	// Plate Gloves
+  11	9	7	0	0	1	// Plate Boots
+
+  7	12	7	0	0	1	// Wind Helm
+  8	12	7	0	0	1	// Wind Armor
+  9	12	7	0	0	1	// Wind Pants
+  10	12	7	0	0	1	// Wind Gloves
+  11	12	7	0	0	1	// Wind Boots
+
+  7	25	7	0	0	1	// Light Plate Helm
+  8	25	7	0	0	1	// Light Plate Armor
+  9	25	7	0	0	1	// Light Plate Pants
+  10	25	7	0	0	1	// Light Plate Gloves
+  11	25	7	0	0	1	// Light Plate Boots
+
+//Swords
+  0	9	3	1	0	1	// Salamander
+  0	10	3	1	0	1	// Light Saber
+  0	11	3	1	0	1	// Legendary Sword
+  0	12	3	1	0	1	// Helical Sword
+
+  0	9	6	1	0	1	// Salamander
+  0	10	6	1	0	1	// Light Saber
+  0	11	6	1	0	1	// Legendary Sword
+  0	12	6	1	0	1	// Helical Sword
+
+  0	9	7	1	0	1	// Salamander
+  0	10	7	1	0	1	// Light Saber
+  0	11	7	1	0	1	// Legendary Sword
+  0	12	7	1	0	1	// Helical Sword
+
+//Axes
+  1	4	3	1	0	1	// Elven Axe
+  1	4	6	1	0	1	// Elven Axe
+  1	4	7	1	0	1	// Elven Axe
+
+//Maces
+  2	3	3	1	0	1	// Great Hammer
+  2	8	3	1	0	1	// Battle Scepter
+
+  2	3	6	1	0	1	// Great Hammer
+  2	8	6	1	0	1	// Battle Scepter
+
+  2	3	7	1	0	1	// Great Hammer
+  2	8	7	1	0	1	// Battle Scepter
+
+//Spears
+  3	5	3	1	0	1	// Double Poleaxe
+  3	6	3	1	0	1	// Halberd
+  3	7	3	1	0	1	// Berdysh
+
+  3	5	6	1	0	1	// Double Poleaxe
+  3	6	6	1	0	1	// Halberd
+  3	7	6	1	0	1	// Berdysh
+
+  3	5	7	1	0	1	// Double Poleaxe
+  3	6	7	1	0	1	// Halberd
+  3	7	7	1	0	1	// Berdysh
+
+//Bows & Crossbows
+  4	4	3	1	0	1	// Tiger Bow
+  4	12	3	1	0	1	// Serpent Crossbow
+
+  4	4	6	1	0	1	// Tiger Bow
+  4	12	6	1	0	1	// Serpent Crossbow
+
+  4	4	7	1	0	1	// Tiger Bow
+  4	12	7	1	0	1	// Serpent Crossbow
+
+//Staffs
+  5	3	3	1	0	1	// Thunder Staff
+  5	4	3	1	0	1	// Serpent Crossbow
+
+  5	3	6	1	0	1	// Thunder Staff
+  5	4	6	1	0	1	// Serpent Crossbow
+
+  5	3	7	1	0	1	// Thunder Staff
+  5	4	7	1	0	1	// Serpent Crossbow
+
+//Shields
+  6	6	3	1	0	1	// Skull Shield
+  6	7	3	1	0	1	// Spiked Shield
+  6	8	3	1	0	1	// Tower Shield
+
+  6	6	6	1	0	1	// Skull Shield
+  6	7	6	1	0	1	// Spiked Shield
+  6	8	6	1	0	1	// Tower Shield
+
+  6	6	7	1	0	1	// Skull Shield
+  6	7	7	1	0	1	// Spiked Shield
+  6	8	7	1	0	1	// Tower Shield
+end

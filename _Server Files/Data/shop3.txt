@@ -1,0 +1,13 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+7 25 0 0 0 1 0 //Light Plate Mask
+8 25 0 0 0 1 0 //Light Plate Armor
+10 25 0 0 0 1 0 //Light Plate Gloves
+9 25 0 0 0 1 0 //Light Plate Pants
+11 25 0 0 0 1 0 //Light Plate Boot
+2 8 0 0 0 1 0 //Battle Scepter
+end

@@ -1,0 +1,149 @@
+//==========================================================================
+//Project: Season 4
+//Sources: RMST 
+//Re-Struct & Fixes: Wigos
+//Information: Gold Medal
+//==========================================================================
+//Type	Index	Level	Skill	Luck	Option	Name
+//==========================================================================
+//Sets
+  7	4	3	0	0	1	// Bone Helm
+  8	4	3	0	0	1	// Bone Armor
+  9	4	3	0	0	1	// Bone Pants
+  10	4	3	0	0	1	// Bone Gloves
+  11	4	3	0	0	1	// Bone Boots
+  7	0	3	0	0	1	// Bronze Helm
+  8	0	3	0	0	1	// Bronze Armor
+  9	0	3	0	0	1	// Bronze Pants
+  10	0	3	0	0	1	// Bronze Gloves
+  11	0	3	0	0	1	// Bronze Boots
+  7	11	3	0	0	1	// Silk Helm
+  8	11	3	0	0	1	// Silk Armor
+  9	11	3	0	0	1	// Silk Pants
+  10	11	3	0	0	1	// Silk Gloves
+  11	11	3	0	0	1	// Silk Boots
+
+  7	4	6	0	0	1	// Bone Helm
+  8	4	6	0	0	1	// Bone Armor
+  9	4	6	0	0	1	// Bone Pants
+  10	4	6	0	0	1	// Bone Gloves
+  11	4	6	0	0	1	// Bone Boots
+  7	0	6	0	0	1	// Bronze Helm
+  8	0	6	0	0	1	// Bronze Armor
+  9	0	6	0	0	1	// Bronze Pants
+  10	0	6	0	0	1	// Bronze Gloves
+  11	0	6	0	0	1	// Bronze Boots
+  7	11	6	0	0	1	// Silk Helm
+  8	11	6	0	0	1	// Silk Armor
+  9	11	6	0	0	1	// Silk Pants
+  10	11	6	0	0	1	// Silk Gloves
+  11	11	6	0	0	1	// Silk Boots
+
+  7	4	7	0	0	1	// Bone Helm
+  8	4	7	0	0	1	// Bone Armor
+  9	4	7	0	0	1	// Bone Pants
+  10	4	7	0	0	1	// Bone Gloves
+  11	4	7	0	0	1	// Bone Boots
+  7	0	7	0	0	1	// Bronze Helm
+  8	0	7	0	0	1	// Bronze Armor
+  9	0	7	0	0	1	// Bronze Pants
+  10	0	7	0	0	1	// Bronze Gloves
+  11	0	7	0	0	1	// Bronze Boots
+  7	11	7	0	0	1	// Silk Helm
+  8	11	7	0	0	1	// Silk Armor
+  9	11	7	0	0	1	// Silk Pants
+  10	11	7	0	0	1	// Silk Gloves
+  11	11	7	0	0	1	// Silk Boots
+
+//Swords
+  0	5	3	1	0	1	// Blade
+  0	6	3	1	0	1	// Gladius
+  0	7	3	1	0	1	// Falchion
+  0	8	3	1	0	1	// Serpent Sword
+
+  0	5	6	1	0	1	// Blade
+  0	6	6	1	0	1	// Gladius
+  0	7	6	1	0	1	// Falchion
+  0	8	6	1	0	1	// Serpent Sword
+
+  0	5	7	1	0	1	// Blade
+  0	6	7	1	0	1	// Gladius
+  0	7	7	1	0	1	// Falchion
+  0	8	7	1	0	1	// Serpent Sword
+
+//Axes
+  1	1	3	1	0	1	// Hand Axe
+  1	2	3	1	0	1	// Double Axe
+  1	3	3	1	0	1	// Tomahawk
+
+  1	1	6	1	0	1	// Hand Axe
+  1	2	6	1	0	1	// Double Axe
+  1	3	6	1	0	1	// Tomahawk
+
+  1	1	7	1	0	1	// Hand Axe
+  1	2	7	1	0	1	// Double Axe
+  1	3	7	1	0	1	// Tomahawk
+
+//Maces
+  2	1	3	1	0	1	// Morning Star
+  2	2	3	1	0	1	// Flail
+
+  2	1	6	1	0	1	// Morning Star
+  2	2	6	1	0	1	// Flail
+
+  2	1	7	1	0	1	// Morning Star
+  2	2	7	1	0	1	// Flail
+
+//Spears
+  3	0	3	1	0	1	// Light Spear
+  3	3	3	1	0	1	// Giant Trident
+  3	4	3	1	0	1	// Serpent Trident
+
+  3	0	6	1	0	1	// Light Spear
+  3	3	6	1	0	1	// Giant Trident
+  3	4	6	1	0	1	// Serpent Trident
+
+  3	0	7	1	0	1	// Light Spear
+  3	3	7	1	0	1	// Giant Trident
+  3	4	7	1	0	1	// Serpent Trident
+
+
+//Bows & Crossbows
+  4	1	3	1	0	1	// Bow
+  4	2	3	1	0	1	// Elven Bow
+  4	9	3	1	0	1	// Golden Crossbow
+  4	10	3	1	0	1	// Arquebus
+
+  4	1	6	1	0	1	// Bow
+  4	2	6	1	0	1	// Elven Bow
+  4	9	6	1	0	1	// Golden Crossbow
+  4	10	6	1	0	1	// Arquebus
+
+  4	1	7	1	0	1	// Bow
+  4	2	7	1	0	1	// Elven Bow
+  4	9	7	1	0	1	// Golden Crossbow
+  4	10	7	1	0	1	// Arquebus
+
+//Staffs
+  5	1	3	0	0	1	// Angelic Staff
+  5	2	3	0	0	1	// Serpent Staff
+
+  5	1	6	0	0	1	// Angelic Staff
+  5	2	6	0	0	1	// Serpent Staff
+
+  5	1	7	0	0	1	// Angelic Staff
+  5	2	7	0	0	1	// Serpent Staff
+
+//Shields
+  6	3	3	0	0	1	// Elven Shield
+  6	1	3	1	0	1	// Horn Shield
+  6	5	3	1	0	1	// Dragon Slayer Shield
+
+  6	3	6	0	0	1	// Elven Shield
+  6	1	6	1	0	1	// Horn Shield
+  6	5	6	1	0	1	// Dragon Slayer Shield
+
+  6	3	7	0	0	1	// Elven Shield
+  6	1	7	1	0	1	// Horn Shield
+  6	5	7	1	0	1	// Dragon Slayer Shield
+end
