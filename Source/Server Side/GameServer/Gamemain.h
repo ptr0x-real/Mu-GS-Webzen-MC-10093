@@ -25,10 +25,11 @@ extern int DataServerPort;
 extern int JoinServerConnected;
 extern int DataServerConnected;
 
+#if ENABLE_MC_SQL == 1
 extern int  gConnectBonus;
 extern int  gConnectBonusTime;
 extern int  gConnectBonusCashPoints;
-
+#endif // ENABLE_MC_SQL == 1
 
 #ifdef ADD_GAMESERVER_PARAMETER_20050728
 extern int DataServerPort2;

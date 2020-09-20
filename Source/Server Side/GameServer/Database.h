@@ -1,5 +1,6 @@
 #pragma once
 
+#if ENABLE_MC_SQL == 1
 class CDataBase
 {
 private:
@@ -66,3 +67,4 @@ public:
 
 	void DiagnosticConn();
 };
+#endif // ENABLE_MC_SQL == 1

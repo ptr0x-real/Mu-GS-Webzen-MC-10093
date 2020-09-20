@@ -651,7 +651,7 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KOR|Win32'">
-    <OutDir>$(SolutionDir)Source\Bin\$(ProjectName)_$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)Bin\$(ProjectName)_$(Configuration)\</OutDir>
     <IntDir>$(OutDir)IntermediateDir\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -1807,7 +1807,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)Source\Base Common Src\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Base Common Src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -1835,6 +1835,9 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)$(TargetName).*" "$(SolutionDir)..\_Server Files\GameServer"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TAIFree|Win32'">
     <ClCompile>

@@ -1,4 +1,6 @@
 #include "StdAfx.h"
+
+#if ENABLE_MC_SQL == 1
 #include "protocol.h"
 /*
 void  CPShop::CGPShopReqBuyItemEx(PMSG_REQ_BUYITEM_FROM_PSHOP *lpMsg, int aSourceIndex, int aIndex)
@@ -147,3 +149,4 @@ void CPShop::CustomLogcash(char * Text)
 	fprintf(stream, "%02d:%02d:%02d - %s\n", now.wHour, now.wMinute, now.wSecond, Text);
 	fclose(stream);
 }
+#endif // ENABLE_MC_SQL == 1
