@@ -1,5 +1,6 @@
 #include "StdAfx.h"
 
+#if ENABLE_MC_SQL == 1
 CManager Manager = CManager();
 
 CManager::CManager(void)
@@ -170,3 +171,4 @@ int CManager::CtlCount( char* Account )
 
 	return CtlCode;
 }
+#endif // ENABLE_MC_SQL == 1

@@ -1282,11 +1282,13 @@ int				gEledoradoGoldDerconExItemDropRate;
 int				gEledoradoDevilLizardKingExItemDropRate;
 int				gEledoradoDevilTantarosExItemDropRate;
 
+#if ENABLE_MC_SQL == 1
 int  gConnectBonus;
 int  gConnectBonusTime;
 int  gConnectBonusCredits;
 int  gConnectBonusCashPoints;
 int  gConnectBonusZen;
+#endif // ENABLE_MC_SQL == 1
 
 #ifdef HAPPY_POUCH
 INT				gHappyPouchRedDropRate = 1000;
@@ -4518,6 +4520,7 @@ g_Crywolf.LoadData( gDirPath.GetNewPath("Crywolf.dat") );
 	g_ResetSystem.Load( gDirPath.GetNewPath("ResetSystem.cfg"));
 	g_BuffHelper.Load(gDirPath.GetNewPath("BuffHelperSystem.cfg"));
 
+#if ENABLE_MC_SQL == 1
 	gConnectBonus = GetPrivateProfileInt("Bonus","BonusSystem",1,gDirPath.GetNewPath("OnlineBonus.ini"));
 	gConnectBonusTime = GetPrivateProfileInt("Bonus", "BonusTime", 1, gDirPath.GetNewPath("OnlineBonus.ini"));
 	if (gConnectBonusTime <= 0)
@@ -4530,7 +4533,7 @@ g_Crywolf.LoadData( gDirPath.GetNewPath("Crywolf.dat") );
 		gConnectBonusTime = gConnectBonusTime * 60;
 	}
 	gConnectBonusCashPoints = GetPrivateProfileInt("Bonus", "BonusCash", 0, gDirPath.GetNewPath("OnlineBonus.ini"));
-
+#endif // ENABLE_MC_SQL == 1
 
 	g_PvpEvent.Load();
 
@@ -4545,12 +4548,15 @@ g_Crywolf.LoadData( gDirPath.GetNewPath("Crywolf.dat") );
 	gBalanceSystem.Load(gDirPath.GetNewPath(BALANCESYSTEM_DIR));
 	gSettings = new CSettings; gSettings->Loading(); _dynamic_experience._loading();
 	Balancer.Load();
+
+#if ENABLE_MC_SQL == 1
 	Manager.Initialize();
+
 	//DevGamesX 01/05/2018 - OffExp
 	OffExp.LoadConfig();
 	YDTeamTopOnline();
 	//s_PickUp.LoadFile(gDirPath.GetNewPath("..\\data\\PickupSystem.txt"));
-
+#endif // ENABLE_MC_SQL == 1
 }
 
 //----------------------------------------------------------------------------

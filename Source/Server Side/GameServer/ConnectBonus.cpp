@@ -1,4 +1,6 @@
 #include "StdAfx.h"
+
+#if ENABLE_MC_SQL == 1
 #include "ConnectBonus.h"
 #include "Gamemain.h"
 char Query12[100];
@@ -32,3 +34,4 @@ void AddTimeBonus(int UserIndex)
 
 	}
 }
+#endif // ENABLE_MC_SQL == 1

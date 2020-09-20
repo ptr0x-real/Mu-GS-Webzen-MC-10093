@@ -4219,6 +4219,7 @@ BOOL gObjSetCharacter(BYTE *lpdata, int aIndex)
 
 	//g_VIPSystem.CheckVIP(lpObj);
 
+#if ENABLE_MC_SQL == 1
 	cManager.ManagementProc(lpObj,"/vipinfo",lpObj->m_Index);
 	int Golds = Manager.KCredits(gObj[aIndex].AccountID);
 	MsgOutput(aIndex,"[CASH SYSTEM] Tienes %d de Cash", Golds);
@@ -4229,6 +4230,7 @@ BOOL gObjSetCharacter(BYTE *lpdata, int aIndex)
 	}
 	else
 		LogAddTD("Free User Connected: [%s]",lpObj->AccountID);
+#endif // ENABLE_MC_SQL == 1
 
 	return TRUE;
 }
@@ -10827,11 +10829,15 @@ void gObjSecondDurDown(LPOBJECTSTRUCT lpObj)
 {	
 	lpObj->m_TimeCount++;
 	int ret = 0, reCalCharacter = FALSE;
+
+#if ENABLE_MC_SQL == 1
 	if (gConnectBonus == 1)
 	{
 		lpObj->m_ConnectBonusTime++;
 		AddTimeBonus(lpObj->m_Index);
 	}
+#endif // ENABLE_MC_SQL == 1
+
 	// 변신 반지 내구력 감소
 #ifdef MODIFY_CHANGE_RING_DURABILITY_BUGFIX_20080820
 	if( lpObj->m_Change >= 0 ) gObjChangeDurProc2(lpObj);
@@ -14371,9 +14377,11 @@ void gObjLifeCheck(LPOBJECTSTRUCT lpTargetObj, LPOBJECTSTRUCT lpObj, int AttackD
 				MsgSendV2(lpObj, (LPBYTE)&ServerCmd, sizeof(ServerCmd));
 				DataSend(lpObj->m_Index, (LPBYTE)&ServerCmd, sizeof(ServerCmd));
 
+#if ENABLE_MC_SQL == 1
 				LogAdd("[Duel] [%s][%s] Win Duel, Loser [%s][%s]",lpObj->AccountID,lpObj->Name,lpTargetObj->AccountID,lpTargetObj->Name);
 				Manager.ExecFormat("UPDATE [MuOnline].[dbo].[Character] SET DuelWins = DuelWins + 1 WHERE Name='%s'", lpObj->Name);					
 			    Manager.ExecFormat("UPDATE [MuOnline].[dbo].[Character] SET DuelLoser = DuelLoser + 1 WHERE Name='%s'", lpTargetObj->Name); // sql duel wins
+#endif // ENABLE_MC_SQL == 1
 			}
 #endif // ADD_NEWPVP_PKFIELD
 		}

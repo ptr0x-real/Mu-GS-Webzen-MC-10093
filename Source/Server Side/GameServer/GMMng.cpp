@@ -4346,6 +4346,7 @@ MakeCommandUsage:
 			return TRUE;
 		}
 		break;
+#if ENABLE_MC_SQL == 1
 		case GMCMD_DUELINFO:
 		{
 			//aca va la funcion del comando xD
@@ -4358,6 +4359,7 @@ MakeCommandUsage:
 			return TRUE;
 		}
 		break;
+#endif // ENABLE_MC_SQL == 1
 		case GMCMD_ATTACK:
 		{
 			TNotice notice;

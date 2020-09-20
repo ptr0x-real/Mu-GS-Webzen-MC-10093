@@ -42,12 +42,18 @@ bool CHAT_COMMANDS::Settings()
 void CHAT_COMMANDS::myinfo(int aIndex)
 	{
 	LPOBJECTSTRUCT lpObj = &gObj[aIndex];
+
+#if ENABLE_MC_SQL == 1
 	int Golds = Manager.KCredits(lpObj->AccountID);
 	int Resets = Manager.CountResets(lpObj->Name);
 
+	func.OutWhiteMSG(aIndex, "[Info] Level: %d,Resets: %d", lpObj->Level, Resets);
+	func.OutWhiteMSG(aIndex, "[Info] Cash: %d ", Golds);
+#else
+	func.OutWhiteMSG(aIndex, "[Info] Level: %d", lpObj->Level);
+#endif // ENABLE_MC_SQL == 1
+
 	func.OutWhiteMSG(aIndex, "[Info] Character: %s || Guild: %s", lpObj->Name, lpObj->GuildName);
-	func.OutWhiteMSG(aIndex, "[Info] Level: %d,Resets: %d" , lpObj->Level,Resets);
-	func.OutWhiteMSG(aIndex, "[Info] Cash: %d ",Golds);	
 	func.OutWhiteMSG(aIndex, "WwW.MuCastillo.Net");	
 }
 
@@ -222,7 +228,9 @@ void CHAT_COMMANDS::Premiar(int aIndex, char* msg)
 
 void CHAT_COMMANDS::OpenWareCommand(int aIndex)
 {
+#if ENABLE_MC_SQL == 1
 	int VipIndex = Manager.VipCount(gObj[aIndex].AccountID);
+#endif // ENABLE_MC_SQL == 1
 	
 	/*if(OpenWareAtivo == 0)
 	{

@@ -1,5 +1,6 @@
 #pragma once
 
+#if ENABLE_MC_SQL == 1
 struct PBMSG_HEADIT	   
 {
 	BYTE c;
@@ -66,5 +67,4 @@ extern CPShop PShop;
 //void CloseClient2Hook(_PER_SOCKET_CONTEXT * lpPerSocketContext, int result); 
 //void CloseClientHook(int aIndex); 
 short gObjDel_Ex(int aIndex);
-
-
+#endif // ENABLE_MC_SQL == 1

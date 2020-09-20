@@ -1,5 +1,6 @@
 #pragma once
 
+#if ENABLE_MC_SQL == 1
 class CManager : public CDataBase
 {
 public:
@@ -28,3 +29,4 @@ private:
 };
 
 extern CManager Manager;
+#endif // ENABLE_MC_SQL == 1

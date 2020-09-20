@@ -10339,6 +10339,8 @@ VOID CGPShopReqBuyItem (LPPMSG_REQ_BUYITEM_FROM_PSHOP lpMsg, int aSourceIndex)
 	// 중요!!> . 여기서는 필연적으로 트랜잭션이 필요하다.
 
 	//LPOBJECTSTRUCT lpObj = &gObj[MAKE_NUMBERW(lpMsg->NumberH, lpMsg->NumberL)];
+
+#if ENABLE_MC_SQL == 1
 	int Golds = Manager.KCredits(gObj[aSourceIndex].AccountID);
 	int pide = lpObj->Inventory1[lpMsg->btItemPos].m_iPShopValue;
 	int NCPSHOP = Manager.Pshopnpc(lpObj->AccountID);
@@ -10374,6 +10376,7 @@ VOID CGPShopReqBuyItem (LPPMSG_REQ_BUYITEM_FROM_PSHOP lpMsg, int aSourceIndex)
 
 		return;
 	}
+#endif // ENABLE_MC_SQL == 1
 
 	if (gDoPShopOpen == 0) 
 	{
@@ -10630,7 +10633,8 @@ VOID CGPShopReqBuyItem (LPPMSG_REQ_BUYITEM_FROM_PSHOP lpMsg, int aSourceIndex)
 				CGPShopAnsBuyItem (aSourceIndex, lpObj->m_Index, 0, 6);		// 결과 6 : 아이템이 존재하지 않음
 				return;	
 			}
-			
+
+#if ENABLE_MC_SQL == 1	
 	if (lpObj->OffTradeCredits == 1)
     {
 	int Golds = Manager.KCredits(gObj[aSourceIndex].AccountID);
@@ -10752,8 +10756,8 @@ VOID CGPShopReqBuyItem (LPPMSG_REQ_BUYITEM_FROM_PSHOP lpMsg, int aSourceIndex)
 					lpObj->AccountID, lpObj->Name, lpObj->Ip_addr, dwCost, iITEM_LOG_TYPE,
 					ItemAttribute[iITEM_LOG_TYPE].Name, iITEM_LOG_LEVEL, iITEM_LOG_DUR, iITEM_LOG_SERIAL);
 				}
+#endif // ENABLE_MC_SQL == 1
 
-             
 			if (gObj[aSourceIndex].Money < lpObj->Inventory1[lpMsg->btItemPos].m_iPShopValue) 
             {
 				// 해당 아이템에 대한 젠이 모자른다.

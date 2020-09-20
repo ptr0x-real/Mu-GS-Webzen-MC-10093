@@ -76,7 +76,7 @@
 #endif
 
 /* Macros to help deal with the "not original" code */
-#define SQL_DUMMY
+#define ENABLE_MC_SQL 0
 
 #include "Database.h"
 #include "Manager.h"
