@@ -1,0 +1,128 @@
+//==========================================================================
+//Project: Season 4
+//Sources: RMST 
+//Re-Struct & Fixes: Wigos
+//Information: Gold Medal
+//==========================================================================
+//Type	Index	Level	Skill	Luck	Option	Name
+//==========================================================================
+//Sets
+  7	2	3	0	0	1	// Pad Helm
+  8	2	3	0	0	1	// Pad Armor
+  9	2	3	0	0	1	// Pad Pants
+  10	2	3	0	0	1	// Pad Gloves
+  11	2	3	0	0	1	// Pad Boots
+  7	5	3	0	0	1	// Leather Helm
+  8	5	3	0	0	1	// Leather Armor
+  9	5	3	0	0	1	// Leather Pants
+  10	5	3	0	0	1	// Leather Gloves
+  11	5	3	0	0	1	// Leather Boots
+  7	10	3	0	0	1	// Vine Helm
+  8	10	3	0	0	1	// Vine Armor
+  9	10	3	0	0	1	// Vine Pants
+  10	10	3	0	0	1	// Vine Gloves
+  11	10	3	0	0	1	// Vine Boots
+
+  7	2	6	0	0	1	// Pad Helm
+  8	2	6	0	0	1	// Pad Armor
+  9	2	6	0	0	1	// Pad Pants
+  10	2	6	0	0	1	// Pad Gloves
+  11	2	6	0	0	1	// Pad Boots
+  7	5	6	0	0	1	// Leather Helm
+  8	5	6	0	0	1	// Leather Armor
+  9	5	6	0	0	1	// Leather Pants
+  10	5	6	0	0	1	// Leather Gloves
+  11	5	6	0	0	1	// Leather Boots
+  7	10	6	0	0	1	// Vine Helm
+  8	10	6	0	0	1	// Vine Armor
+  9	10	6	0	0	1	// Vine Pants
+  10	10	6	0	0	1	// Vine Gloves
+  11	10	6	0	0	1	// Vine Boots
+
+  7	2	7	0	0	1	// Pad Helm
+  8	2	7	0	0	1	// Pad Armor
+  9	2	7	0	0	1	// Pad Pants
+  10	2	7	0	0	1	// Pad Gloves
+  11	2	7	0	0	1	// Pad Boots
+  7	5	7	0	0	1	// Leather Helm
+  8	5	7	0	0	1	// Leather Armor
+  9	5	7	0	0	1	// Leather Pants
+  10	5	7	0	0	1	// Leather Gloves
+  11	5	7	0	0	1	// Leather Boots
+  7	10	7	0	0	1	// Vine Helm
+  8	10	7	0	0	1	// Vine Armor
+  9	10	7	0	0	1	// Vine Pants
+  10	10	7	0	0	1	// Vine Gloves
+  11	10	7	0	0	1	// Vine Boots
+
+//Swords
+  0	0	3	0	0	1	// Kriss
+  0	1	3	0	0	1	// Short Sword
+  0	2	3	0	0	1	// Rapier
+  0	3	3	1	0	1	// Katana
+  0	4	3	1	0	1	// Sword of Assassin
+
+  0	0	6	0	0	1	// Kriss
+  0	1	6	0	0	1	// Short Sword
+  0	2	6	0	0	1	// Rapier
+  0	3	6	1	0	1	// Katana
+  0	4	6	1	0	1	// Sword of Assassin
+
+  0	0	7	0	0	1	// Kriss
+  0	1	7	0	0	1	// Short Sword
+  0	2	7	0	0	1	// Rapier
+  0	3	7	1	0	1	// Katana
+  0	4	7	1	0	1	// Sword of Assassin
+
+//Axes
+  1	0	3	0	0	1	// Small Axe
+  1	1	3	0	0	1	// Hand Axe
+  1	2	3	0	0	1	// Double Axe
+
+  1	0	6	0	0	1	// Small Axe
+  1	1	6	0	0	1	// Hand Axe
+  1	2	6	0	0	1	// Double Axe
+
+  1	0	7	0	0	1	// Small Axe
+  1	1	7	0	0	1	// Hand Axe
+  1	2	7	0	0	1	// Double Axe
+
+//Maces
+  2	0	3	0	0	1	// Mace
+  2	0	6	0	0	1	// Mace
+  2	0	7	0	0	1	// Mace
+
+//Spears
+  3	1	3	1	0	1	// Spear
+  3	2	3	1	0	1	// Dragon Lance
+
+  3	1	6	1	0	1	// Spear
+  3	2	3	1	0	1	// Dragon Lance
+
+  3	1	7	1	0	1	// Spear
+  3	2	3	1	0	1	// Dragon Lance
+
+//Bows & Crossbows
+  4	0	3	1	0	1	// Short Bow
+  4	8	3	1	0	1	// Crossbow
+
+  4	0	6	1	0	1	// Short Bow
+  8	0	3	1	0	1	// Crossbow
+
+  4	0	7	1	0	1	// Short Bow
+  4	8	3	1	0	1	// Crossbow
+
+//Staffs
+  5	0	3	0	0	1	// Skull Staff
+  5	0	6	0	0	1	// Skull Staff
+  5	0	7	0	0	1	// Skull Staff
+
+//Shields
+  6	0	3	0	0	1	// Small Shield
+  6	4	3	1	0	1	// Buckler
+
+  6	0	6	0	0	1	// Small Shield
+  6	4	6	1	0	1	// Buckler
+
+  6	0	7	0	0	1	// Small Shield
+  6	4	7	1	0	1	// Buckler

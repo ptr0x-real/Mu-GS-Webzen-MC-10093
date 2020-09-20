@@ -1,0 +1,58 @@
+//==============================================================================
+//	Event Item Bag 12 - Box of Kundun +5
+//	All Rights Reserved (C) 2010 Nemesis
+//==============================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//==============================[Sets]==========================================
+// [Great Dragon Set]
+//==============================================================================
+8	21	0	0	1	0	//Excellent Great Dragon Armor
+11	21	0	0	1	0	//Excellent Great Dragon Boots
+10	21	0	0	1	0	//Excellent Great Dragon Gloves
+7	21	0	0	1	0	//Excellent Great Dragon Helm
+9	21	0	0	1	0	//Excellent Great Dragon Pants
+//==============================================================================
+// [Dark Soul Set]
+//==============================================================================
+8	22	0	0	1	0	//Excellent Dark Soul Armor
+11	22	0	0	1	0	//Excellent Dark Soul Boots
+10	22	0	0	1	0	//Excellent Dark Soul Gloves
+7	22	0	0	1	0	//Excellent Dark Soul Helm
+9	22	0	0	1	0	//Excellent Dark Soul Pants
+//==============================================================================
+// [Red Spirit Set]
+//==============================================================================
+8	24	0	0	1	0	//Excellent Red Spirit Armor
+11	24	0	0	1	0	//Excellent Red Spirit Boots
+10	24	0	0	1	0	//Excellent Red Spirit Gloves
+7	24	0	0	1	0	//Excellent Red Spirit Helm
+9	24	0	0	1	0	//Excellent Red Spirit Pants
+//==============================================================================
+// [Hurricane Set]
+//==============================================================================
+8	23	0	0	1	0	//Excellent Hurricane Armor
+11	23	0	0	1	0	//Excellent Hurricane Boots
+10	23	0	0	1	0	//Excellent Hurricane Gloves
+9	23	0	0	1	0	//Excellent Hurricane Pants
+//==============================================================================
+// [Dark Master Set]
+//==============================================================================
+8	28	0	0	1	0	//Excellent Dark Master Armor
+11	28	0	0	1	0	//Excellent Dark Master Boots
+10	28	0	0	1	0	//Excellent Dark Master Gloves
+7	28	0	0	1	0	//Excellent Dark Master Helm
+9	28	0	0	1	0	//Excellent Dark Master Pants
+//==============================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//==============================[Weapons]=======================================
+0	20	0	1	1	0	//Excellent Knight Blade
+0	17	0	1	1	0	//Excellent Dark Breaker
+0	21	0	1	1	0	//Excellent Black Reing Blade
+0	18	0	1	1	0	//Excellent Thunder Blade
+2	12	0	0	1	0	//Excellent Great Lord Scepter
+3	10	0	1	1	0	//Excellent Dragon Spear
+4	19	0	1	1	0	//Excellent Great Reing Crossbow
+4	20	0	1	1	0	//Excellent Viper Bow
+5	11	0	0	1	0	//Excellent Kundun Staff
+//==============================================================================
+end

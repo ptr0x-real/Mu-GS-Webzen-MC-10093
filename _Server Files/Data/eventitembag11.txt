@@ -1,0 +1,62 @@
+//==============================================================================
+//	Event Item Bag 11 - Box of Kundun +4
+//	All Rights Reserved (C) 2010 Nemesis
+//==============================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//===============================Sets===========================================
+// [Dark Phoenix Set]
+//==============================================================================
+8	17	0	0	1	0	//Excellent Dark Phoenix Armor
+11	17	0	0	1	0	//Excellent Dark Phoenix Boots
+10	17	0	0	1	0	//Excellent Dark Phoenix Gloves
+7	17	0	0	1	0	//Excellent Dark Phoenix Helm
+9	17	0	0	1	0	//Excellent Dark Phoenix Pants
+//==============================================================================
+// [Grand Soul Set]
+//==============================================================================
+8	18	0	0	1	0	//Excellent Grand Soul Armor
+11	18	0	0	1	0	//Excellent Grand Soul Boots
+10	18	0	0	1	0	//Excellent Grand Soul Gloves
+7	18	0	0	1	0	//Excellent Grand Soul Helm
+9	18	0	0	1	0	//Excellent Grand Soul Pants
+//==============================================================================
+// [Divine Set]
+//==============================================================================
+8	19	0	0	1	0	//Excellent Divine Armor
+11	19	0	0	1	0	//Excellent Divine Boots
+10	19	0	0	1	0	//Excellent Divine Gloves
+7	19	0	0	1	0	//Excellent Divine Helm
+9	19	0	0	1	0	//Excellent Divine Pants
+//==============================================================================
+// [Thunder Hawk Set]
+//==============================================================================
+8	20	0	0	1	0	//Excellent Thunder Hawk Armor
+11	20	0	0	1	0	//Excellent Thunder Hawk Boots
+10	20	0	0	1	0	//Excellent Thunder Hawk Gloves
+9	20	0	0	1	0	//Excellent Thunder Hawk Pants
+//==============================================================================
+// [Dark Steel Set]
+//==============================================================================
+8	27	0	0	1	0	//Excellent Dark Steel Armor
+11	27	0	0	1	0	//Excellent Dark Steel Boots
+10	27	0	0	1	0	//Excellent Dark Steel Gloves
+7	27	0	0	1	0	//Excellent Dark Steel Helm
+9	27	0	0	1	0	//Excellent Dark Steel Pants
+//=====================================================================================
+//Type,	Index,	Level,	Skill,	Luck,	Option
+//==============================[Weapons]==============================================
+0	16	0	1	1	0	//Excellent Destruction Sword
+0	31	0	1	1	0	//Excellent Rune Blade
+2	7	0	0	1	0	//Excellent Elemental Mace
+2	11	0	0	1	0	//Excellent Lord Scepter
+4	16	0	1	1	0	//Excellent Saint Crossbow
+4	17	0	1	1	0	//Excellent Celestial Bow
+5	8	0	0	1	0	//Excellent Destruction Staff
+5	9	0	0	1	0	//Excellent Grand Soul Staff
+6	15	0	0	1	0	//Excellent Grand Soul Shield
+6	16	0	0	1	0	//Excellent Elemental Shield
+0	19	0	0	1	0	//Excellent Divine Archangel Sword
+4	18	0	1	1	0	//Excellent Divine Archangel Crossbow
+5	10	0	0	1	0	//Excellent Divine Archangel Staff
+//=====================================================================================
+end

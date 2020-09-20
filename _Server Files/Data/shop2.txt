@@ -1,0 +1,13 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+5 1 0 0 0 1 0 //Angelic Staff
+7 2 0 0 0 1 0 //Pad Helm
+8 2 0 0 0 1 0 //Pad Armor
+10 2 0 0 0 1 0 //Pad Gloves
+9 2 0 0 0 1 0 //Pad Pants
+11 2 0 0 0 1 0 //Pad Boots
+end

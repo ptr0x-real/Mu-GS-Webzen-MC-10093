@@ -1,0 +1,84 @@
+// Kundum +1
+
+// Leather Set
+7	5 	0 	0	1	0	//Leather Helm
+8	5 	0 	0	1	0	//Leather Armor
+10	5 	0 	0	1	0	//Leather Gloves
+9 	5 	0 	0	1	0	//Leather Pants
+11 	5 	0 	0	1	0	//Leather Boots
+
+// Vine Set
+7 	10	0 	0	1	0	//Vine Helm
+8 	10	0 	0	1	0	//Vine Armor
+9 	10	0 	0	1	0	//Vine Pants
+10 	10	0 	0	1	0	//Vine Gloves
+11 	10	0 	0	1	0	//Vine Boots
+
+
+// Silk Set
+7 	11	0 	0	1	0	//Silk Helm
+8 	11	0 	0	1	0	//Silk Armor
+9 	11	0 	0	1	0	//Silk Pants
+10 	11	0 	0	1	0	//Silk Gloves
+11 	11	0 	0	1	0	//Silk Boots
+
+// Pad Set
+7 	2	0 	0	1	0	//Pad Helm
+8 	2	0 	0	1	0	//Pad Armor
+9 	2	0 	0	1	0	//Pad Pants
+10 	2	0 	0	1	0	//Pad Gloves
+11 	2	0 	0	1	0	//Pad Boots
+
+// Swords
+0	0	0 	0	1	0	//Kris
+0	1	0 	0	1	0	//Short Sword
+0	2	0 	0	1	0	//Rapier
+0	3	0 	0	1	0	//Katana
+0	4	0 	0	1	0	//Sword Of Assasian
+
+// Axes
+1	0	0 	0	1	0	//Small Axe
+1	1	0 	0	1	0	//Hand Axe
+1	2	0 	0	1	0	//Double Axe
+1	3	0	0	1	0	//Tomahawk
+
+// Maces
+2	0	0 	0	1	0	//Mace
+2	1	0 	0	1	0	//Morning Star
+
+// Spears
+3	1	0 	0	1	0	//Spear
+3	2	0 	0	1	0	//Dragon Lance
+
+
+// Bows
+4 	0	0 	0	1	0	//Short Bow
+4 	1	0 	0	1	0	//Bow
+4 	2	0 	0	1	0	//Elven Bow
+4 	3	0 	0	1	0	//Battle Bow
+4 	8	0 	0	1	0	//Crossbow
+4 	9	0 	0	1	0	//Golden Crossbow
+4 	10	0 	0	1	0	//Arquebus
+
+// Staffs
+5 	0	0 	0	1	0	//Skull Staff
+5 	1	0 	0	1	0	//Angelic Staff
+
+// Shields
+6 	0	0 	0	1	0	//Round Shield
+6 	1	0 	0	1	0	//Horn Shield
+
+// Rings & Pendants
+13	8	0	0	1	0	//Ring of Ice
+13	9	0	0	1	0	//Ring of Poison
+13	12	0	0	1	0	//Ring of Lighting
+13	13	0	0	1	0	//Pendant of Fire
+13	21	0	0	1	0	//Ring of Fire
+13	22	0	0	1	0	//Ring of Earth
+13	23	0	0	1	0	//Ring of Wind
+13	24	0	0	1	0	//Ring of Magic
+13	25	0	0	1	0	//Pendant of Ice
+13	26	0	0	1	0	//Pendant of Wind
+13	27	0	0	1	0	//Pendant of Water
+13	28	0	0	1	0	//Pendant of Ability
+end

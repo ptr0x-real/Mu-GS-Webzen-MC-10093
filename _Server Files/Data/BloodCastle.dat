@@ -1,0 +1,102 @@
+//Blood Castle
+//Open Time, Play Time, Time to complete quest
+0
+5	15	1
+end
+
+// BC mobs dropped item time interval until item disappeares
+// item drop rate(ItemDropPer(10)/n) / exc item drop rate(1/n) / time for items to disappear
+1
+100	1000	0
+end
+
+//Castle Door Health
+//Castle Number, Crystal Statue Health, Castle Door Health, Rewards Number
+2
+0	         65000	                150000	            1	           // BC1
+1	         105000	                205000	            2	           // BC2
+2	         145000	                260000	            2	           // BC3
+3	         185000	                325000	            3	           // BC4
+4	         225000	                400000	            3	           // BC5
+5	         265000	                480000	            4	           // BC6
+6	         305000	                565000	            5	           // BC7
+end
+
+//Blood Castle Reward Items
+5
+	//	Type	Index	Level	Skill	Luck	Option	ExcOption	MaxDropRate(1/1000)
+	//Blood Castle 1
+	0
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+	end
+	//Blood Castle 2
+	1
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	22	0	0	0	0	0		1000    //Jewel of Creation
+	end
+	//Blood Castle 3
+	2
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	22	0	0	0	0	0		1000    //Jewel of Creation
+	end
+	//Blood Castle 4
+	3
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	22	0	0	0	0	0		1000    //Jewel of Creation
+		14	14	0	0	0	0	0		1000    //Jewel of Soul
+	end
+	//Blood Castle 5
+	4
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	22	0	0	0	0	0		1000    //Jewel of Creation
+		14	14	0	0	0	0	0		1000    //Jewel of Soul
+	end
+	//Blood Castle 6
+	5
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	14	0	0	0	0	0		1000    //Jewel of Soul
+		14	13	0	0	0	0	0		1000    //Jewel of Bless
+		14	16	0	0	0	0	0		1000    //Jewel of Life
+	end
+	//Blood Castle 7
+	6
+		12	15	0	0	0	0	0		1000    //Jewel of Chaos
+		14	14	0	0	0	0	0		1000    //Jewel of Soul
+		14	16	0	0	0	0	0		1000    //Jewel of Life
+		14	13	0	0	0	0	0		1000    //Jewel of Bless
+		14	22	0	0	0	0	0		1000    //Jewel of Creation
+	end
+end
+
+//Blood Castle Level
+6
+	//	MINLEVEL(DK/DW/ELF)	MAXLEVEL(DK/DW/ELF)	MINLEVEL(MG)	MAXLEVEL(MG)
+	//Blood Castle 1
+	0
+		15			80			10		60
+	end
+	//Blood Castle 2
+	1
+		81			130			61		110
+	end
+	//Blood Castle 3
+	2
+		131			180			111		160
+	end
+	//Blood Castle 4
+	3
+		181			230			161		210
+	end
+	//Blood Castle 5
+	4
+		231			280			211		260
+	end
+	//Blood Castle 6
+	5
+		281			310			261		310
+	end
+	//Blood Castle 7
+	6
+		311			400			311		400
+	end
+end

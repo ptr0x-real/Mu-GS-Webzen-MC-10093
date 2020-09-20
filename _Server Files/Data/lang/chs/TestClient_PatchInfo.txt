@@ -1,0 +1,8 @@
+1. \data\lang\chs\commonloc.cfg 파일 수정
+	ClientExeVersion	= 0.95.13
+	ClientExeSerial		= bQxkVgYeYf9aHNHc
+
+
+
+	
+

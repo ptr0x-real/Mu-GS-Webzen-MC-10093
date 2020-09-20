@@ -1,0 +1,14 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+7 3 0 0 0 1 0 //Legendary Helm
+8 3 0 0 0 1 0 //Legendary Armor
+10 3 0 0 0 1 0 //Legendary Gloves
+9 3 0 0 0 1 0 //Legendary Pants
+11 3 0 0 0 1 0 //Legendary boots
+6 14 0 0 0 1 0 //Legendary Shield
+5 5 0 0 0 1 0 //Legendary Staff
+end

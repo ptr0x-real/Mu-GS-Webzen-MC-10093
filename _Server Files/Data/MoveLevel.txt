@@ -1,0 +1,19 @@
+//	Level	Map	x	y	x	y
+	30	0	1	1	255	255	//Lorencia
+	35	3	1	1	255	255	//Noria
+	40	2	1	1	255	255	//Devias
+	20	1	1	137	255	255	//Dungeon
+	40	1	1	1	255	40	//Dungeon
+	40	1	60	43	255	133	//Dungeon
+	50	1	1	46	50	131	//Dungeon
+	75	7	1	1	255	255	//Atlans
+	90	4	153	14	255	145	//Lost Tower
+	95	4	158	159	250	249	//Lost Tower2
+	100	4	78	161	139	251	//Lost Tower3
+	105	4	78	81	139	142	//Lost Tower4
+	110	4	79	2	138	61	//Lost Tower5
+	115	4	1	2	60	61	//Lost Tower6
+	120	4	1	82	61	250	//Lost Tower7
+	130	8	1	1	255	255	//Tarkan
+	170	10	1	1	255	255	//Icarus
+	180	5	1	1	255	255	//Exile

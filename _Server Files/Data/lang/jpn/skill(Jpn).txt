@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////	
+// Text Ver. 1.1.3.2	
+// Version 1.00m  - T서버	
+// Version 1.00m  - M서버	
+// 최종 작업자 - 정동일	
+// 최종 작업일 - 오전 11:22 2005-03-07	
+// 내용 : 공성전 최종 확인	
+////////////////////////////////////////////////////////////////////////////////	
+
+"//Attribute1 [-1(none), 0(none), 1(poison), 2(lighting), 3(fire), 4(earth), 5(wind), 6(water)]"	
+"//Attribute2 [-1(none), 0(physical), 1(magic)]"	
+// SkillBrand [can only be used when there's a certain skill]	
+"// Skilltype [0(basic skill), 1(ranking skill)]"	
+
+//No.	Name
+17	"Energy Ball"
+4	"Fire Ball"
+11	"Power Wave"
+3	"Lighting"
+6	"Teleport"
+2	"Meteorite"
+7	"Ice"
+1	"Posion"
+5	"Flame"
+8	"Twister"
+9	"Evil Spirit"
+10	"Hellfire"
+12	"Aquaflash"
+16	"Soul Barrier"
+13	"Blast"
+15	"Telekinesis"
+14	"Inferno"
+39	"Ice Storm"
+38	"Death Poison"
+40	"Hell Burst"
+
+18	"Defense"
+19	"Falling Slash"
+20	"Lunge"
+21	"Uppercut"
+22	"Cyclone Slash"
+23	"Slash"
+
+41	"Twisting Slash"
+47	"Impale"
+49	"Fire Breath"
+48	"Inner Strength"
+43	"Death Stab"
+42	"Rageful Blow"
+
+24	"Triple Shot"
+26	"Heal"
+27	"Greater Defense"
+28	"Greater Damage"
+52	"Penetration"
+
+30	"Summon Goblin"
+31	"Summon Stone Golem"
+32	"Summon Assassin"
+33	"Summon Elite Yeti"
+34	"Summon Dark Knight"
+35	"Summon Bali"
+36	"Summon Soldier"
+
+55	"Fire Slash"
+56	"Power Slash"
+73	"Mana Rays"
+
+50	"Flame of Evil(Monster)"
+
+//Dark Lord	
+60	"Force"
+61	"FireBurst"
+62	"Earthshake"
+63	"Summon"
+64	"Increase Critical Damage"
+65	"Electric Spark"
+66	"Force Wave"
+
+//Monster skill	
+200	"Summon Monster"
+201	"Defense All Magic Attack"
+202	"Defense All Physical Attack"
+end	

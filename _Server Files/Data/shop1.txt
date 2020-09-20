@@ -1,0 +1,20 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+14 1 0 15 0 0 0 //Small Healing Potion
+14 2 0 25 0 0 0 // Healing Potion
+14 3 0 50 0 0 0 //Large Healing Potion
+14 4 0 15 0 0 0 //Small Mana Potion
+14 5 0 25 0 0 0 // Mana Potion
+14 6 0 50 0 0 0 //Large Mana Potion
+14 8 0 50 0 0 0 //Antidote
+14 9 0 0 0 0 0 //Alcohol
+14 20 0 0 0 0 0 //Love Charm
+14 9 1 0 0 0 0 //Olive of Love
+13 29 0 0 0 0 0 //Armor of Guardian
+13 18 1 0 0 0 0 // Invisibility Cloak +1
+14 19 1 0 0 0 0 //Devil’s Invitation+1
+end

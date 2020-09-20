@@ -1,0 +1,51 @@
+//---------------------------------------------------------------------------------------
+// Files brindados por Mirage Continent & www.miragecontinent.com (Files 99B+)
+// Alex (Salida de TOROS grandes) en Lorencia
+//---------------------------------------------------------------------------------------// 
+// EXPLICACION DE LAS LINEAS DE LOS ITEMS
+//---------------------------------------------------------------------------------------//
+// Un ejemplo con el item (Small Axe):
+// 1 0 0 255 0 0 0 //Small Axe
+// EXPLICACION:
+// [1] => Identifica al [GRUPO] de items en este caso a las Axes = [1].
+// [0] => Identifica el [NÚMERO] de item dentro del grupo de Axes en este caso a la Small Axe.
+// [0] => Identifica el [NIVEL & LEVEL] del item, se configura desde el número 0 hasta el 13.
+// [255] => Identifica la [DURABILIDAD] del item, se configura desde el número 0 hasta el 255.
+// [0] => Identifica si tiene o no [SKILL] el item, se configura de dos formas, es decir, [1] = Activado, [0] = desactivado.
+// [0] => Identifica si tiene o no [SUERTE] el item, se configura de dos formas, es decir, [1] = Activado, [0] = desactivado.
+// [0] => Identifica el [ADICIONAL] del item (Puede ser 0, 1, 2, 3 y 4), es decir, [0] = 0 de adicional , [1] = 4 de adicional, [2] = 8 de adicional, [3] = 12 de adicional y [4] = 16 de adicional.
+
+
+//---------------------------------------------------------------------------------------
+// POCIONES
+//---------------------------------------------------------------------------------------//
+// [GRUPO] - [NUMERO ITEM] - [NIVEL & LEVEL] - [DURABILIDAD] - [SKILL] - [SUERTE] - [ADICIONAL]
+14 1 0 30 0 0 0  // Small Healing Potion
+14 2 0 60 0 0 0  // Medium Healing Potion
+14 3 0 100 0 0 0  // Large Healing Potion
+14 4 0 30 0 0 0  // Small Mana Potion
+14 5 0 60 0 0 0  // Medium Mana Potion
+14 6 0 100 0 0 0  // Large Mana Potion
+
+//---------------------------------------------------------------------------------------// 
+// OTROS
+//---------------------------------------------------------------------------------------//
+// [GRUPO] - [NUMERO ITEM] - [NIVEL & LEVEL] - [DURABILIDAD] - [SKILL] - [SUERTE] - [ADICIONAL]
+14 9 0 0 0 0 0  // Alcohol
+14 10 0 0 0 0 0  // Town Portal Scroll
+4 15 2 255 0 0 0  // Arrows
+4 7 2 255 0 0 0  // Bolts
+
+//---------------------------------------------------------------------------------------// 
+// ESCUDOS
+//---------------------------------------------------------------------------------------// 
+// [GRUPO] - [NUMERO ITEM] - [NIVEL & LEVEL] - [DURABILIDAD] - [SKILL] - [SUERTE] - [ADICIONAL]
+6 0 0 0 0 1 0  // Small Shield
+6 4 0 0 0 1 0  // Buckler
+6 1 0 0 0 1 0  // Horn Shield
+6 2 0 0 0 1 0  // Kite Shield
+6 6 0 0 0 1 0  // Skull Shield
+6 10 0 0 0 1 0  // Large Round Shield
+6 9 0 0 0 1 0  // Plate Shield
+6 7 0 0 0 1 0  // Spike Shield
+end

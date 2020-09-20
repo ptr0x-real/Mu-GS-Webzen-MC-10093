@@ -1,0 +1,73 @@
+// Kundum +2
+
+// Plate Set
+7	9 	0	0	1	0	//Plate Helm
+8	9	0	0	1	0	//Plate Armor
+9	9	0	0	1	0	//Plate Pants
+10	9	0	0	1	0	//Plate Gloves
+11	9	0	0	1	0	//Plate Boots
+
+//Light Plate
+8	25	0	0	1	0	//Light Plate Armor
+11	25	0	0	1	0	//Light Plate Boots
+10	25	0	0	1	0	//Light Plate Gloves
+7	25	0	0	1	0	//Light Plate Mask
+9	25	0	0	1	0	//Light Plate Pants
+
+// Brass Set
+7	8	0	0	1	0	//Brass Helm
+8	8	0	0	1	0	//Brass Armor
+9	8	0	0	1	0	//Brass Pants
+10	8	0	0	1	0	//Brass Gloves
+11	8	0	0	1	0	//Brass Boots
+
+// Sphinx Set
+7 	7	0	0	1	0	//Sphinx Helm
+8 	7	0	0	1	0	//Sphinx Armor
+9 	7	0	0	1	0	//Sphinx Pants
+10 	7	0	0	1	0	//Sphinx Gloves
+11 	7	0	0	1	0	//Sphinx Boots
+
+// Wind Set
+7 	12	0	0	1	0	//Wind Helm
+8 	12	0	0	1	0	//Wind Armor
+9 	12	0	0	1	0	//Wind Pants
+10 	12	0	0	1	0	//Wind Gloves
+11 	12	0	0	1	0	//Wind Boots
+
+// Bone Set
+7 	4	0	0	1	0	//Bone Helm
+8 	4	0	0	1	0	//Bone Armor
+9 	4	0	0	1	0	//Bone Pants
+10 	4	0	0	1	0	//Bone Gloves
+11 	4	0	0	1	0	//Bone Boots
+
+//Scale
+8	 6	 0	 0	 1	 0	 //Scale Armor
+11	 6	 0	 0	 1	 0	 //Scale Boots
+10	 6	 0	 0	 1	 0	 //Scale Gloves
+7	 6 	 0	 0	 1	 0	 //Scale Helm
+9	 6	 0	 0	 1	 0	 //Scale Pants
+
+// Spirit Set
+7 	13	0	0	1	0	//Spirit Helm
+8 	13	0	0	1	0	//Spirit Armor
+9 	13	0	0	1	0	//Spirit Pants
+10 	13	0	0	1	0	//Spirit Gloves
+11 	13	0	0	1	0	//Spirit Boots
+
+// Swords
+0 	5	0	0	1	0	//Blade
+0 	6	0	0	1	0	//Gladius
+0 	7	0	0	1	0	//Falchion
+0 	8	0	0	1	0	//Serpent Sword
+0 	9	0	0	1	0	//Sword Of Salamander
+0 	10	0	0	1	0	//Light Saber
+0 	14	0	0	1	0	//Lightning Sword
+
+// Axes
+1 	4	0	0	1	0	//Elven Axe
+1 	5	0	0	1	0	//Battle Axe
+1 	6	0	0	1	0	//Nikea Axe
+1 	7	0	0	1	0	//Larkan Axe
+end

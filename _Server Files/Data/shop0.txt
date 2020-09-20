@@ -1,0 +1,16 @@
+////////////////////////
+/// SHOPS 99Z - SLOW ///
+///   AUTOR: THEOZ   ///
+/// WWW.MULEVING.NET ///
+////////////////////////
+
+0 0 0 0 0 1 0 //Kris
+0 2 0 0 1 1 0 //Rapier
+0 3 0 0 1 1 0 //Katache
+0 5 0 0 1 1 0 //Blade
+7 5 0 0 0 1 0 //Leather Helm
+8 5 0 0 0 1 0 //Leather Armor
+10 5 0 0 0 1 0 //Leather Gloves
+9 5 0 0 0 1 0 //Leather Pants
+11 5 0 0 0 1 0 //Leather boots
+end
