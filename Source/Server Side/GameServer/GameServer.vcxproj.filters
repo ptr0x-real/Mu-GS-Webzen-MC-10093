@@ -408,9 +408,6 @@
     <ClInclude Include="DSProtocol.h">
       <Filter>Protocol\Char-DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\Sprodef.h">
-      <Filter>Protocol\LoginServer</Filter>
-    </ClInclude>
     <ClInclude Include="Sprotocol.h">
       <Filter>Protocol\LoginServer</Filter>
     </ClInclude>
@@ -1118,6 +1115,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Base Common Src\Lua\MuLua.h">
       <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Base Common Src\include\Sprodef.h">
+      <Filter>Protocol\LoginServer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
