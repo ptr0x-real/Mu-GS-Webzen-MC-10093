@@ -45,12 +45,16 @@ const static int s_nMaxDropRate = 10000 * 100;
 
 CProbabilityItemBag::CProbabilityItemBag()
 {
+#if ENABLE_MC_CODE == 1
 	DropMapInfo = NULL;
+#endif // ENABLE_MC_CODE == 1
 }
 
 CProbabilityItemBag::~CProbabilityItemBag()
 {
+#if ENABLE_MC_CODE == 1
 	delete[] DropMapInfo;
+#endif // ENABLE_MC_CODE == 1
 }
 
 void CProbabilityItemBag::ProbabilityItemBagInit(char * name)
@@ -68,11 +72,13 @@ void CProbabilityItemBag::ProbabilityItemBagInit(char * name)
 
 	m_iRateKindCount	= 0;
 
-	if(g_TerrainManager.Size() < 1)
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.Size() < 1)
 		g_TerrainManager.Load();
 
-	if(DropMapInfo == NULL)
+	if (DropMapInfo == NULL)
 		DropMapInfo = new CItemBagDropMapInfo[g_TerrainManager.Size()];
+#endif // ENABLE_MC_CODE == 1
 	
 //#ifdef SCRIPT_DECODE_WORK
 //	LoadItemDecode(gDirPath.GetNewPath(name));	
@@ -112,7 +118,11 @@ void CProbabilityItemBag::LoadItem(char *script_file)
 					if(Token==NAME && strcmp("end",TokenString)==NULL) break;
 
 					int	MapIndex = (int)TokenNumber;
-					if( !CHECK_LIMIT(MapIndex, g_TerrainManager.Size()) )
+#if ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(MapIndex, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(MapIndex, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 					{
 						MsgBox("ExEvent ItemBag LoadFail [%s]", script_file);
 						return;

@@ -60,7 +60,7 @@ CChaosCastle			g_ChaosCastle;				// 카오스 캐슬 이벤트 객체
 
 extern PartyClass		gParty;
 extern CMonsterSetBase	gMSetBase;
-extern MapClass			*MapC;
+extern MapClass			MapC[];
 extern classdef			DCInfo;
 
 

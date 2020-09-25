@@ -19,7 +19,7 @@ CCastleSiege	g_CastleSiege;
 #include <TIME.H>
 
 #include "MapClass.h"
-extern MapClass		*MapC;
+extern MapClass		MapC[];
 
 #include "LifeStone.h"
 #include "Mercenary.h"

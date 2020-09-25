@@ -25,6 +25,10 @@
 #define MAP_ATTR_HOLLOW				0x08		// 甘加己 - 顶墩覆
 #define MAP_ATTR_WATER				0x10		// 甘加己 - 拱
 
+/*
+	Returns the associated .att file for a given map index (index starts in 0).
+*/
+const char* const GetMapAttrName(int mapNumber);
 
 typedef struct
 {
@@ -53,7 +57,7 @@ public :
 	CMapItem	m_cItem[MAX_MAPITEM];
 	int			m_ItemCount;
 	
-	RECT	*gRegenRect;
+	RECT	gRegenRect[MAX_MAP];
 	int		thisMapNumber;
 
 public:

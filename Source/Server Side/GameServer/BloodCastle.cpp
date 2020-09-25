@@ -70,7 +70,7 @@ extern ITEM_ATTRIBUTE	ItemAttribute[];
 
 extern PartyClass		gParty;
 extern CMonsterSetBase	gMSetBase;
-extern MapClass			*MapC;
+extern MapClass			MapC[];
 extern classdef			DCInfo;
 
 

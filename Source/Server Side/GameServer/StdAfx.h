@@ -77,6 +77,7 @@
 
 /* Macros to help deal with the "not original" code */
 #define ENABLE_MC_SQL 0
+#define ENABLE_MC_CODE 0
 
 #include "Database.h"
 #include "Manager.h"

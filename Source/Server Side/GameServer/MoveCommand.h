@@ -72,6 +72,7 @@ public:
 #ifdef DARKLORD_WORK
 	BOOL	LoadMoveLevel(char* filename);
 	int		GetMoveLevel(int mapnumber, int x, int y, int Class);
+	int		GetMoveLevel(int mapnumber);
 	int		CheckMoveLevel(int mapnumber, int x, int y, int Class);
 #endif
 	
@@ -109,6 +110,8 @@ public:
 #ifdef ADD_NEWPVP_PKFIELD
 	LPMOVE_COMMAND_DATA	GetMoveCommandData(int nMapIndex);
 #endif // ADD_NEWPVP_PKFIELD
+
+	char* CMoveCommand::GetMapName(int mapnumber); // Get the map name by map number.
 };
 
 extern CMoveCommand	gMoveCommand;
