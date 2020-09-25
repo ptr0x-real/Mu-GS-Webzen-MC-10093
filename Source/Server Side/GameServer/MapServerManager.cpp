@@ -26,7 +26,9 @@ _MAPSVR_DATA::_MAPSVR_DATA	()
 
 _MAPSVR_DATA::~_MAPSVR_DATA	()
 {
+#if ENABLE_MC_CODE == 1
 	delete[] m_sMAP_MOVE;
+#endif // ENABLE_MC_CODE == 1
 }
 
 VOID _MAPSVR_DATA::Clear	(INT iInitSetVal)
@@ -37,12 +39,19 @@ VOID _MAPSVR_DATA::Clear	(INT iInitSetVal)
 	memset (m_cIPADDR, 0, sizeof(m_cIPADDR));	// 이 서버의 IP주소
 	m_wPORT							= 0;		// 이 서버의 포트번호
 
-	if(g_TerrainManager.Size() < 1)
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.Size() < 1)
 		g_TerrainManager.Load();
 
 	m_sMAP_MOVE = new SHORT[g_TerrainManager.Size()];
+#endif // ENABLE_MC_CODE == 1
 
-	for (INT iMAP_COUNT = 0 ; iMAP_COUNT < g_TerrainManager.Size() ; iMAP_COUNT++) {
+#if ENABLE_MC_CODE == 1
+	for (INT iMAP_COUNT = 0; iMAP_COUNT < g_TerrainManager.Size(); iMAP_COUNT++)
+#else // ENABLE_MC_CODE == 1
+	for (INT iMAP_COUNT = 0; iMAP_COUNT < MAX_MAP; iMAP_COUNT++)
+#endif // ENABLE_MC_CODE == 1
+	{
 		switch(iInitSetVal) {
 		case -1 :
 			m_sMAP_MOVE[iMAP_COUNT]	= MAPSVR_DATASTAT_ANYOTHERFSTSVR;	// 초기값 - 이동 가능한 서버 중 첫번째 서버로 접속한다.
@@ -251,7 +260,12 @@ BOOL CMapServerManager::LoadData	(LPSTR lpszFileName)
 						return FALSE;
 					}
 					// 5 . 맵 번호의 인덱스 범위가 유효한지 확인
-					if (!CHECK_LIMIT(wMapNum, g_TerrainManager.Size())) {
+#if ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(wMapNum, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(wMapNum, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
+					{
 						MsgBox("[MapServerMng] CMapServerManager::LoadData() - file load error : Map Number is out of bound (SVR:%d, MAP:%d)", 
 							sSVR_CODE,
 							wMapNum

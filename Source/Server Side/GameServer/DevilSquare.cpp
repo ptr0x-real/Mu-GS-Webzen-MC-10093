@@ -61,7 +61,7 @@ extern wsJoinServerCli wsRServerCli;		//  ·©Å·¼­¹ö
 
 extern PartyClass		gParty;
 extern CMonsterSetBase	gMSetBase;
-extern MapClass			*MapC;
+extern MapClass			MapC[];
 
 extern WzUdp			gUdpSocCRank;		// Rank Server
 

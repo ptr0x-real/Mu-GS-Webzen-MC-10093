@@ -3513,7 +3513,11 @@ int CGMMng::ManagementProc(LPOBJECTSTRUCT lpObj, char* szCmd, int aIndex)
 			x   = GetTokenNumber();
 			y   = GetTokenNumber();
 
+#if ENABLE_MC_CODE == 1
 			if (!CHECK_LIMIT(map, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+			if (!CHECK_LIMIT(map, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 				break;
 			if (!CHECK_LIMIT(x, 256))
 				break;

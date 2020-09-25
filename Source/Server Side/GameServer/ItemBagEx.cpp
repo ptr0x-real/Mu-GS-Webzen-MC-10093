@@ -36,12 +36,16 @@ extern CDirPath		gDirPath;
 
 CItemBagEx::CItemBagEx()
 {
+#if ENABLE_MC_CODE == 1
 	this->DropMapInfo = NULL;
+#endif // ENABLE_MC_CODE == 1
 }
 
 CItemBagEx::~CItemBagEx()
 {
+#if ENABLE_MC_CODE == 1
 	delete[] DropMapInfo;
+#endif // ENABLE_MC_CODE == 1
 }
 
 
@@ -58,11 +62,13 @@ void CItemBagEx::Init(char * name)
 	
 	m_iBagObjectCount = 0;	
 
-	if(g_TerrainManager.Size() < 1)
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.Size() < 1)
 		g_TerrainManager.Load();
 
-	if(DropMapInfo == NULL)
+	if (DropMapInfo == NULL)
 		DropMapInfo = new CItemBagDropMapInfo[g_TerrainManager.Size()];
+#endif // ENABLE_MC_CODE == 1
 	
 #ifdef SCRIPT_DECODE_WORK
 	LoadItemDecode(gDirPath.GetNewPath(name));	
@@ -197,7 +203,11 @@ void CItemBagEx::LoadItem(char *script_file)
 					if(Token==NAME && strcmp("end",TokenString)==NULL) break;
 
 					int	MapIndex = (int)TokenNumber;
-					if( !CHECK_LIMIT(MapIndex, g_TerrainManager.Size()) )
+#if ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(MapIndex, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+					if (!CHECK_LIMIT(MapIndex, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 					{
 						MsgBox("ExEvent ItemBag LoadFail [%s]", script_file);
 						return;

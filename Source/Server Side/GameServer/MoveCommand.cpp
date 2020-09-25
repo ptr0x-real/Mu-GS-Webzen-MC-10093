@@ -215,29 +215,42 @@ BOOL CMoveCommand::LoadMoveLevel(char* filename)
 
 int	CMoveCommand::GetMoveLevel(int mapnumber, int x, int y, int Class)
 {
-	for( int i = 0; i < MAX_MOVE_COMMAND_COUNT; i++ )
+	for (int i = 0; i < MAX_MOVE_COMMAND_COUNT; i++)
 	{
-		if( m_MoveLevel[i].MapNumber == mapnumber )
+		if (m_MoveLevel[i].MapNumber == mapnumber)
 		{
-			if( x >= m_MoveLevel[i].X && x <= m_MoveLevel[i].TX &&
-				y >= m_MoveLevel[i].Y && y <= m_MoveLevel[i].TY )
+			if (x >= m_MoveLevel[i].X && x <= m_MoveLevel[i].TX &&
+				y >= m_MoveLevel[i].Y && y <= m_MoveLevel[i].TY)
 			{
 #ifdef UPDATE_NEWMAP_SWAMP_OF_CALMNESS_20080108 // 평온의 늪일 경우 마검사나 다크로드도 Movereq.txt 파을에 따라 입장
-				if( mapnumber == MAP_INDEX_SWAMP_OF_CALMNESS )
+				if (mapnumber == MAP_INDEX_SWAMP_OF_CALMNESS)
 					return m_MoveLevel[i].MoveLevel;
 #endif	// UPDATE_NEWMAP_SWAMP_OF_CALMNESS_20080108
-				
-				if( Class == CLASS_DARKLORD || Class == CLASS_MAGUMSA )					
-					return (m_MoveLevel[i].MoveLevel*2)/3;
+
+				if (Class == CLASS_DARKLORD || Class == CLASS_MAGUMSA)
+					return (m_MoveLevel[i].MoveLevel * 2) / 3;
 				else
 					return m_MoveLevel[i].MoveLevel;
-			}			
+			}
 		}
-	
+
 	}
 	return -1;
 }
 #endif
+
+int	CMoveCommand::GetMoveLevel(int mapnumber)
+{
+	for (int i = 0; i < MAX_MOVE_COMMAND_COUNT; i++)
+	{
+		if (m_MoveLevel[i].MapNumber == mapnumber)
+		{
+			return m_MoveLevel[i].MoveLevel;
+		}
+
+	}
+	return -1;
+}
 
 #ifdef MODIFY_DARKLORD_SKILL_RECALL_PARTY_20040831
 // 0. 장착 아이템 체크
@@ -370,6 +383,26 @@ int	CMoveCommand::FindIndex(char* mapname)
 	}
 
 	return -1;
+}
+
+char* CMoveCommand::GetMapName(int mapnumber)
+{
+	char* mapname = nullptr;
+
+	for (int i = 0; i < MAX_MOVE_COMMAND_COUNT; i++)
+	{
+		if (m_MoveCommandData[i].Index == -1)
+		{
+			break;
+		}
+
+		if (m_MoveCommandData[i].MapNumber == mapnumber)
+		{
+			mapname = m_MoveCommandData[i].Name;
+		}
+	}
+
+	return mapname;
 }
 
 #ifdef ADD_MAPMOVE_PROTOCOL_20090327
@@ -570,7 +603,11 @@ BOOL CMoveCommand::Move(LPOBJECTSTRUCT lpObj, char* mapname)
 		}
 	}
 
-	if( g_TerrainManager.CheckTerrain(MapNumber) == true )
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.CheckTerrain(MapNumber) == true)
+#else // ENABLE_MC_CODE == 1
+	if (gMoveCommand.GetMapName(MapNumber) != nullptr)
+#endif // ENABLE_MC_CODE == 1
 	{
 		LogAddTD("[%s][%s] Use Move [%d][%d][%d] - [%d][%d][%d]", 
 			lpObj->AccountID, lpObj->Name, lpObj->Level, lpObj->m_AccountType, lpObj->m_iResetNumber,

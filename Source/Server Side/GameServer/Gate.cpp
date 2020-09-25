@@ -33,7 +33,7 @@
 2  2 1 107 247 110 247 0   1   0	//·Î·»½Ã¾Æ -> ´øÁ¯1Ãş
 */
 
-extern MapClass		*MapC;
+extern MapClass		MapC[];
 
 CGate	gGateC;
 

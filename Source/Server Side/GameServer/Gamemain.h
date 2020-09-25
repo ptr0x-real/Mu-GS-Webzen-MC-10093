@@ -63,7 +63,7 @@ extern int	gEvent1ItemDropTodayMax;
 extern int  gEvent1ItemDropTodayPercent;
 
 extern DWORD		dwgCheckSum[];
-extern MapClass		*MapC;
+extern MapClass		MapC[];
 extern CShop		ShopC[];
 extern DWORD		gLevelExperience[];
 extern DWORD		gItemNumberCount;
