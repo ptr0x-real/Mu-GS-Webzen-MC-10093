@@ -935,7 +935,11 @@ void MoveMonsterProc()
 							int nextY = lpObj->PathY[lpObj->PathCur];
 							BYTE mapnumber;
 							mapnumber	= lpObj->MapNumber;
-							if ( mapnumber > g_TerrainManager.Size() - 1 )
+#if ENABLE_MC_CODE == 1
+							if (mapnumber > g_TerrainManager.Size() - 1)
+#else // ENABLE_MC_CODE == 1
+							if (mapnumber > MAX_MAP - 1)
+#endif // ENABLE_MC_CODE == 1
 							{
 								// 더큰 에러;;;
 							}
@@ -2312,8 +2316,12 @@ bool IsOnDuel (int aIndex1, int aIndex2)
 int GetMapMoveLevel(LPOBJECTSTRUCT lpObj, int mapnumber, int max_over)
 {
 	int overLevel=0;
-	
-	if( mapnumber > g_TerrainManager.Size()-1 ) 
+
+#if ENABLE_MC_CODE == 1
+	if (mapnumber > g_TerrainManager.Size() - 1)
+#else // ENABLE_MC_CODE == 1
+	if (mapnumber > MAX_MAP - 1)
+#endif // ENABLE_MC_CODE == 1
 	{
 		mapnumber = 0;
 		LogAdd("error-L3 : map number not %s %d", __FILE__, __LINE__);
@@ -2326,8 +2334,13 @@ int GetMapMoveLevel(LPOBJECTSTRUCT lpObj, int mapnumber, int max_over)
 	}
 	else 
 	{
-		max_over  = g_TerrainManager.GetMinLevel(mapnumber);
+#if ENABLE_MC_CODE == 1
+		max_over = g_TerrainManager.GetMinLevel(mapnumber);
 		overLevel = g_TerrainManager.GetMinLevel(mapnumber);
+#else // ENABLE_MC_CODE == 1
+		max_over = gMoveCommand.GetMoveLevel(mapnumber);
+		overLevel = gMoveCommand.GetMoveLevel(mapnumber);
+#endif // ENABLE_MC_CODE == 1
 	}
 	
 	// 마검사일때는 2/3 로 줄인다.
@@ -3073,8 +3086,12 @@ BOOL gObjSetCharacter(BYTE *lpdata, int aIndex)
 
 	lpObj->StartX       = (BYTE)lpObj->X;
 	lpObj->StartY       = (BYTE)lpObj->Y;
-	
-	if( !CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size())  )
+
+#if ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 	{
 		LogAdd("error : Map Number max over. %s %d",__FILE__, __LINE__);
 		lpObj->MapNumber = 0;
@@ -6311,7 +6328,12 @@ short gObjDel(int index)
 		return 0;
 	
 #ifdef CLEAR_STANDATTR_OBJDEL_20050325
-	if (CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size())) {
+#if ENABLE_MC_CODE == 1
+	if (CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+	if (CHECK_LIMIT(lpObj->MapNumber, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
+	{
 		MapC[lpObj->MapNumber].ClearStandAttr(lpObj->m_OldX, lpObj->m_OldY);
 		MapC[lpObj->MapNumber].ClearStandAttr(lpObj->X, lpObj->Y);
 	}
@@ -6681,10 +6703,14 @@ BOOL gObjCheckXYMapTile(LPOBJECTSTRUCT lpObj)
 	x			= lpObj->X;
 	y			= lpObj->Y;
 	mapnumber	= lpObj->MapNumber;
-	
-	if( mapnumber > g_TerrainManager.Size()-1 ) mapnumber = 0;
 
-	int mapminlevel=g_TerrainManager.GetMinLevel(mapnumber);
+#if ENABLE_MC_CODE == 1
+	if (mapnumber > g_TerrainManager.Size() - 1) mapnumber = 0;
+	int mapminlevel = g_TerrainManager.GetMinLevel(mapnumber);
+#else // ENABLE_MC_CODE == 1
+	if (mapnumber > MAX_MAP - 1) mapnumber = 0;
+	int mapminlevel = gMoveCommand.GetMoveLevel(mapnumber);
+#endif // ENABLE_MC_CODE == 1
 
 #ifdef MODIFY_CHECK_MOVELEVEL_20060731
 	// 모든 맵의 최소 요구 레벨을 0으로 설정한다.
@@ -6702,7 +6728,11 @@ BOOL gObjCheckXYMapTile(LPOBJECTSTRUCT lpObj)
 	{
 		if( mapminlevel > 0 )
 		{
+#if ENABLE_MC_CODE == 1
 			int minlevel = g_TerrainManager.GetMinLevel(mapnumber);
+#else // ENABLE_MC_CODE == 1
+			int minlevel = gMoveCommand.GetMoveLevel(mapnumber);
+#endif // ENABLE_MC_CODE == 1
 			if( minlevel > 0 )
 			{
 				mapminlevel = minlevel-((minlevel/3)*2);
@@ -7395,7 +7425,11 @@ BOOL gObjBackSpring(LPOBJECTSTRUCT lpObj, LPOBJECTSTRUCT lpTargetObj)
 {	
 	int tdir;
 
-	if( !CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size())  )
+#if ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 	{
 		LogAdd("error : %s %d",__FILE__, __LINE__);
 		return FALSE;
@@ -7630,7 +7664,11 @@ BOOL gObjBackSpring2(LPOBJECTSTRUCT lpObj, LPOBJECTSTRUCT lpTargetObj, int count
 {	
 	int tdir;
 
-	if( !CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size())  )
+#if ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(lpObj->MapNumber, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 	{
 		LogAdd("error : %s %d",__FILE__, __LINE__);
 		return FALSE;
@@ -22495,7 +22533,12 @@ void gObjSetState()
 			}
 		}
 	}
-	for( n=0; n<g_TerrainManager.Size(); n++)
+
+#if ENABLE_MC_CODE == 1
+	for (n = 0; n < g_TerrainManager.Size(); n++)
+#else // ENABLE_MC_CODE == 1
+	for (n = 0; n < MAX_MAP; n++)
+#endif // ENABLE_MC_CODE == 1
 	{
 		MapC[n].StateSetDestroy();
 	}
@@ -29621,7 +29664,12 @@ BOOL	gObjCheckTeleportArea(int aIndex, BYTE x, BYTE y)
 
 	// 이동 가능한 지역인지 판별
 	int mapnumber = gObj[aIndex].MapNumber;
-	if( mapnumber < 0  || mapnumber >= g_TerrainManager.Size() )
+
+#if ENABLE_MC_CODE == 1
+	if (mapnumber < 0 || mapnumber >= g_TerrainManager.Size())
+#else // ENABLE_MC_CODE == 1
+	if (mapnumber < 0 || mapnumber >= MAX_MAP)
+#endif // ENABLE_MC_CODE == 1
 	{
 		return FALSE;
 	}	
@@ -29731,14 +29779,24 @@ BOOL	gObjCheckAttackArea(int aIndex, int TarObjIndex)
 
 	// 나..
 	int mapnumber = gObj[aIndex].MapNumber;
-	if( mapnumber < 0  || mapnumber >= g_TerrainManager.Size() )
+
+#if ENABLE_MC_CODE == 1
+	if (mapnumber < 0 || mapnumber >= g_TerrainManager.Size())
+#else // ENABLE_MC_CODE == 1
+	if (mapnumber < 0 || mapnumber >= MAX_MAP)
+#endif // ENABLE_MC_CODE == 1
 	{
 		return 2;
 	}	
 
 	// 공격 대상
 	int tarmapnumber = gObj[TarObjIndex].MapNumber;
-	if( tarmapnumber < 0  || tarmapnumber >= g_TerrainManager.Size() )
+
+#if ENABLE_MC_CODE == 1
+	if (tarmapnumber < 0 || tarmapnumber >= g_TerrainManager.Size())
+#else // ENABLE_MC_CODE == 1
+	if (tarmapnumber < 0 || tarmapnumber >= MAX_MAP)
+#endif // ENABLE_MC_CODE == 1
 	{
 		return 3;
 	}	

@@ -45,7 +45,7 @@ private:
 
 	int			m_iBagObjectCount;					// 아이템 리스트 수
 
-	CItemBagDropMapInfo	*DropMapInfo;		// 이벤트 아이템이 드롭될 맵 정보
+	CItemBagDropMapInfo	DropMapInfo[MAX_MAP];		// 이벤트 아이템이 드롭될 맵 정보
 
 #ifdef UPDATE_PROBABILITYiTEMBAG_ADD_SETITEM_20080329
 	CItemBagAttrEx2		BagObject[MAX_ITEMBAGEX];	// 아이템 리스트

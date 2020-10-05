@@ -1475,9 +1475,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				}
 				break;
 			case 1000 :
-
 				{
+#if ENABLE_MC_CODE == 1
 				for( int n=0; n<g_TerrainManager.Size(); n++)
+#else // ENABLE_MC_CODE == 1
+				for (int n = 0; n < MAX_MAP; n++)
+#endif // ENABLE_MC_CODE == 1
 				{
 					MapC[n].WeatherVariationProcess();
 				}

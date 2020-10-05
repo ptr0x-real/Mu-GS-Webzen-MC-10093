@@ -16,7 +16,7 @@ public:
 	virtual ~CDirPath();
 
 	void SetFirstPath(char *dir_path);
-	char* GetNewPath(char *npath);
+	char* GetNewPath(const char *npath);
 
 	char m_path[MAX_PATH];
 	char m_newpath[MAX_PATH];

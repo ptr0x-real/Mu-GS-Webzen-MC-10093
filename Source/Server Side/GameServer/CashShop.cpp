@@ -13,7 +13,7 @@
 
 #include "Include\Readscript.h"
 #include "Common\zzzitem.h"
-#include "..\\common\winutil.h"
+#include "common\winutil.h"
 #include "DirPath.h"
 #include "DSProtocol.h"
 

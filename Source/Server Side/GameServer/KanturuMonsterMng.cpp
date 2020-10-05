@@ -10,7 +10,7 @@
 
 #include "Include\ReadScript.h"
 #include "MapClass.h"
-extern MapClass		*MapC;
+extern MapClass		MapC[];
 
 #include "KanturuDefine.h"
 

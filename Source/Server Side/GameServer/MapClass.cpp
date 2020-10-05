@@ -40,6 +40,135 @@ extern CwsGameServer	wsGServer;
 #define TERRAIN_SIZE_MASK 255
 
 
+const char* const GetMapAttrName(int mapNumber)
+{
+	// 맵파일 이름 초기화
+	static char MapAttrName[MAX_MAP][15] = {
+		"terrain1.att",		// 로랜시아
+		"terrain2.att",		// 던전 
+		"terrain3.att",		// 데비아스
+		"terrain4.att",		// 노리아
+		"terrain5.att",		// 로스트 타워
+		"terrain6.att",		// 
+		"terrain7.att",		// 경기장
+		"terrain8.att",		// 아틀란스
+		"terrain9.att",		// 타르칸
+		"terrain10.att",	// 데빌스퀘어
+#ifdef FOR_BLOODCASTLE
+		"terrain11.att",	// 천공.
+		"terrain12.att",	// 블러드캐슬1
+		"terrain12.att",	// 블러드캐슬2
+		"terrain12.att",	// 블러드캐슬3
+		"terrain12.att",	// 블러드캐슬4
+		"terrain12.att",	// 블러드캐슬5
+		"terrain12.att",	// 블러드캐슬6
+#endif
+#ifdef BLOODCASTLE_EXTEND_20040314
+		"terrain12.att",	// 블러드캐슬7
+#endif
+#ifdef CHAOSCASTLE_SYSTEM_20040408
+		"terrain19.att",	// 카오스 캐슬1
+		"terrain19.att",	// 카오스 캐슬2
+		"terrain19.att",	// 카오스 캐슬3
+		"terrain19.att",	// 카오스 캐슬4
+		"terrain19.att",	// 카오스 캐슬5
+		"terrain19.att",	// 카오스 캐슬6
+#endif
+#ifdef ADD_NEW_MAP_KALIMA_20040518
+		"terrain25.att",	// 칼리마 1
+		"terrain25.att",	// 칼리마 2
+		"terrain25.att",	// 칼리마 3
+		"terrain25.att",	// 칼리마 4
+		"terrain25.att",	// 칼리마 5
+		"terrain25.att",	// 칼리마 6
+#endif
+#ifdef ADD_NEW_MAP_CASTLE_20041115
+		"terrain31.att",	// 성 맵
+#endif
+#ifdef ADD_NEW_MAP_CASTLE_HUNTZONE_20041115
+		"terrain32.att",	// 성 사냥터 맵
+#endif
+#ifdef DEVILSQUARE_EXTEND_20050221			// 데빌스퀘어 맵추가
+		"terrain33.att",	// 데빌스퀘어 맵 확장
+#endif
+#ifdef ADD_NEW_MAP_AIDA_20050617
+		"terrain34.att",	// 아이다 맵
+#endif
+#ifdef	ADD_NEW_MAP_CRYWOLF_FIRSTZONE_20050414 
+		"terrain35.att",	// 크라이울프 1차맵
+#endif
+#ifdef	ADD_NEW_MAP_CRYWOLF_SECONDZONE_20050414 
+		"terrain36.att",	// 크라이울프 2차맵
+#endif
+#ifdef HIDDEN_KALIMA_20050706
+		"terrain37.att",	// 히든 칼리마
+#endif
+#ifdef ADD_NEW_MAP_KANTURU_COMMON_20060523
+		"terrain38.att",	// 칸투르 1차 맵
+		"terrain39.att",	// 칸투르 2차 맵		
+#endif
+#ifdef ADD_NEW_MAP_KANTURU_BOSS_20060627
+		"terrain40.att",	// 칸투르 보스 맵		
+#endif
+#ifdef UPDATE_GM_FUNCTION_20070228
+		"terrain41.att",	// GM 소환 지역
+#endif
+#ifdef THIRD_CHANGEUP_SYSTEM_20070507	// 3차 전직 맵(att) 추가
+		"terrain42.att",	// 3차 전직 퀘스트 맵
+		"terrain43.att",	// 3차 전직 퀘스트 보스맵
+#endif		
+#ifdef ADD_EVENT_MAP_ILLUSION_TEMPLE_20070328
+		"terrain46.att",	// 사용안함
+		"terrain46.att",	// 사용안함
+		"terrain46.att",	// 환영사원1
+		"terrain46.att",	// 환영사원2
+		"terrain46.att",	// 환영사원3
+		"terrain46.att",	// 환영사원4
+		"terrain46.att",	// 환영사원5
+		"terrain46.att",	// 환영사원6
+#endif
+#ifdef ADD_SEASON_3_NEW_MAP_20070910
+		"terrain52.att",	// 시즌 3 신규 맵
+#endif
+#ifdef ADD_BLOODCASTLE_FOR_MASTER_LEVEL_20071010
+		"terrain12.att",	// 블러드캐슬8
+#endif
+#ifdef ADD_CHAOSCASTLE_FOR_MASTER_LEVEL_20071010
+		"terrain19.att",	// 카오스 캐슬7
+#endif
+#ifdef UPDATE_NEWMAP_SWAMP_OF_CALMNESS_20080108
+		"terrain57.att",	// 사용안함!
+		"terrain57.att",	// 사용안함!
+		"terrain57.att",	// 평온의늪
+#endif
+#ifdef ADD_RAKLION_20080408
+		"terrain58.att",	// 라클리온 필드
+		"terrain59.att",	// 라클리온 보스존
+#endif // ADD_RAKLION_20080408
+
+#ifdef UPDATE_XMASEVENT_MAP_20080930
+		"terrain62.att",	// 해외 크리스마스 이벤트맵
+		"terrain62.att",	// 해외 크리스마스 이벤트맵
+		"terrain62.att",	// 해외 크리스마스 이벤트맵
+		"terrain62.att",	// 해외 크리스마스 이벤트맵
+#endif // UPDATE_XMASEVENT_MAP_20080930	
+#ifdef ADD_NEWPVP_PKFIELD
+		"terrain63.att",	// 불카누스폐허
+		"terrain64.att",	// 결투장
+#endif // ADD_NEWPVP_PKFIELD
+	};
+
+	if (mapNumber < 0 || mapNumber >= MAX_MAP)
+	{
+		return "invalid mapNumber";
+	}
+	else
+	{
+		return MapAttrName[mapNumber];
+	}
+}
+
+
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -48,10 +177,12 @@ extern CwsGameServer	wsGServer;
 
 MapClass::MapClass()
 {
-	if(g_TerrainManager.Size() < 1)
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.Size() < 1)
 		g_TerrainManager.Load();
 
 	gRegenRect = new RECT[g_TerrainManager.Size()];
+#endif // ENABLE_MC_CODE == 1
 
 	m_Weather = 0;
 	m_WeatherTimer = GetTickCount();
@@ -85,14 +216,20 @@ MapClass::MapClass()
 
 MapClass::~MapClass()
 {
+#if ENABLE_MC_CODE == 1
 	delete[] gRegenRect;
+#endif // ENABLE_MC_CODE == 1
 	free();
 }
 
 // 맵 번호를 체크한다.
 BOOL MapNumberCheck(int map)
 {
-	if( map < 0 || map > g_TerrainManager.Size()-1 ) return FALSE;
+#if ENABLE_MC_CODE == 1
+	if (map < 0 || map > g_TerrainManager.Size() - 1) return FALSE;
+#else // ENABLE_MC_CODE == 1
+	if (map < 0 || map > MAX_MAP - 1) return FALSE;
+#endif // ENABLE_MC_CODE == 1
 	return TRUE;
 }
 

@@ -16,6 +16,7 @@
 #include "Include\cb_protocol.h"
 #include "Event.h"
 #include "Common\Winutil.h"
+#include "MoveCommand.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -54,7 +55,11 @@ BOOL CRingMonsterHerd::MonsterHerdItemDrop(
 
 		// 이벤트가 끝났다는 공지를 한다.
 		CHAR szTemp[256];
+#if ENABLE_MC_CODE == 1
 		wsprintf(szTemp, lMsg.Get(1205), gObj[iMaxHitUser].Name, g_TerrainManager.GetMapName(lpObj->MapNumber));	// "%s님이 %s를 침략한 백색의 마법사 군단을 물리쳤습니다."
+#else // ENABLE_MC_CODE == 1
+		wsprintf(szTemp, lMsg.Get(1205), gObj[iMaxHitUser].Name, gMoveCommand.GetMapName(lpObj->MapNumber));	// "%s님이 %s를 침략한 백색의 마법사 군단을 물리쳤습니다."
+#endif // ENABLE_MC_CODE == 1
 		AllSendServerMsg (szTemp);
 
 		LogAddTD("[Ring Event] White Wizard Killed by [%s][%s], MapNumber:%d", gObj[iMaxHitUser].AccountID, gObj[iMaxHitUser].Name, gObj[iMaxHitUser].MapNumber);

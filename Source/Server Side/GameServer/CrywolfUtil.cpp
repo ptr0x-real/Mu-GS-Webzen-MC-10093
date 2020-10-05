@@ -11,7 +11,7 @@
 
 #include "MapServerManager.h"
 #include "Gamemain.h"
-#include "..\\Common\ClassDef.h"
+#include "Common\ClassDef.h"
 
 #ifdef ADD_LOG_400LEVELUP_PARTY_20070628
 #include "PartyClass.h"

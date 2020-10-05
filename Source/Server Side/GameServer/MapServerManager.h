@@ -40,7 +40,7 @@ typedef struct _MAPSVR_DATA {
 	SHORT	m_sSVR_CODE;						// 이 서버의 서버코드
 	CHAR	m_cIPADDR[16];						// 이 서버의 IP주소
 	WORD	m_wPORT;							// 이 서버의 포트번호
-	SHORT	*m_sMAP_MOVE;				// 이 서버에서 이동 가능/불가능한 서버들에 대한 정보 (위의 상태정보 값 사용)
+	SHORT	m_sMAP_MOVE[MAX_MAP];				// 이 서버에서 이동 가능/불가능한 서버들에 대한 정보 (위의 상태정보 값 사용)
 
 	_MAPSVR_DATA			();
 	virtual ~_MAPSVR_DATA	();

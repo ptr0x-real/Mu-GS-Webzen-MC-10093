@@ -13,7 +13,7 @@
 #include "MagicInf.h"
 #endif // ADD_RAKLION_20080408
 
-#include "..\\Common\WinUtil.h"
+#include "Common\WinUtil.h"
 
 using namespace std;
 

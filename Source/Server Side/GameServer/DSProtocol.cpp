@@ -2991,6 +2991,7 @@ void ItemSerialCreateRecv(LPSDHP_ITEMCREATERECV lpMsg)
 	
 	if( mapnumber != 255 )
 	{
+#if ENABLE_MC_CODE == 1
 //#if defined ( EVENT_FRIENDSHIP_20040204 ) || defined ( EVENT_LOTTO )
 #ifdef MODIFY_GAMBLING_COMPLEMENT_20090513
 		if( (mapnumber < 0) || ((mapnumber > g_TerrainManager.Size()-1) && (mapnumber < ITEMMAKE_INVENTORY_GAMBLINGITEM)))
@@ -3008,6 +3009,13 @@ void ItemSerialCreateRecv(LPSDHP_ITEMCREATERECV lpMsg)
 	#endif
 */
 //#endif // EVENT_FRIENDSHIP_20040204 || EVENT_LOTTO
+#else // ENABLE_MC_CODE == 1
+#ifdef MODIFY_GAMBLING_COMPLEMENT_20090513
+		if ((mapnumber < 0) || ((mapnumber > MAX_MAP - 1) && (mapnumber < ITEMMAKE_INVENTORY_GAMBLINGITEM)))
+#else // MODIFY_GAMBLING_COMPLEMENT_20090513
+		if ((mapnumber < 0) || ((mapnumber > MAX_MAP - 1) && (mapnumber < ITEMMAKE_INVENTORY_1CELL)))
+#endif // MODIFY_GAMBLING_COMPLEMENT_20090513
+#endif // ENABLE_MC_CODE == 1
 		{
 			return;
 		}

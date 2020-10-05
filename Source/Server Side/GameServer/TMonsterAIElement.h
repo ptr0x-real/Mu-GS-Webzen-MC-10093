@@ -85,7 +85,7 @@ public:
 	static	TMonsterAIElement			s_MonsterAIElementArray[MAX_MONSTER_SKILL_ELEMENT];
 	
 public:
-	static	TMonsterAIMovePath			*s_MonsterAIMovePath;
+	static	TMonsterAIMovePath			s_MonsterAIMovePath[];
 
 public:
 	int		ForceAIElement				( int iIndex, int iTargetIndex, TMonsterAIState* pAIState );

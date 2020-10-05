@@ -1,3 +1,5 @@
+#if ENABLE_MC_CODE == 1
+
 #ifndef __TERRAINMANAGER_H__
 #define __TERRAINMANAGER_H__
 
@@ -67,4 +69,5 @@ private:
 
 extern CTerrainManager g_TerrainManager;
 
-#endif
+#endif // __TERRAINMANAGER_H__
+#endif // ENABLE_MC_CODE == 1

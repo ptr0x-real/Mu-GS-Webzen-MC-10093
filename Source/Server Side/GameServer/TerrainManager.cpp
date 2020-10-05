@@ -1,4 +1,6 @@
 #include "stdafx.h"
+
+#if ENABLE_MC_CODE == 1
 #include "TerrainManager.h"
 
 #include "Include\Readscript.h"
@@ -65,3 +67,4 @@ void CTerrainManager::Load(const char *filename)
 
 	fclose(SMDFile);
 }
+#endif // ENABLE_MC_CODE == 1

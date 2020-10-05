@@ -1249,8 +1249,8 @@ typedef struct
 	BYTE TargetNumberH;	// 7
 	BYTE TargetNumberL;	// 8
 #ifdef ADD_TRAP_OBJECT_EXTEND_20060731
-	BYTE	TargetNumberH;
-	BYTE	TargetNumberL;
+	BYTE	_TargetNumberH;
+	BYTE	_TargetNumberL;
 #endif
 } 
 PMSG_ACTIONRESULT, *LPPMSG_ACTIONRESULT;

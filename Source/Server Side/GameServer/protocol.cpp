@@ -4456,7 +4456,11 @@ void CGItemGetRequest(LPPMSG_ITEMGETREQUEST lpMsg, int aIndex)
 	}
 
 	map_num = gObj[aIndex].MapNumber;
-	if( !CHECK_LIMIT(map_num, g_TerrainManager.Size() ) ) 
+#if ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(map_num, g_TerrainManager.Size()))
+#else // ENABLE_MC_CODE == 1
+	if (!CHECK_LIMIT(map_num, MAX_MAP))
+#endif // ENABLE_MC_CODE == 1
 	{
 		LogAdd("error-L3 : %s %d", __FILE__, __LINE__);
 		//return;
@@ -14255,7 +14259,11 @@ void PMoveProc(LPPMSG_MOVE lpMove, int aIndex)
 
 		BYTE mapnumber;
 		mapnumber	= lpObj->MapNumber;
-		if ( mapnumber > g_TerrainManager.Size() - 1 )
+#if ENABLE_MC_CODE == 1
+		if (mapnumber > g_TerrainManager.Size() - 1)
+#else // ENABLE_MC_CODE == 1
+		if (mapnumber > MAX_MAP - 1)
+#endif // ENABLE_MC_CODE == 1
 		{
 			// 더큰 에러
 		}

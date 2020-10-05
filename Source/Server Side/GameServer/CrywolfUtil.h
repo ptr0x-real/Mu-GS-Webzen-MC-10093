@@ -5,7 +5,7 @@
 class CCrywolfScoreSort
 {
 public:
-	bool	operator() (const LPOBJECTSTRUCT lpObj1, const LPOBJECTSTRUCT lpObj2)
+	bool	operator() (const LPOBJECTSTRUCT lpObj1, const LPOBJECTSTRUCT lpObj2) const
 	{
 		bool bResult = lpObj1->m_iCrywolfMVPScore >= lpObj2->m_iCrywolfMVPScore;
 		

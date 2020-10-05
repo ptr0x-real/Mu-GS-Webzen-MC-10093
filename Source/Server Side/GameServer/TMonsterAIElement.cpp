@@ -33,7 +33,7 @@ extern CDirPath	gDirPath;
 
 BOOL				TMonsterAIElement::s_bDataLoad = FALSE;
 TMonsterAIElement	TMonsterAIElement::s_MonsterAIElementArray[MAX_MONSTER_AI_ELEMENT];
-TMonsterAIMovePath	*TMonsterAIElement::s_MonsterAIMovePath = NULL;
+TMonsterAIMovePath	TMonsterAIElement::s_MonsterAIMovePath[MAX_MAP];
 
 //----------------------------------------------------------------------------------------
 
@@ -43,13 +43,17 @@ static TMonsterAIUtil	MONSTER_UTIL;
 
 TMonsterAIElement::TMonsterAIElement()
 {
+#if ENABLE_MC_CODE == 1
 	s_MonsterAIMovePath = NULL;
+#endif // ENABLE_MC_CODE == 1
 	Reset();
 }
 
 TMonsterAIElement::~TMonsterAIElement()
 {
+#if ENABLE_MC_CODE == 1
 	delete[] s_MonsterAIMovePath;
+#endif // ENABLE_MC_CODE == 1
 }
 
 
@@ -78,11 +82,13 @@ int TMonsterAIElement::LoadData( LPSTR lpszFileName )
 		return FALSE;
 	}
 
-	if(g_TerrainManager.Size() < 1)
+#if ENABLE_MC_CODE == 1
+	if (g_TerrainManager.Size() < 1)
 		g_TerrainManager.Load();
 
-	if(s_MonsterAIMovePath == NULL)
+	if (s_MonsterAIMovePath == NULL)
 		s_MonsterAIMovePath = new TMonsterAIMovePath[g_TerrainManager.Size()];
+#endif // ENABLE_MC_CODE == 1
 
 	try
 	{		
@@ -187,7 +193,11 @@ int	 TMonsterAIElement::DelAllAIElement()
 		s_MonsterAIElementArray[i].Reset();
 	}
 
-	for( int j=0; j<g_TerrainManager.Size(); j++ )
+#if ENABLE_MC_CODE == 1
+	for (int j = 0; j < g_TerrainManager.Size(); j++)
+#else // ENABLE_MC_CODE == 1
+	for (int j = 0; j < MAX_MAP; j++)
+#endif // ENABLE_MC_CODE == 1
 	{
 		s_MonsterAIMovePath[j].DelAllAIMonsterMovePath();
 	}

@@ -45,7 +45,7 @@
 #define G_V_S4_5	9
 #define G_V_S4_6	10
 
-#define GAME_VERSION	G_V_99B//G_V_S4_6
+#define GAME_VERSION	G_V_S2_2//G_V_S4_6
 
 // GXDev
 #define OBJ_STARTUSERINDEX (MAX_OBJECT - MAX_USER)
@@ -1581,7 +1581,7 @@
 //////////////////////////////////////////////////////////////////////////
 // 시즌3plus 신규캐릭터 스킬추가
 //////////////////////////////////////////////////////////////////////////
-#if GAME_VERSION >= G_V_S2
+#if GAME_VERSION >= G_V_S2_2
 	// 380 아이템 엑 안떨어지게(goni)
 	#define MODIFY_380_EXCELENT_ITEM_DISABLE_20080212
 #endif
@@ -4987,6 +4987,8 @@ enum MAP_INDEX
 	#if GAME_VERSION == G_V_S4_5
 		#define JAPAN_PACKET
 	#endif
+
+#define GLOBAL_PACKET
 
 	#ifdef KOREAN_PACKET
 		#define PACKET_MOVE				0xD3 

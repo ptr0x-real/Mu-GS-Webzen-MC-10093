@@ -1,0 +1,51 @@
+//------------------------------------------------------------------------------------------------------------
+//	Type	Index	Level	Skill	Luck	Add	Exc	X	Y      Scale	Description
+//------------------------------------------------------------------------------------------------------------
+1
+	13      43	0	0	0	0	0	0	0	50	// Seal of Ascension
+	13      44	0	0	0	0	0	0	0	50	// Seal of Wealth
+	13      45	0	0	0	0	0	0	0	50	// Seal of Sustenance
+	14      70	0	0	0	0	0	0	0	50	// Elite Healing Potion
+	14      71	0	0	0	0	0	0	0	50	// Elite Mana Potion
+	14      94	0	0	0	0	0	0	0	50	// Medium Elite Healing Potion
+	13      46	0	0	0	0	0	0	0	50	// Devil Square Ticket
+	13      47	0	0	0	0	0	0	0	50	// Blood Castle Ticket
+	13      48	0	0	0	0	0	0	0	50	// Kalima Ticket
+	13      61	0	0	0	0	0	0	0	50	// Illusion Temple Ticket
+	13      62	0	0	0	0	0	0	0	50	// Invitation to Santa Village
+	13      59	0	0	0	0	0	0	0	50	// Seal of Mobility
+	13      54	0	0	0	0	0	0	0	50	// Reset Fruit Strength
+	13      55	0	0	0	0	0	0	0	50	// Reset Fruit Agility
+	13      56	0	0	0	0	0	0	0	50	// Reset Fruit Vitality
+	13      57	0	0	0	0	0	0	0	50	// Reset Fruit Energy
+	13      58	0	0	0	0	0	0	0	50	// Reset Fruit Command
+	14      53	0	0	0	0	0	0	0	50	// Talisman of Luck
+	14      96	0	0	0	0	0	0	0	50	// Talisman of Chaos Assembly
+	14      54	0	0	0	0	0	0	0	50	// Chaos Card
+	14	92	0	0	0	0	0	0	0	50	// Chaos Card Gold
+	14	93	0	0	0	0	0	0	0	50	// Chaos Card Rare
+	14	95	0	0	0	0	0	0	0	50	// Chaos Card Mini
+	14	91	0	0	0	0	0	0	0	50	// Summoner Creation Card
+	13	64	0	0	0	0	0	0	0	50	// Demon Pet
+	13	65	0	0	0	0	0	0	0	50	// Fairy Pet
+	13	67	0	0	0	0	0	0	0	50	// Rudolf Pet
+	13	80	0	0	0	0	0	0	0	50	// Panda Pet
+	13	76	0	0	0	0	0	0	0	50	// Panda Ring
+	14	97	0	0	0	0	0	0	0	50	// Scroll of Battle
+	14	98	0	0	0	0	0	0	0	50	// Scroll of Strengthener
+	14	72	0	0	0	0	0	0	0	50	// Scroll of Agility
+	14	73	0	0	0	0	0	0	0	50	// Scroll of Protection
+	14	74	0	0	0	0	0	0	0	50	// Scroll of Wrath
+	14	75	0	0	0	0	0	0	0	50	// Scroll of Wizardry
+	14	76	0	0	0	0	0	0	0	50	// Scroll of Health
+	14	77	0	0	0	0	0	0	0	50	// Scroll of Mana
+	14	78	0	0	0	0	0	0	0	50	// Leap of Strength
+	14	79	0	0	0	0	0	0	0	50	// Leap of Agility
+	14	80	0	0	0	0	0	0	0	50	// Leap of Vitality
+	14	81	0	0	0	0	0	0	0	50	// Leap of Energy
+	14	82	0	0	0	0	0	0	0	50	// Leap of Command
+	14	171	0	0	0	0	0	0	0	50	// Legend Amulet
+	14	174	0	0	0	0	0	0	0	50	// Deathless Amulet
+	13	153	0	0	0	0	0	0	0	50	// Ring of Chaos
+	13	154	0	0	0	0	0	0	0	50	// Ring of Bless
+	13	155	0	0	0	0	0	0	0	50	// Ring of Soul

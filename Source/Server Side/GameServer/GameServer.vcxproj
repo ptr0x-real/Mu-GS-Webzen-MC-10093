@@ -232,7 +232,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KOR|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <UseOfMfc>Static</UseOfMfc>
+    <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
@@ -1791,7 +1791,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KOR|Win32'">
     <ClCompile>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <Optimization>Disabled</Optimization>
@@ -1808,6 +1808,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <AdditionalIncludeDirectories>$(SolutionDir)Base Common Src\</AdditionalIncludeDirectories>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -2404,6 +2405,7 @@
     <ClInclude Include="..\..\Base Common Src\Common\WzMemScript.h" />
     <ClInclude Include="..\..\Base Common Src\Common\WZScriptEncode.h" />
     <ClInclude Include="..\..\Base Common Src\Common\zzzitem.h" />
+    <ClInclude Include="..\..\Base Common Src\include\Sprodef.h" />
     <ClInclude Include="..\..\Base Common Src\Lua\LuaFun.h" />
     <ClInclude Include="..\..\Base Common Src\Lua\LuaSample.h" />
     <ClInclude Include="..\..\Base Common Src\Lua\MuLua.h" />
@@ -2434,7 +2436,6 @@
     <ClInclude Include="DbSave.h" />
     <ClInclude Include="DBSockMng.h" />
     <ClInclude Include="DSProtocol.h" />
-    <ClInclude Include="..\Include\Sprodef.h" />
     <ClInclude Include="Sobrevivencia.h" />
     <ClInclude Include="Sprotocol.h" />
     <ClInclude Include="protocol.h" />
